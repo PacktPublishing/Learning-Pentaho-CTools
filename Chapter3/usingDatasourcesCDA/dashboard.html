@@ -1,0 +1,34 @@
+<div class="container-fluid">
+    <div id="container" class="container">
+        <div id="row" class="row">
+            <div id="col" class="col-sx-12">
+                <h1>Ctools Book Samples!</h1>
+                <div id="table" class="table"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script language="javascript" type="text/javascript">
+    var dashboard;
+    require(['cdf/Dashboard.Bootstrap', 'cdf/components/TableComponent'], 
+        function(Dashboard, TextComponent) {
+            dashboard = new Dashboard();
+            var dashboardPath = dashboard.context.path.match(/^(\/([^/]+\/)*)(.*)$/)[1];
+            dashboard.addComponent(new TextComponent({
+                name: "top50Customers",
+                type: "tableComponent",
+                parameters:[],
+                listeners: [],
+                chartDefinition: {
+            		path: dashboardPath+"customers.cda",
+            		dataAccessId: "top50Customers"
+            	},
+                htmlObject: "table",
+                executeAtStart: true,
+                priority: 5
+            }));
+            dashboard.init();
+            return dashboard;
+        }
+    );
+</script>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CDADescriptor>
+    <DataSources>
+        <Connection id="top50Customers" type="mondrian.jndi">
+            <Jndi>SampleData</Jndi>
+            <Catalog>mondrian:/SteelWheels</Catalog>
+            <Cube>SteelWheelsSales</Cube>
+        </Connection>
+    </DataSources>
+    <DataAccess id="top50Customers" connection="top50Customers" type="denormalizedMdx" access="public">
+        <Name>top50Customers</Name>
+        <Query>
+            WITH 
+                SET CUSTOMERS AS TopCount([Customers].Children, 50.0, [Measures].[Sales])
+            SELECT 
+                NON EMPTY {[Measures].[Sales]} ON COLUMNS,
+                NON EMPTY CUSTOMERS ON ROWS 
+            FROM [SteelWheelsSales]
+            WHERE ${marketParam}
+        </Query>
+        <Parameters>
+            <Parameter name="marketParam" type="String" default="[Markets].[All Markets]"/>
+        </Parameters>
+    </DataAccess>
+
+</CDADescriptor>

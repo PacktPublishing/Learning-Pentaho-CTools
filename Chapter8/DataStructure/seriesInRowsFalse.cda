@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDADescriptor>
+   <DataSources>
+      <Connection id="crosstabMode" type="mondrian.jndi">
+         <Catalog>mondrian:/SteelWheels</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+      <Connection id="nonCrosstabMode" type="mondrian.jndi">
+         <Catalog>mondrian:/SteelWheels</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+      <Connection id="timeseriesTrue" type="mondrian.jndi">
+         <Catalog>mondrian:/SteelWheels</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+   </DataSources>
+   <DataAccess access="public" connection="crosstabMode" id="crosstabMode" type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query>WITH
+SET [ROWS] AS {[Markets].[Territory].Members}
+SET [COLUMNS] AS {[Time].[Years].Members}
+SELECT
+NON EMPTY [COLUMNS] ON COLUMNS,
+NON EMPTY [ROWS] ON ROWS
+FROM [SteelWheelsSales]</Query>
+   </DataAccess>
+   <DataAccess access="public" connection="nonCrosstabMode" id="nonCrosstabMode" type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query>WITH
+SET [ROWS] AS {[Markets].[Country].Members}
+SET [COLUMNS] AS {[Measures].[Sales]}
+SELECT
+NON EMPTY [COLUMNS] ON COLUMNS,
+NON EMPTY [ROWS] ON ROWS
+FROM [SteelWheelsSales]</Query>
+   </DataAccess>
+   <DataAccess access="public" connection="timeseriesTrue" id="timeseriesTrue" type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Output indexes="5,1,2,3,4" mode="include"/>
+      <Parameters/>
+      <Query>WITH
+MEMBER [Markets].[Date] AS  [Time].CURRENTMEMBER.PARENT.PARENT.NAME || "-" || [Time].CURRENTMEMBER.NAME
+SET [COLUMNS] AS UNION({[Markets].[Territory].Members}, {[Markets].[Date]})
+SET [ROWS] AS {[Time].[Months].Members}
+SELECT
+NON EMPTY [COLUMNS] ON COLUMNS,
+NON EMPTY [ROWS] ON ROWS
+FROM [SteelWheelsSales]</Query>
+   </DataAccess>
+</CDADescriptor>

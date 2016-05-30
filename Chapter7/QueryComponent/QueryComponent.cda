@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDADescriptor>
+   <DataSources>
+      <Connection id="accordion" type="mondrian.jndi">
+         <Catalog>mondrian:/SteelWheels</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+   </DataSources>
+   <DataAccess access="public" connection="accordion" id="accordion" type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Output indexes="1,0,2" mode="include"/>
+      <Parameters/>
+      <Query><![CDATA[WITH 
+ SET [ROWS] AS {[Product].[Vendor].Members}
+ MEMBER [Measures].[Line] AS [Product].[Vendor].CURRENTMEMBER.PARENT.NAME
+SELECT
+ NON EMPTY {[Measures].[Line], [Measures].[Sales]} ON COLUMNS,
+ NON EMPTY [ROWS] ON ROWS
+FROM [SteelWheelsSales]]]></Query>
+   </DataAccess>
+</CDADescriptor>

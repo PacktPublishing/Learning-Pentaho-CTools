@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDADescriptor>
+   <DataSources>
+      <Connection id="productLineQuery" type="mondrian.jndi">
+         <Catalog>mondrian:/SteelWheels</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+      <Connection id="yearQuery" type="mondrian.jndi">
+         <Catalog>mondrian:/SteelWheels</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+      <Connection id="overviewTableQuery" type="mondrian.jndi">
+         <Catalog>mondrian:/SteelWheels</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+      <Connection id="totalSalesQuery_new" type="mondrian.jndi">
+         <Catalog>mondrian:/SteelWheels</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+      <Connection id="totalSalesQuery" type="mondrian.jndi">
+         <Catalog>mondrian:/SteelWheels</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+      <Connection id="quantitySoldQuery" type="mondrian.jndi">
+         <Catalog>mondrian:/SteelWheels</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+      <Connection id="salesByTerritoryQuery" type="mondrian.jndi">
+         <Catalog>mondrian:/SteelWheels</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+      <Connection id="salesByProductQuery" type="mondrian.jndi">
+         <Catalog>mondrian:/SteelWheels</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+      <Connection id="salesByCountryQuery" type="mondrian.jndi">
+         <Catalog>mondrian:/SteelWheels</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+   </DataSources>
+   <DataAccess access="public" connection="productLineQuery" id="productLineQuery" type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Output indexes="1,0,2" mode="include"/>
+      <Parameters/>
+      <Query><![CDATA[WITH 
+    SET PRODUCTLINES AS { [Product].[Trains], [Product].[Trucks and Buses], [Product].[Motorcycles],  [Product].[Vintage Cars], [Product].[Classic Cars] }
+    MEMBER [Measures].[UniqueName] AS [Product].CURRENTMEMBER.UNIQUENAME
+    MEMBER [Measures].[Total] AS AGGREGATE(PRODUCTLINES, [Measures].[Sales])
+    MEMBER [Measures].[Percentage] AS  [Measures].[Sales]/[Measures].[Total]
+    
+SELECT
+    {[Measures].[UniqueName], [Measures].[Sales], [Measures].[Percentage]} ON COLUMNS,
+    ORDER(PRODUCTLINES, [Measures].[Percentage], DESC) ON ROWS
+FROM [SteelWheelsSales]]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="yearQuery" id="yearQuery" type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Output indexes="1,0" mode="include"/>
+      <Parameters/>
+      <Query><![CDATA[WITH
+    MEMBER [Measures].[Years UniqueName]  AS  [Time].currentmember.UniqueName
+    SET  YEAR  AS  UNION( [Time].[All Years] , [Time].[Years].Members )
+    
+SELECT
+    [Measures].[Years UniqueName]  ON COLUMNS,
+    YEAR   ON ROWS
+FROM [SteelWheelsSales]]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="overviewTableQuery" id="overviewTableQuery"
+               type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Output indexes="0,2,3" mode="include"/>
+      <Parameters>
+         <Parameter default="[Product].[Trains], [Product].[Trucks and Buses], [Product].[Motorcycles],  [Product].[Vintage Cars], [Product].[Classic Cars]"
+                    name="productLineParam"
+                    type="String"/>
+         <Parameter default="[Time].[All Years]" name="yearParam" type="String"/>
+      </Parameters>
+      <Query><![CDATA[WITH 
+    SET PRODUCTLINES AS { ${productLineParam} }
+    MEMBER [Measures].[UniqueName] AS [Product].CURRENTMEMBER.UNIQUENAME
+    MEMBER [Measures].[Total] AS AGGREGATE(PRODUCTLINES, [Measures].[Sales])
+    MEMBER [Measures].[Percentage] AS  ([Measures].[Sales]/[Measures].[Total])*100
+    
+SELECT
+    {[Measures].[UniqueName], [Measures].[Sales], [Measures].[Percentage]} ON COLUMNS,
+    ORDER(PRODUCTLINES, [Measures].[Percentage], DESC) ON ROWS
+FROM [SteelWheelsSales]
+WHERE {${yearParam}}]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="totalSalesQuery_new" id="totalSalesQuery_new"
+               type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="[Product].[Trains], [Product].[Trucks and Buses], [Product].[Motorcycles],  [Product].[Vintage Cars], [Product].[Classic Cars]"
+                    name="productLineParam"
+                    type="String"/>
+         <Parameter default="[Time].[All Years]" name="yearParam" type="String"/>
+      </Parameters>
+      <Query><![CDATA[SELECT
+    NON EMPTY CrossJoin( { ${productLineParam} }, {[Measures].[Sales]} ) ON COLUMNS,
+    NON EMPTY Except( Descendants(${yearParam}, [Time].[Quarters]) , [Time].[All Years] ) ON ROWS
+FROM [SteelWheelsSales]]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="totalSalesQuery" id="totalSalesQuery" type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="[Product].[Trains], [Product].[Trucks and Buses], [Product].[Motorcycles],  [Product].[Vintage Cars], [Product].[Classic Cars]"
+                    name="productLineParam"
+                    type="String"/>
+         <Parameter default="[Time].[All Years]" name="yearParam" type="String"/>
+      </Parameters>
+      <Query><![CDATA[WITH 
+ MEMBER [Measures].[Year] AS [Time].CURRENTMEMBER.PARENT.Name
+SELECT 
+    NON EMPTY UNION(Crossjoin({[Product].[All Products]}, {[Measures].[Year]}), Crossjoin({${productLineParam}}, {[Measures].[Sales]})) ON COLUMNS,
+    NON EMPTY {Except(Descendants(${yearParam}, [Time].[Quarters]), {[Time].[All Years]})} ON ROWS
+FROM [SteelWheelsSales]]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="quantitySoldQuery" id="quantitySoldQuery"
+               type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="[Product].[Trains], [Product].[Trucks and Buses], [Product].[Motorcycles],  [Product].[Vintage Cars], [Product].[Classic Cars]"
+                    name="productLineParam"
+                    type="StringArray"/>
+         <Parameter default="[Time].[All Years]" name="yearParam" type="String"/>
+      </Parameters>
+      <Query><![CDATA[WITH 
+ MEMBER [Measures].[Year] AS [Time].CURRENTMEMBER.PARENT.Name
+SELECT 
+    NON EMPTY UNION(Crossjoin({[Product].[All Products]}, {[Measures].[Year]}), Crossjoin({${productLineParam}}, {[Measures].[Quantity]})) ON COLUMNS,
+    NON EMPTY {Except(Descendants(${yearParam}, [Time].[Quarters]), {[Time].[All Years]})} ON ROWS
+FROM [SteelWheelsSales]]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="salesByTerritoryQuery" id="salesByTerritoryQuery"
+               type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="[Product].[Trains], [Product].[Trucks and Buses], [Product].[Motorcycles],  [Product].[Vintage Cars], [Product].[Classic Cars]"
+                    name="productLineParam"
+                    type="String"/>
+         <Parameter default="[Time].[All Years]" name="yearParam" type="String"/>
+      </Parameters>
+      <Query><![CDATA[WITH
+    MEMBER [Measures].[Sales in Time] AS ( [Measures].[Sales] , ${yearParam} )
+Select
+    { [Markets].[APAC] , [Markets].[EMEA] , [Markets].[NA] } on COLUMNS,
+    { ${productLineParam} } on ROWS
+FROM [SteelWheelsSales]
+Where [Measures].[Sales in Time]]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="salesByProductQuery" id="salesByProductQuery"
+               type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="[Product].[Trains], [Product].[Trucks and Buses], [Product].[Motorcycles],  [Product].[Vintage Cars], [Product].[Classic Cars]"
+                    name="productLineParam"
+                    type="String"/>
+         <Parameter default="[Time].[All Years]" name="yearParam" type="String"/>
+      </Parameters>
+      <Query><![CDATA[WITH
+SET [COLUMNS] AS {[Markets].[Territory].Members}
+SET [ROWS] AS
+    {[Product].[Product].Members}
+MEMBER [Measures].[Trend] as IIF(ISEMPTY(([Time].CURRENTMEMBER.lag(1), [Measures].[Sales])) OR [Measures].[Sales]=0, 0, ([Measures].[Sales]-([Time].CURRENTMEMBER.lag(1), [Measures].[Sales])) /[Measures].[Sales])+0
+MEMBER [Measures].[Sales ($)] as [Measures].[Sales]
+MEMBER [Measures].[Qt] as [Measures].[Quantity]
+SELECT
+NON EMPTY CrossJoin([COLUMNS], {[Measures].[Qt], [Measures].[Sales ($)], [Measures].[Trend]}) ON COLUMNS,
+NON EMPTY [ROWS] ON ROWS
+FROM [SteelWheelsSales]
+WHERE {${yearParam}}]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="salesByCountryQuery" id="salesByCountryQuery"
+               type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Output indexes="0" mode="exclude"/>
+      <Parameters>
+         <Parameter default="[Product].[Trains], [Product].[Trucks and Buses], [Product].[Motorcycles],  [Product].[Vintage Cars], [Product].[Classic Cars]"
+                    name="productLineParam"
+                    type="String"/>
+         <Parameter default="[Time].[All Years]" name="yearParam" type="String"/>
+      </Parameters>
+      <Query><![CDATA[WITH
+SET [ROWS] AS FILTER({[Markets].[Country].Members}, [Measures].[Qt] <> 0)
+MEMBER [Measures].[Territory] as IIF([Markets].[Country].CURRENTMEMBER.PARENT.NAME <> "#null", [Markets].[Country].CURRENTMEMBER.PARENT.NAME, "NA")
+MEMBER [Measures].[Country] as [Markets].[Country].CURRENTMEMBER.NAME
+MEMBER [Measures].[Sales ($)] as [Measures].[Sales]+0
+MEMBER [Measures].[LY] as [Time].LASTCHILD.NAME
+MEMBER [Measures].[LY Sales ($)] as ([Time].LASTCHILD, [Measures].[Sales ($)])
+MEMBER [Measures].[LY-1] as [Time].LASTCHILD.lag(1).NAME
+MEMBER [Measures].[LY-1 Sales ($)] as ([Time].LASTCHILD.lag(1), [Measures].[Sales ($)])
+MEMBER [Measures].[Qt] as [Measures].[Quantity]+0
+MEMBER [Measures].[Trend] as IIF([Measures].[LY-1 Sales ($)]<>0, ([Measures].[LY Sales ($)]-[Measures].[LY-1 Sales ($)])/[Measures].[LY-1 Sales ($)], 1)+0
+MEMBER [Measures].[Sparkline] AS GENERATE(TAIL(DESCENDANTS(${yearParam}, [Time].[Months]), 12), CAST(ROUND( [Measures].[Sales]+0, 1) AS STRING), ',')
+MEMBER [Measures].[Bubble] as [Measures].[Sales]+0
+SELECT
+NON EMPTY {[Measures].[Territory], [Measures].[Country], [Measures].[Qt], [Measures].[Sales ($)], [Measures].[LY], [Measures].[LY Sales ($)], [Measures].[LY-1], [Measures].[LY-1 Sales ($)] , [Measures].[Trend], [Measures].[Sparkline], [Measures].[Bubble]} ON COLUMNS,
+NON EMPTY [ROWS] ON ROWS
+FROM [SteelWheelsSales]
+
+WHERE {${yearParam}}]]></Query>
+   </DataAccess>
+</CDADescriptor>

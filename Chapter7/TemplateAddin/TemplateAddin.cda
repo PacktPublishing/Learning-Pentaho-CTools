@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDADescriptor>
+   <DataSources>
+      <Connection id="templateQuery_old" type="mondrian.jndi">
+         <Catalog>mondrian:/SteelWheels</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+      <Connection id="templateQuery" type="mondrian.jndi">
+         <Catalog>mondrian:/SteelWheels</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+   </DataSources>
+   <DataAccess access="public" connection="templateQuery_old" id="templateQuery_old"
+               type="mdx">
+      <Name>templateQuery_old</Name>
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[WITH
+SET [ROWS_SET] AS NonEmptyCrossJoin(NonEmptyCrossJoin({[Markets].[Territory].Members}, {[Product].[Line].Members}), [Time].[Years].Members)
+SELECT
+NON EMPTY {[Measures].[Sales]} ON COLUMNS,
+NON EMPTY ROWS_SET ON ROWS
+FROM [SteelWheelsSales]]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="templateQuery" id="templateQuery" type="mdx">
+      <Name>templateQuery</Name>
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[WITH
+SET [ROWS_SET] AS NonEmptyCrossJoin({[Markets].[Territory].Members}, {[Product].[Line].Members})
+SELECT
+NON EMPTY {[Measures].[Sales]} ON COLUMNS,
+NON EMPTY ROWS_SET ON ROWS
+FROM [SteelWheelsSales]]]></Query>
+   </DataAccess>
+</CDADescriptor>

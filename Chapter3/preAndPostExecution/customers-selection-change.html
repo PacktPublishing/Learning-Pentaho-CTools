@@ -1,0 +1,104 @@
+<style>
+    .separator {
+        height: 20px;
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 20px;
+    }
+</style>
+<div class="container-fluid">
+    <div id="container" class="container">
+         <div class="row">
+            <div class="col-xs-12">
+                <h1>Ctools Book Samples!</h1>
+            </div>
+        </div>    
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                <span id="marketLevelSelectorLabel" class="selectorLabel"></span>
+                <span id="marketLevelSelector" class="selector"></span>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <span id="marketSelectorLabel" class="selectorLabel"></span>
+                <span id="marketSelector" class="selector"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="separator"></div>
+            </div>
+            <div class="col-xs-12">
+                <div id="table" class="table"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script language="javascript" type="text/javascript">
+    var dashboard;
+    require(['cdf/Dashboard.Bootstrap', 'cdf/components/TableComponent', 'cdf/components/SelectComponent',  "cdf/Logger", "cdf/lib/jquery"], 
+        function(Dashboard, TableComponent, SelectComponent, Logger, $) {
+            dashboard = new Dashboard();
+            dashboard.addParameter('marketLevelDashParam', 'territories');
+            dashboard.addParameter('marketDashParam', '[Markets].[All Markets]');
+            var path = dashboard.context.path;
+            var dashPath = path.substring(0,path.lastIndexOf('/'));
+            dashboard.addComponent(new SelectComponent({
+                name: "marketLevelFilter",
+                type: "selectComponent",
+                parameter: "marketLevelDashParam",
+                valueAsId: false,
+                valuesArray: [["territories","Territory"],["countries","Country"],["cities","City"]],
+                htmlObject: "marketLevelSelector",
+                executeAtStart: true,
+                priority: 5,
+                postExecution: function(){
+                    $('#marketLevelSelectorLabel').text('Select market level:');
+                },
+            }));
+            dashboard.addComponent(new SelectComponent({
+                name: "marketFilter",
+                type: "selectComponent",
+                parameter: "marketDashParam",
+                valueAsId: false,
+                parameters:[],
+                listeners: ["marketLevelDashParam"],
+                queryDefinition: {
+            		path: dashPath+"/customers-selection-change.cda"
+            	},
+                htmlObject: "marketSelector",
+                executeAtStart: true,
+                priority: 5,
+                preExecution: function(){
+                    var level = dashboard.getParameterValue("marketLevelDashParam");
+                    this.queryDefinition.dataAccessId = level;
+                },
+                postFetch: function(data) {
+                    for (var i=0; i<data.resultset.length; i++) {
+                            if (data.resultset[i][1]=="#null") 
+                                data.resultset[i][1]="OTHERS";
+                    }
+                    return data;
+                },
+                postExecution: function(){
+                    var level = dashboard.getParameterValue("marketLevelDashParam");
+                    $('#marketSelectorLabel').text('Select from '+level+':');
+                }
+            }));
+            dashboard.addComponent(new TableComponent({
+                name: "top50Customers",
+                type: "tableComponent",
+                parameters:[["marketQueryParam", 'marketDashParam']],
+                listeners: ['marketDashParam'],
+                chartDefinition: {
+            		path: dashPath+"/customers-selection-change.cda",
+            		dataAccessId: "top50Customers"
+            	},
+                htmlObject: "table",
+                executeAtStart: true,
+                priority: 5
+            }));
+            dashboard.init();
+            return dashboard;
+        }
+    );
+</script>

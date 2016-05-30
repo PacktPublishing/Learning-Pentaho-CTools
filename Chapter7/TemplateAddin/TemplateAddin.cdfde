@@ -1,0 +1,474 @@
+{
+ "layout": {
+  "title": "CDF - Sample structure",
+  "rows": [
+   {
+    "id": "b7749b9b-7112-ac8b-44d5-00fef41458dd",
+    "type": "LayoutResourceCode",
+    "typeDesc": "Resource",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "value": "CSS",
+      "type": "Id"
+     },
+     {
+      "name": "resourceCode",
+      "value": ".single {\n    text-align: center;\n} ",
+      "type": "Resource"
+     },
+     {
+      "name": "resourceType",
+      "value": "Css",
+      "type": "Label"
+     }
+    ]
+   },
+   {
+    "id": "0de1bae7-7d13-2395-2a6f-9f7c7af4b8b8",
+    "type": "LayoutSpace",
+    "typeDesc": "Space",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "height",
+      "value": "10",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "56bcbf91-0e2a-c6c0-ea65-8c13a2a66ddd",
+    "type": "LayoutRow",
+    "typeDesc": "Row",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "85ff843d-a513-448b-a324-0453ba8c7158",
+    "type": "LayoutBootstrapColumn",
+    "typeDesc": "Column",
+    "parent": "56bcbf91-0e2a-c6c0-ea65-8c13a2a66ddd",
+    "properties": [
+     {
+      "name": "name",
+      "value": "template",
+      "type": "Id"
+     },
+     {
+      "name": "bootstrapExtraSmall",
+      "value": "12",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapSmall",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapMedium",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapLarge",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapCssClass",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "622c4ba4-737a-0f3b-cd1f-a1822a4a943b",
+    "type": "LayoutSpace",
+    "typeDesc": "Space",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "height",
+      "value": "10",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   }
+  ]
+ },
+ "components": {
+  "rows": [
+   {
+    "id": "OTHERCOMPONENTS",
+    "name": "Others",
+    "type": "Label",
+    "typeDesc": "<i>Group</i>",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "Group",
+      "value": "Others",
+      "type": "Label"
+     }
+    ]
+   },
+   {
+    "id": "b87817f0-1be0-40d6-679f-1228d9b23b7a",
+    "type": "ComponentsTemplateComponent",
+    "typeDesc": "Template Component",
+    "parent": "OTHERCOMPONENTS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "template",
+      "type": "Id"
+     },
+     {
+      "name": "listeners",
+      "value": "[]",
+      "type": "Listeners"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "dataSource",
+      "value": "templateQuery",
+      "type": "Datasource"
+     },
+     {
+      "name": "priority",
+      "value": 5,
+      "type": "Integer"
+     },
+     {
+      "name": "htmlObject",
+      "value": "${h:template}",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "function f(){\n\nvar templateOpts = { \n        templateType: 'underscore',\n        template:\n            '<% _.each(items, function(value, idx) { %>' +\n            '  <div class=\"row clickable productLine\" data-id=\"<%=value[1]%>\"> '+\n            '    <div class=\"category\"> <b> <%= value[1] %> : </b> </div>'+\n            '    <div class=\"value\"> <%= formatter(value[2], \"abbreviation\") %> </div>'+\n            '  </div>' +\n            '<% }); %>',\n        formatters: [[\"abbreviation\", function(value, id) {\n            return Utils.numberFormat(value, '$0.0A'); \n        }]],\n    \n        events: [[\"click , .clickable.productLine\", function(event){\n            alert('You clicked: '+$(this).data('id'));\n        }]],\n        modelHandler: function(data, opt) {\n            var model = {};\n      \t    model[opt.rootElement] = data.value;\n            return model;\n        },\n        \n    };\n    this.setAddInOptions(\"templateType\",\"template\", templateOpts);\n    \n} ",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postFetch",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "tooltip",
+      "value": "",
+      "type": "Html"
+     },
+     {
+      "name": "modelHandler",
+      "value": "function(data){\n    var model = {};\n    model = _.groupBy(data.resultset, function(row){\n        return row[0];\n    });\n    return {items: model};\n} ",
+      "type": "JavaScript"
+     },
+     {
+      "name": "template",
+      "value": "function() { \n           \n    var template =  '<div class=\"row card\">' +\n                    '<% _.each(items, function(value, key) { %>' +\n                    '  <div class=\"col-xs-12 col-sm-6 col-md-4 col-lg-3 single clickable territory\" data-category=\"<%=key%>\"> '+\n                    '    <div class=\"category\"> <b> <%= addin(key, \"clippedText\", \"Category\") %> </b> </div>'+\n                    '    <div class=\"addin\"> <%= addin(value, \"template\", \"template\") %> </div>'+\n                    '  </div>' +\n                    '<% }); %>' +\n                    '</div>'; \n   \n    return template;\n} ",
+      "type": "JavaScript"
+     },
+     {
+      "name": "templateType",
+      "value": "underscore",
+      "type": "templateTypeCustom"
+     },
+     {
+      "name": "events",
+      "value": "[]",
+      "type": "EditorValuesArray"
+     },
+     {
+      "name": "formatters",
+      "value": "[]",
+      "type": "EditorValuesArray"
+     },
+     {
+      "name": "rootElement",
+      "value": "items",
+      "type": "String"
+     },
+     {
+      "name": "extendableOptions",
+      "value": "",
+      "type": "JavaScript"
+     }
+    ]
+   }
+  ]
+ },
+ "datasources": {
+  "rows": [
+   {
+    "id": "MDX",
+    "name": "MDX Queries",
+    "type": "Label",
+    "typeDesc": "<i>Group</i>",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "Group",
+      "value": "MDX Queries",
+      "type": "Label"
+     }
+    ]
+   },
+   {
+    "id": "af6fef44-977b-faad-2e02-95d31f520a74",
+    "type": "Componentsmdx_mondrianJndi",
+    "typeDesc": "mdx over mondrianJndi",
+    "parent": "MDX",
+    "properties": [
+     {
+      "name": "name",
+      "value": "templateQuery_old",
+      "type": "Id"
+     },
+     {
+      "name": "access",
+      "value": "public",
+      "type": "Access"
+     },
+     {
+      "name": "jndi",
+      "value": "SampleData",
+      "type": "Jndi"
+     },
+     {
+      "name": "catalog",
+      "value": "mondrian:/SteelWheels",
+      "type": "MondrianCatalog"
+     },
+     {
+      "name": "query",
+      "value": "WITH\nSET [ROWS_SET] AS NonEmptyCrossJoin(NonEmptyCrossJoin({[Markets].[Territory].Members}, {[Product].[Line].Members}), [Time].[Years].Members)\nSELECT\nNON EMPTY {[Measures].[Sales]} ON COLUMNS,\nNON EMPTY ROWS_SET ON ROWS\nFROM [SteelWheelsSales]",
+      "type": "CurrentMdxQuery"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "CdaParameters"
+     },
+     {
+      "name": "bandedMode",
+      "value": "compact",
+      "type": "BandedMode"
+     },
+     {
+      "name": "cdacalculatedcolumns",
+      "value": "[]",
+      "type": "CdaCalculatedColumnsArray"
+     },
+     {
+      "name": "cdacolumns",
+      "value": "[]",
+      "type": "CdaColumnsArray"
+     },
+     {
+      "name": "output",
+      "value": "[]",
+      "type": "IndexArray"
+     },
+     {
+      "name": "outputMode",
+      "value": "include",
+      "type": "OutputMode"
+     },
+     {
+      "name": "cacheKeys",
+      "value": "[]",
+      "type": "CacheKeysValues"
+     },
+     {
+      "name": "cacheDuration",
+      "value": 3600,
+      "type": "Integer"
+     },
+     {
+      "name": "cache",
+      "value": "true",
+      "type": "Boolean"
+     }
+    ],
+    "meta": "CDA",
+    "meta_conntype": "mondrian.jndi",
+    "meta_datype": "mdx"
+   },
+   {
+    "id": "0c847feb-3c6b-5b2b-ff19-8bd2c66a6403",
+    "type": "Componentsmdx_mondrianJndi",
+    "typeDesc": "mdx over mondrianJndi",
+    "parent": "MDX",
+    "properties": [
+     {
+      "name": "name",
+      "value": "templateQuery",
+      "type": "Id"
+     },
+     {
+      "name": "access",
+      "value": "public",
+      "type": "Access"
+     },
+     {
+      "name": "jndi",
+      "value": "SampleData",
+      "type": "Jndi"
+     },
+     {
+      "name": "catalog",
+      "value": "mondrian:/SteelWheels",
+      "type": "MondrianCatalog"
+     },
+     {
+      "name": "query",
+      "value": "WITH\nSET [ROWS_SET] AS NonEmptyCrossJoin({[Markets].[Territory].Members}, {[Product].[Line].Members})\nSELECT\nNON EMPTY {[Measures].[Sales]} ON COLUMNS,\nNON EMPTY ROWS_SET ON ROWS\nFROM [SteelWheelsSales]",
+      "type": "CurrentMdxQuery"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "CdaParameters"
+     },
+     {
+      "name": "bandedMode",
+      "value": "compact",
+      "type": "BandedMode"
+     },
+     {
+      "name": "cdacalculatedcolumns",
+      "value": "[]",
+      "type": "CdaCalculatedColumnsArray"
+     },
+     {
+      "name": "cdacolumns",
+      "value": "[]",
+      "type": "CdaColumnsArray"
+     },
+     {
+      "name": "output",
+      "value": "[]",
+      "type": "IndexArray"
+     },
+     {
+      "name": "outputMode",
+      "value": "include",
+      "type": "OutputMode"
+     },
+     {
+      "name": "cacheKeys",
+      "value": "[]",
+      "type": "CacheKeysValues"
+     },
+     {
+      "name": "cacheDuration",
+      "value": 3600,
+      "type": "Integer"
+     },
+     {
+      "name": "cache",
+      "value": "true",
+      "type": "Boolean"
+     }
+    ],
+    "meta": "CDA",
+    "meta_conntype": "mondrian.jndi",
+    "meta_datype": "mdx"
+   }
+  ]
+ },
+ "filename": "/public/Ctools+Book+Samples/Chapter+7/TemplateAddin/TemplateAddin.cdfde"
+}

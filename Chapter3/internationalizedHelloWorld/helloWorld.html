@@ -1,0 +1,41 @@
+<style>
+    .messageContainer {
+        background-color: #4682B4;
+        color: white;
+    }
+</style>
+
+<div class="container-fluid">
+    <h1>CDF Hello World Sample</h1>
+    <div id="messageContainer" class="messageContainer"></div>
+</div>
+
+<script language="javascript" type="text/javascript">
+
+    var dashboard;
+    
+    require(['cdf/Dashboard.Clean', 'cdf/components/TextComponent'], 
+        
+        function(Dashboard, TextComponent) {
+            dashboard = new Dashboard();
+            dashboard.addComponent(new TextComponent({
+                name: "myTextComponent",
+                type: "textComponent",
+                parameters:[],
+                listeners: [],
+                htmlObject: "messageContainer",
+                executeAtStart: true,
+                priority: 5,
+                expression: function() {
+                    return dashboard.i18nSupport.prop("internationalized.message");
+                }
+            }));
+            dashboard.preInit = function() {
+                console.log('preInitttttttttt');
+            }
+            dashboard.init();
+            return dashboard;
+        }
+    );
+
+</script>

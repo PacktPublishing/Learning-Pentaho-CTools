@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdf>
+  <title>Custom Component Usage Sample</title>
+  <author>Learning Pentaho Ctools </author>
+  <description>Learning Pentaho Ctools</description>
+  <icon></icon>
+  <template>template.html</template>
+  <style>clean</style>
+  <require>true</require>
+</cdf>

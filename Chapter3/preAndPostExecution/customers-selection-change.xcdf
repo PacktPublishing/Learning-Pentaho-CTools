@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdf>
+  <title>Ctools Book Samples!</title>
+  <author>My Name</author>
+  <description>Ctools Book Samples!</description>
+  <icon></icon>
+  <template>customers-selection-change.html</template>
+  <style>clean</style>
+  <require>true</require>
+</cdf>

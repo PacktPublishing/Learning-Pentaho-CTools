@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDADescriptor>
+   <DataSources>
+      <Connection id="simpleSelection" type="mondrian.jndi">
+         <Catalog>mondrian:/SteelWheels</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+      <Connection id="optionsAndGroups" type="mondrian.jndi">
+         <Catalog>mondrian:/SteelWheels</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+      <Connection id="query" type="mondrian.jndi">
+         <Catalog>mondrian:/SteelWheels</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+      <Connection id="multipleLevels" type="mondrian.jndi">
+         <Catalog>mondrian:/SteelWheels</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+      <Connection id="ProductLineQuery" type="mondrian.jndi">
+         <Catalog>mondrian:/SteelWheels</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+      <Connection id="ProductVendorQuery" type="mondrian.jndi">
+         <Catalog>mondrian:/SteelWheels</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+      <Connection id="ProductQuery" type="mondrian.jndi">
+         <Catalog>mondrian:/SteelWheels</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+      <Connection id="accordionFilters" type="mondrian.jndi">
+         <Catalog>mondrian:/SteelWheels</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+   </DataSources>
+   <DataAccess access="public" connection="simpleSelection" id="simpleSelection" type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Output indexes="1,0" mode="include"/>
+      <Parameters/>
+      <Query><![CDATA[WITH
+    SET [ROWS_SET] AS {[Product].[Line].Members}
+    MEMBER [Measures].[PRODUCT DESC] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Product]).NAME
+    MEMBER [Measures].[PRODUCT UNAME] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Product]).UNIQUENAME
+    MEMBER [Measures].[VENDOR DESC] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Vendor]).NAME
+    MEMBER [Measures].[VENDOR UNAME] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Vendor]).UNIQUENAME
+    MEMBER [Measures].[LINE DESC] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Line]).NAME
+    MEMBER [Measures].[LINE UNAME] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Line]).UNIQUENAME
+SELECT
+    NON EMPTY {
+        [Measures].[LINE UNAME]
+    } ON COLUMNS,
+    NON EMPTY [ROWS_SET] ON ROWS
+FROM [SteelWheelsSales]]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="optionsAndGroups" id="optionsAndGroups" type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns>
+         <Column idx="1">
+            <Name>Group Id</Name>
+         </Column>
+         <Column idx="2">
+            <Name>Group Label</Name>
+         </Column>
+         <Column idx="3">
+            <Name>Item Label</Name>
+         </Column>
+         <Column idx="4">
+            <Name>Item Id</Name>
+         </Column>
+      </Columns>
+      <Output indexes="3,4,1,2" mode="include"/>
+      <Parameters/>
+      <Query><![CDATA[WITH
+    SET [ROWS_SET] AS {[Product].[Vendor].Members}
+    MEMBER [Measures].[PRODUCT DESC] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Product]).NAME
+    MEMBER [Measures].[PRODUCT UNAME] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Product]).UNIQUENAME
+    MEMBER [Measures].[VENDOR DESC] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Vendor]).NAME
+    MEMBER [Measures].[VENDOR UNAME] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Vendor]).UNIQUENAME
+    MEMBER [Measures].[LINE DESC] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Line]).NAME
+    MEMBER [Measures].[LINE UNAME] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Line]).UNIQUENAME
+SELECT
+    NON EMPTY {
+        [Measures].[LINE UNAME], [Measures].[LINE DESC], 
+        [Measures].[VENDOR UNAME], [Measures].[VENDOR DESC]
+    } ON COLUMNS,
+    NON EMPTY [ROWS_SET] ON ROWS
+FROM [SteelWheelsSales]]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="query" id="query" type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Output indexes="5,6,3,4,1,2" mode="include"/>
+      <Parameters/>
+      <Query><![CDATA[WITH
+    SET [ROWS_SET] AS {[Product].[Product].Members}
+    MEMBER [Measures].[PRODUCT DESC] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Product]).NAME
+    MEMBER [Measures].[PRODUCT UNAME] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Product]).UNIQUENAME
+    MEMBER [Measures].[VENDOR DESC] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Vendor]).NAME
+    MEMBER [Measures].[VENDOR UNAME] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Vendor]).UNIQUENAME
+    MEMBER [Measures].[LINE DESC] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Line]).NAME
+    MEMBER [Measures].[LINE UNAME] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Line]).UNIQUENAME
+SELECT
+    NON EMPTY {
+        [Measures].[LINE UNAME], [Measures].[LINE DESC], 
+        [Measures].[VENDOR UNAME], [Measures].[VENDOR DESC],
+        [Measures].[PRODUCT UNAME], [Measures].[PRODUCT DESC]
+    } ON COLUMNS,
+    NON EMPTY [ROWS_SET] ON ROWS
+FROM [SteelWheelsSales]]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="multipleLevels" id="multipleLevels" type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[WITH
+    SET [ROWS_SET] AS {[Product].[Product].Members}
+    MEMBER [Measures].[PRODUCT DESC] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Product]).NAME
+    MEMBER [Measures].[PRODUCT UNAME] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Product]).UNIQUENAME
+    MEMBER [Measures].[VENDOR DESC] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Vendor]).NAME
+    MEMBER [Measures].[VENDR UNAME] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Vendor]).UNIQUENAME
+    MEMBER [Measures].[LINE DESC] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Line]).NAME
+    MEMBER [Measures].[LINE UNAME] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Line]).UNIQUENAME
+SELECT
+    NON EMPTY {
+        [Measures].[LINE DESC], [Measures].[LINE UNAME],
+        [Measures].[VENDOR DESC], [Measures].[VENDOR UNAME],
+        [Measures].[PRODUCT DESC], [Measures].[PRODUCT UNAME]
+    } ON COLUMNS,
+    NON EMPTY [ROWS_SET] ON ROWS
+FROM [SteelWheelsSales]]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="ProductLineQuery" id="ProductLineQuery" type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Output indexes="1,2" mode="include"/>
+      <Parameters/>
+      <Query><![CDATA[WITH
+    SET [ROWS_SET] AS {[Product].[Line].MEMBERS}
+    MEMBER [Measures].[DESC] AS [Product].CURRENTMEMBER.NAME
+    MEMBER [Measures].[UNAME] AS [Product].CURRENTMEMBER.UNIQUENAME
+SELECT
+    NON EMPTY {
+        [Measures].[UNAME], [Measures].[DESC]
+    } ON COLUMNS,
+    NON EMPTY [ROWS_SET] ON ROWS
+FROM [SteelWheelsSales]]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="ProductVendorQuery" id="ProductVendorQuery"
+               type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Output indexes="1,2" mode="include"/>
+      <Parameters>
+         <Parameter default="[Product].[Classic Cars].[Classic Metal Creations]"
+                    name="productLineParam"
+                    type="String"/>
+      </Parameters>
+      <Query><![CDATA[WITH
+    SET [ROWS_SET] AS DESCENDANTS({${productLineParam}}, 1)
+    MEMBER [Measures].[DESC] AS [Product].CURRENTMEMBER.NAME
+    MEMBER [Measures].[UNAME] AS [Product].CURRENTMEMBER.UNIQUENAME
+SELECT
+    NON EMPTY {
+        [Measures].[UNAME], [Measures].[DESC]
+    } ON COLUMNS,
+    NON EMPTY [ROWS_SET] ON ROWS
+FROM [SteelWheelsSales]]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="ProductQuery" id="ProductQuery" type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Output indexes="1,2" mode="include"/>
+      <Parameters>
+         <Parameter default="[Product].[Classic Cars].[Autoart Studio Design]"
+                    name="productVendorParam"
+                    type="String"/>
+      </Parameters>
+      <Query><![CDATA[WITH
+    SET [ROWS_SET] AS DESCENDANTS({${productVendorParam}}, 1)
+    MEMBER [Measures].[DESC] AS [Product].CURRENTMEMBER.NAME
+    MEMBER [Measures].[UNAME] AS [Product].CURRENTMEMBER.UNIQUENAME
+SELECT
+    NON EMPTY {
+        [Measures].[UNAME], [Measures].[DESC]
+    } ON COLUMNS,
+    NON EMPTY [ROWS_SET] ON ROWS
+FROM [SteelWheelsSales]]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="accordionFilters" id="accordionFilters" type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Output indexes="5,6,3,4,1,2" mode="include"/>
+      <Parameters/>
+      <Query><![CDATA[WITH
+    SET [ROWS_SET] AS DESCENDANTS({[Product].[Classic Cars].[Classic Metal Creations]}, 1)
+    MEMBER [Measures].[DESC] AS [Product].CURRENTMEMBER.NAME
+    MEMBER [Measures].[UNAME] AS [Product].CURRENTMEMBER.UNIQUENAME
+SELECT
+    NON EMPTY {
+        [Measures].[UNAME], [Measures].[DESC]
+    } ON COLUMNS,
+    NON EMPTY [ROWS_SET] ON ROWS
+FROM [SteelWheelsSales]]]></Query>
+   </DataAccess>
+</CDADescriptor>

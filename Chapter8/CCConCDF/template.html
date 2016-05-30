@@ -1,0 +1,40 @@
+<div class="row">
+    <div class="col-xs-12">
+        <div id="chart"/>
+    </div>
+</div>
+
+<script language="javascript" type="text/javascript">
+
+  require(['cdf/Dashboard.Bootstrap', 'cdf/components/CccBarChartComponent'],
+    function(Dashboard, CccBarChartComponent) {
+
+    var dashboard = new Dashboard();
+    
+    //dashboard.addDataSource("query", {
+    //    dataAccessId: "totalSalesQuery",
+    //    path: "/public/Ctools Book Samples/Chapter 8/querie.cda",
+    //});
+
+    var chart = new CccBarChartComponent({
+        type: "cccBarChart",
+        name: "cccChart",
+        executeAtStart: true,
+        htmlObject: "chart",
+        chartDefinition: {
+            //datasource: "query",
+            height: 200,
+            path: "/public/Ctools Book Samples/Chapter 8/queries.cda",
+            dataAccessId: "totalSalesQuery",
+            crosstabMode: true,
+            seriesInRows: false,
+            timeSeries: false,
+            plotFrameVisible: false,
+            axis_strokeStyle: "transparent"
+        }
+    });
+
+    dashboard.addComponent(chart);
+    dashboard.init();
+  });
+</script>

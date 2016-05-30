@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDADescriptor>
+   <DataSources>
+      <Connection id="productLineQuery" type="mondrian.jndi">
+         <Catalog>mondrian:/SteelWheels</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+      <Connection id="yearQuery" type="mondrian.jndi">
+         <Catalog>mondrian:/SteelWheels</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+      <Connection id="overviewTableQuery" type="mondrian.jndi">
+         <Catalog>mondrian:/SteelWheels</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+   </DataSources>
+   <DataAccess access="public" connection="productLineQuery" id="productLineQuery" type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Output indexes="1,0,2" mode="include"/>
+      <Parameters/>
+      <Query><![CDATA[WITH 
+    SET PRODUCTLINES AS { [Product].[Trains], [Product].[Trucks and Buses], [Product].[Motorcycles],  [Product].[Vintage Cars], [Product].[Classic Cars] }
+    MEMBER [Measures].[UniqueName] AS [Product].CURRENTMEMBER.UNIQUENAME
+    MEMBER [Measures].[Total] AS AGGREGATE(PRODUCTLINES, [Measures].[Sales])
+    MEMBER [Measures].[Percentage] AS  [Measures].[Sales]/[Measures].[Total]
+    
+SELECT
+    {[Measures].[UniqueName], [Measures].[Sales], [Measures].[Percentage]} ON COLUMNS,
+    ORDER(PRODUCTLINES, [Measures].[Percentage], DESC) ON ROWS
+FROM [SteelWheelsSales]]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="yearQuery" id="yearQuery" type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Output indexes="1,0" mode="include"/>
+      <Parameters/>
+      <Query><![CDATA[WITH
+    MEMBER [Measures].[Years UniqueName]  AS  [Time].currentmember.UniqueName
+    SET  YEAR  AS  UNION( [Time].[All Years] , [Time].[Years].Members )
+    
+SELECT
+    [Measures].[Years UniqueName]  ON COLUMNS,
+    YEAR   ON ROWS
+FROM [SteelWheelsSales]]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="overviewTableQuery" id="overviewTableQuery"
+               type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Output indexes="0,2,3" mode="include"/>
+      <Parameters>
+         <Parameter default="{ [Product].[Trains], [Product].[Trucks and Buses], [Product].[Motorcycles],  [Product].[Vintage Cars], [Product].[Classic Cars] }"
+                    name="productLineParam"
+                    type="String"/>
+         <Parameter default="[Time].[All Years]" name="yearParam" type="String"/>
+      </Parameters>
+      <Query><![CDATA[WITH 
+    SET PRODUCTLINES AS { ${productLineParam} }
+    MEMBER [Measures].[UniqueName] AS [Product].CURRENTMEMBER.UNIQUENAME
+    MEMBER [Measures].[Total] AS AGGREGATE(PRODUCTLINES, [Measures].[Sales])
+    MEMBER [Measures].[Percentage] AS  ([Measures].[Sales]/[Measures].[Total])*100
+    
+SELECT
+    {[Measures].[UniqueName], [Measures].[Sales], [Measures].[Percentage]} ON COLUMNS,
+    ORDER(PRODUCTLINES, [Measures].[Percentage], DESC) ON ROWS
+FROM [SteelWheelsSales]
+WHERE {${yearParam}}]]></Query>
+   </DataAccess>
+</CDADescriptor>

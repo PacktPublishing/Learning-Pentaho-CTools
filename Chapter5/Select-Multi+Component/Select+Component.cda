@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDADescriptor>
+   <DataSources>
+      <Connection id="territoryQuery" type="mondrian.jndi">
+         <Catalog>mondrian:/SteelWheels</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+      <Connection id="countryQuery" type="mondrian.jndi">
+         <Catalog>mondrian:/SteelWheels</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+   </DataSources>
+   <DataAccess access="public" connection="territoryQuery" id="territoryQuery" type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Output indexes="1,0" mode="include"/>
+      <Parameters/>
+      <Query><![CDATA[WITH MEMBER [Measures].[UID] AS [Markets].CURRENTMEMBER.UNIQUENAMESELECT FILTER(DESCENDANTS([Markets].[All Markets], [Markets].[Territory]), [Markets].CURRENTMEMBER.NAME <> '#null' ) on ROWS,{[Measures].[UID]} on COLUMNSFROM [SteelWheelsSales]]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="countryQuery" id="countryQuery" type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Output indexes="1,0" mode="include"/>
+      <Parameters>
+         <Parameter default="[Markets].[APAC]" name="territoryParam" type="String"/>
+      </Parameters>
+      <Query><![CDATA[WITH MEMBER [Measures].[UID] AS [Markets].CURRENTMEMBER.UNIQUENAMESELECT DESCENDANTS({${territoryParam}}, [Markets].[Country]) on ROWS,{[Measures].[UID]} on COLUMNSFROM [SteelWheelsSales]]]></Query>
+   </DataAccess>
+</CDADescriptor>

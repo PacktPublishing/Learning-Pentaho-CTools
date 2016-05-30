@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdf>
+  <title>CCC Chart Sample</title>
+  <author>Ctools Book</author>
+  <description>CCC Chart Sample</description>
+  <icon></icon>
+  <template>template.html</template>
+  <style>clean</style>
+  <require>true</require>
+</cdf>

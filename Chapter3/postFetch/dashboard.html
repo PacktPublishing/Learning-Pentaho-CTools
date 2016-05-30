@@ -1,0 +1,83 @@
+<div class="container-fluid">
+    <div id="container" class="container">
+         <div class="row">
+            <div class="col-xs-12">
+                <h1>Ctools Book Samples!</h1>
+            </div>
+        </div>    
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                <div id="territorySelector" class="selector"></div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <div id="countrySelector" class="selector"></div>
+            </div>
+            <div class="col-xs-12">
+                <div id="table" class="table"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script language="javascript" type="text/javascript">
+    var dashboard;
+    require(['cdf/Dashboard.Bootstrap', 'cdf/components/TableComponent', 'cdf/components/SelectComponent'], 
+        function(Dashboard, TableComponent, SelectComponent) {
+            dashboard = new Dashboard();
+            dashboard.addParameter('territoryDashParam', '[Markets].[All Markets]');
+            dashboard.addParameter('countryDashParam', '[Markets].[Country].Members');
+            var path = dashboard.context.path;
+            var dashPath = path.substring(0,path.lastIndexOf('/'));
+            dashboard.addComponent(new SelectComponent({
+                name: "territoryFilter",
+                type: "selectComponent",
+                parameter: "territoryDashParam",
+                valueAsId: false,
+                queryDefinition: {
+            		path: dashPath+"/customers.cda",
+            		dataAccessId: "territories"
+            	},
+                htmlObject: "territorySelector",
+                executeAtStart: true,
+                priority: 5,
+                postFetch: function(data) {
+                    // manipulate result from query
+                    for (var i=0; i<data.resultset.length; i++) {
+                        if (data.resultset[i][1]=="#null") 
+                            data.resultset[i][1]="OTHERS";
+                    }
+                    return data;
+                }
+            }));
+            dashboard.addComponent(new SelectComponent({
+                name: "countryFilter",
+                type: "selectComponent",
+                parameter: "countryDashParam",
+                valueAsId: false,
+                parameters:[['marketQueryParam', 'territoryDashParam']],
+                listeners: ['territoryDashParam'],
+                queryDefinition: {
+            		path: dashPath+"/customers.cda",
+            		dataAccessId: "countries"
+            	},
+                htmlObject: "countrySelector",
+                executeAtStart: true,
+                priority: 5
+            }));
+            dashboard.addComponent(new TableComponent({
+                name: "top50Customers",
+                type: "tableComponent",
+                parameters:[['marketQueryParam', 'countryDashParam']],
+                listeners: ['countryDashParam'],
+                chartDefinition: {
+            		path: dashPath+"/customers.cda",
+            		dataAccessId: "top50Customers"
+            	},
+                htmlObject: "table",
+                executeAtStart: true,
+                priority: 5
+            }));
+            dashboard.init();
+            return dashboard;
+        }
+    );
+</script>

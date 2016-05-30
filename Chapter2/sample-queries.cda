@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CDADescriptor>
+    <DataSources>
+        <Connection id="SampleData" type="mondrian.jndi">
+            <Jndi>SampleData</Jndi>
+            <Catalog>mondrian:/SteelWheels</Catalog>
+            <Cube>SteelWheelsSales</Cube>
+        </Connection>
+    </DataSources>
+    <DataAccess id="territories" connection="SampleData" type="mdx" access="public">
+        <Name>territories</Name>
+        <BandedMode>compact</BandedMode>
+        <Query>
+            WITH 
+                MEMBER [Measures].[UID] AS [Markets].CURRENTMEMBER.UNIQUENAME
+            SELECT 
+                UNION([Markets].[All Markets], DESCENDANTS([Markets].[All Markets], [Markets].[Territory])) on ROWS,
+                {[Measures].[UID]} on COLUMNS
+            FROM [SteelWheelsSales]
+        </Query>
+        <Output indexes="1,0" mode="include"/>
+    </DataAccess>   
+    <DataAccess id="countries" connection="SampleData" type="mdx" access="public">
+        <Name>countries</Name>
+        <BandedMode>compact</BandedMode>
+        <Query>
+            WITH 
+                MEMBER [Measures].[UID] AS [Markets].CURRENTMEMBER.UNIQUENAME
+            SELECT 
+                UNION([Markets].[All Markets], DESCENDANTS(${marketQueryParam}, [Markets].[Country])) on ROWS,
+                {[Measures].[UID]} on COLUMNS
+            FROM [SteelWheelsSales]
+        </Query>
+        <Parameters>
+            <Parameter name="marketQueryParam" type="String" default="[Markets].[All Markets]"/>
+        </Parameters>
+        <Output indexes="1,0" mode="include"/>
+    </DataAccess>   
+    <DataAccess id="cities" connection="SampleData" type="mdx" access="public">
+        <Name>cities</Name>
+        <BandedMode>compact</BandedMode>
+        <Query>
+            WITH 
+                MEMBER [Measures].[UID] AS [Markets].CURRENTMEMBER.UNIQUENAME
+            SELECT 
+                UNION([Markets].[All Markets], DESCENDANTS(${marketQueryParam}, [Markets].[City])) on ROWS,
+                {[Measures].[UID]} on COLUMNS
+            FROM [SteelWheelsSales]
+        </Query>
+        <Parameters>
+            <Parameter name="marketQueryParam" type="String" default="[Markets].[All Markets]"/>
+        </Parameters>
+        <Output indexes="1,0" mode="include"/>
+    </DataAccess>   
+    <DataAccess id="top50Customers" connection="SampleData" type="mdx" access="public">
+        <Name>top50Customers</Name>
+        <BandedMode>compact</BandedMode>
+        <Query>
+            WITH 
+                SET CUSTOMERS AS TopCount([Customers].Children, 50.0, [Measures].[Sales])
+            SELECT 
+                NON EMPTY {[Measures].[Sales]} ON COLUMNS,
+                NON EMPTY CUSTOMERS ON ROWS 
+            FROM [SteelWheelsSales]
+            WHERE ${marketQueryParam}
+        </Query>
+        <Parameters>
+            <Parameter name="marketQueryParam" type="String" default="[Markets].[All Markets]"/>
+        </Parameters>
+    </DataAccess>
+
+</CDADescriptor>

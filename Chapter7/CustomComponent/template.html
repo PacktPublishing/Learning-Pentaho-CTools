@@ -1,0 +1,21 @@
+<div id="showTextHere"></div>
+
+<script language="javascript" type="text/javascript">
+
+  var dashboard; 
+
+  require([
+    'cdf/Dashboard.Bootstrap',
+    CONTEXT_PATH + 'api/repo/files/public/cdf/components/HelloWorld/HelloWorldComponent.js'
+    ],
+  function(Dashboard, HelloWorldComponent) {
+    dashboard = new Dashboard();
+    dashboard.addComponent(new HelloWorldComponent({
+      name: "HelloWorld",
+      type: "HelloWorldComponent",
+      htmlObject: "showTextHere",
+      executeAtStart: true
+    }));
+    dashboard.init();
+  });
+</script>

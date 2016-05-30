@@ -1,0 +1,1810 @@
+{
+ "layout": {
+  "title": "CDF - Sample structure",
+  "rows": [
+   {
+    "id": "bbbed49b-f040-f5fd-22ce-8c31aca159bf",
+    "type": "LayoutResourceFile",
+    "typeDesc": "Resource",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "value": "sparkline",
+      "type": "Id"
+     },
+     {
+      "name": "resourceFile",
+      "value": "${solution:resources/js/sparkline.js}",
+      "type": "ResourceFile"
+     },
+     {
+      "name": "resourceType",
+      "value": "Javascript",
+      "type": "Label"
+     }
+    ]
+   },
+   {
+    "id": "ceab99f9-77d9-ff9a-1124-7bca7183ba58",
+    "type": "LayoutResourceFile",
+    "typeDesc": "Resource",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "value": "hyperlink",
+      "type": "Id"
+     },
+     {
+      "name": "resourceFile",
+      "value": "${solution:resources/js/hyperlink.js}",
+      "type": "ResourceFile"
+     },
+     {
+      "name": "resourceType",
+      "value": "Javascript",
+      "type": "Label"
+     }
+    ]
+   },
+   {
+    "id": "19357702-b5cb-bff7-3825-72b61da640e3",
+    "type": "LayoutResourceFile",
+    "typeDesc": "Resource",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "value": "trendArrow",
+      "type": "Id"
+     },
+     {
+      "name": "resourceFile",
+      "value": "${solution:resources/js/trendArrow.js}",
+      "type": "ResourceFile"
+     },
+     {
+      "name": "resourceType",
+      "value": "Javascript",
+      "type": "Label"
+     }
+    ]
+   },
+   {
+    "id": "6656b627-0ae9-983b-8e5a-f08d11bf1c40",
+    "type": "LayoutResourceFile",
+    "typeDesc": "Resource",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "value": "formatted",
+      "type": "Id"
+     },
+     {
+      "name": "resourceFile",
+      "value": "${solution:resources/js/formatted.js}",
+      "type": "ResourceFile"
+     },
+     {
+      "name": "resourceType",
+      "value": "Javascript",
+      "type": "Label"
+     }
+    ]
+   },
+   {
+    "id": "9c6a6dbc-b9d0-d590-56fe-0fe58a55b2e5",
+    "type": "LayoutResourceFile",
+    "typeDesc": "Resource",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "value": "clippedText",
+      "type": "Id"
+     },
+     {
+      "name": "resourceFile",
+      "value": "${solution:resources/js/clippedText.js}",
+      "type": "ResourceFile"
+     },
+     {
+      "name": "resourceType",
+      "value": "Javascript",
+      "type": "Label"
+     }
+    ]
+   },
+   {
+    "id": "2dce0faa-43a6-79a3-e8a6-7cca1acdb46b",
+    "type": "LayoutResourceFile",
+    "typeDesc": "Resource",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "value": "localizedText",
+      "type": "Id"
+     },
+     {
+      "name": "resourceFile",
+      "value": "${solution:resources/js/localizedText.js}",
+      "type": "ResourceFile"
+     },
+     {
+      "name": "resourceType",
+      "value": "Javascript",
+      "type": "Label"
+     }
+    ]
+   },
+   {
+    "id": "8a81f7c0-1a9a-ce55-edd7-352535553725",
+    "type": "LayoutResourceFile",
+    "typeDesc": "Resource",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "value": "bubble",
+      "type": "Id"
+     },
+     {
+      "name": "resourceFile",
+      "value": "${solution:resources/js/bubble.js}",
+      "type": "ResourceFile"
+     },
+     {
+      "name": "resourceType",
+      "value": "Javascript",
+      "type": "Label"
+     }
+    ]
+   },
+   {
+    "id": "4d3a44bf-d951-99b7-526b-d644bfe406ea",
+    "type": "LayoutResourceFile",
+    "typeDesc": "Resource",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "value": "cccChart",
+      "type": "Id"
+     },
+     {
+      "name": "resourceFile",
+      "value": "${solution:resources/js/cccChart.js}",
+      "type": "ResourceFile"
+     },
+     {
+      "name": "resourceType",
+      "value": "Javascript",
+      "type": "Label"
+     }
+    ]
+   },
+   {
+    "id": "6a2cbf74-190d-8642-c340-8a6f0b69c334",
+    "type": "LayoutResourceFile",
+    "typeDesc": "Resource",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "value": "bulletChart",
+      "type": "Id"
+     },
+     {
+      "name": "resourceFile",
+      "value": "${solution:resources/js/bulletChart.js}",
+      "type": "ResourceFile"
+     },
+     {
+      "name": "resourceType",
+      "value": "Javascript",
+      "type": "Label"
+     }
+    ]
+   },
+   {
+    "id": "b7749b9b-7112-ac8b-44d5-00fef41458dd",
+    "type": "LayoutResourceCode",
+    "typeDesc": "Resource",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "value": "CSS",
+      "type": "Id"
+     },
+     {
+      "name": "resourceCode",
+      "value": ".single {\n    text-align: center;\n    border: 1px solid #eee;\n    cursor: pointer;\n    padding: 10px 0px;\n} \n\n.single:hover, .single.selected:hover {\n    border: 1px solid #49AEC0;\n    background-color: rgba(240, 240, 240, 0.8);\n}\n\n.single.selected {\n    background-color: rgba(240, 240, 240, 0.4);\n}\n\n.single .value {\n    font-size: 18px;\n    color: #888;\n    font-weight: 300;\n    margin: 10px;\n}\n\n\n.sparklineContainer {\n    margin: 10px 0px;\n}\n\n.clippedTextContainer {\n    margin: 0px 20px;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n    overflow: hidden;\n    background-color: rgba(220,220,220,0.8);\n    font-size: 26px;\n    color: #fff;\n}\n\n.addin .bubble {\n    display: inline-block;\n    text-align: center;\n    vertical-align: middle;\n    border: 1px solid #eee;\n    border-radius: 100%;\n}\n\n\n.totalSales .sales {\n    text-align: right;\n}\n\n\n.trendArrowContainer .arrow {\n    font-size: 30px;\n}\n\n.hyperlink {\n    margin: 5px 0px;\n}\n\n.template {\n    margin: 20px 0px;\n}\n\n.clippedText {\n    margin: 10px 0px 5px 0px;\n}\n\n\n\n.addin .clippedText {\n    width: 50%;\n    margin-right: 25%;\n    margin-left: 25%;\n} \n\n.addin .bubble {\n    display: inline-block;\n    text-align: center;\n    vertical-align: middle;\n}\n\n.bubbleContainer {\n    display: table-cell;\n    vertical-align: middle;\n    text-align: center;\n} ",
+      "type": "Resource"
+     },
+     {
+      "name": "resourceType",
+      "value": "Css",
+      "type": "Label"
+     }
+    ]
+   },
+   {
+    "id": "56bcbf91-0e2a-c6c0-ea65-8c13a2a66ddd",
+    "type": "LayoutRow",
+    "typeDesc": "Row",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "85ff843d-a513-448b-a324-0453ba8c7158",
+    "type": "LayoutBootstrapColumn",
+    "typeDesc": "Column",
+    "parent": "56bcbf91-0e2a-c6c0-ea65-8c13a2a66ddd",
+    "properties": [
+     {
+      "name": "name",
+      "value": "template",
+      "type": "Id"
+     },
+     {
+      "name": "bootstrapExtraSmall",
+      "value": "12",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapSmall",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapMedium",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapLarge",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapCssClass",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "template",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "92906654-186a-95b3-4ba1-ae5d6ec46030",
+    "type": "LayoutBootstrapColumn",
+    "typeDesc": "Column",
+    "parent": "56bcbf91-0e2a-c6c0-ea65-8c13a2a66ddd",
+    "properties": [
+     {
+      "name": "name",
+      "value": "template_cccChart",
+      "type": "Id"
+     },
+     {
+      "name": "bootstrapExtraSmall",
+      "value": "12",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapSmall",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapMedium",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapLarge",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapCssClass",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "template cccChart",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "47c753a8-f5ef-1db5-856f-b7deda19bf53",
+    "type": "LayoutBootstrapColumn",
+    "typeDesc": "Column",
+    "parent": "56bcbf91-0e2a-c6c0-ea65-8c13a2a66ddd",
+    "properties": [
+     {
+      "name": "name",
+      "value": "template_bulletChart",
+      "type": "Id"
+     },
+     {
+      "name": "bootstrapExtraSmall",
+      "value": "12",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapSmall",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapMedium",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapLarge",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapCssClass",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "template bulletChart",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "5d85c88a-0106-4bc0-0cc8-42c71f060af3",
+    "type": "LayoutBootstrapColumn",
+    "typeDesc": "Column",
+    "parent": "56bcbf91-0e2a-c6c0-ea65-8c13a2a66ddd",
+    "properties": [
+     {
+      "name": "name",
+      "value": "template_bubble",
+      "type": "Id"
+     },
+     {
+      "name": "bootstrapExtraSmall",
+      "value": "12",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapSmall",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapMedium",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapLarge",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapCssClass",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": " bubble",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "e903247d-1bd1-23d8-7e77-eafe8fee2cea",
+    "type": "LayoutBootstrapColumn",
+    "typeDesc": "Column",
+    "parent": "56bcbf91-0e2a-c6c0-ea65-8c13a2a66ddd",
+    "properties": [
+     {
+      "name": "name",
+      "value": "template_bullet",
+      "type": "Id"
+     },
+     {
+      "name": "bootstrapExtraSmall",
+      "value": "12",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapSmall",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapMedium",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapLarge",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapCssClass",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "template bullet",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "eb18d347-732f-9252-6aec-a1a9ca082be9",
+    "type": "LayoutBootstrapColumn",
+    "typeDesc": "Column",
+    "parent": "56bcbf91-0e2a-c6c0-ea65-8c13a2a66ddd",
+    "properties": [
+     {
+      "name": "name",
+      "value": "template_sparklines",
+      "type": "Id"
+     },
+     {
+      "name": "bootstrapExtraSmall",
+      "value": "12",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapSmall",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapMedium",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapLarge",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapCssClass",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "template sparkline",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "8c14ca89-a367-97fa-d660-870f5d6cd190",
+    "type": "LayoutBootstrapColumn",
+    "typeDesc": "Column",
+    "parent": "56bcbf91-0e2a-c6c0-ea65-8c13a2a66ddd",
+    "properties": [
+     {
+      "name": "name",
+      "value": "template_trendArrow",
+      "type": "Id"
+     },
+     {
+      "name": "bootstrapExtraSmall",
+      "value": "12",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapSmall",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapMedium",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapLarge",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapCssClass",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "template trendArrow",
+      "type": "String"
+     }
+    ]
+   }
+  ]
+ },
+ "components": {
+  "rows": [
+   {
+    "id": "GENERIC",
+    "name": "Generic",
+    "type": "Label",
+    "typeDesc": "<i>Group</i>",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "Group",
+      "value": "Generic",
+      "type": "Label"
+     }
+    ]
+   },
+   {
+    "id": "70797993-8e1b-930c-9e40-a7f40e61e1e3",
+    "type": "ComponentsParameter",
+    "typeDesc": "Simple parameter",
+    "parent": "GENERIC",
+    "properties": [
+     {
+      "name": "name",
+      "value": "selected",
+      "type": "Id"
+     },
+     {
+      "name": "propertyValue",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "parameterViewRole",
+      "value": "unused",
+      "type": "parameterViewRoleCustom"
+     },
+     {
+      "name": "bookmarkable",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "public",
+      "value": "false",
+      "type": "Boolean"
+     }
+    ]
+   },
+   {
+    "id": "OTHERCOMPONENTS",
+    "name": "Others",
+    "type": "Label",
+    "typeDesc": "<i>Group</i>",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "Group",
+      "value": "Others",
+      "type": "Label"
+     }
+    ]
+   },
+   {
+    "id": "b87817f0-1be0-40d6-679f-1228d9b23b7a",
+    "type": "ComponentsTemplateComponent",
+    "typeDesc": "Template Component",
+    "parent": "OTHERCOMPONENTS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "template",
+      "type": "Id"
+     },
+     {
+      "name": "listeners",
+      "value": "[]",
+      "type": "Listeners"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "dataSource",
+      "value": "templateQueryTerritory",
+      "type": "Datasource"
+     },
+     {
+      "name": "priority",
+      "value": 5,
+      "type": "Integer"
+     },
+     {
+      "name": "htmlObject",
+      "value": "${h:template}",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "function f(){\n    \n    var sparklineOpts = function(state){\n        if(state.id == \"Sparkline\"){\n            return {\n                type: 'bar',\n                height: 50,\n                barWidth: 8\n            };\n        } else {   \n            return {\n                width: 120,\n                type: 'bullet',\n                height: '12',\n                targetColor: '#007fff',\n                performanceColor: '#cccccc',\n                rangeColors: ['transparent','transparent','transparent']\n            };\n        }\n    };\n   \n    this.setAddInOptions(\"templateType\",\"sparkline\", sparklineOpts);\n    \n    var bubbleOpts = {\n        containerSize: 60,\n        //color: \"#DDD\"\n        color: \"#FFE085\"\n    };\n\n    this.setAddInOptions(\"templateType\",\"bubble\", bubbleOpts);\n    \n    var bulletChartOpts = {\n        \n        chartOpts: {\n            height: 40,\n            bulletSize: 16,    \n            bulletSpacing: 150,\n            bulletMargin: 5, \n            bulletRuleLabel_text: function(value) {\n                return Utils.numberFormat(value, \"#A\");\n            },\n        }\n    };\n    \n    this.setAddInOptions(\"templateType\",\"bulletChart\", bulletChartOpts);\n    \n    var linkOpts = {\n        pattern: /\\[(.*?)\\]/g\n    };\n\n    this.setAddInOptions(\"templateType\",\"hyperlink\", linkOpts);\n\n\n    var cccChartOpts = { \n        type: 'PieChart',\n        chartOpts: {\n            width: 200,\n            height: 200,\n            seriesInRows: false,\n            crossTabMode: false,\n            timeSeries: false,\n            legendVisible: false,\n            valuesLabelStyle: 'inside',\n            valuesOptimizeLegibility: true,\n            valueFormat: function(value) {\n                return Utils.numberFormat(value, \"#A\");\n            },\n            clearSelectionMode: false,\n            selectable: false,\n            clickable: false,\n            //interactive: false,\n            hoverable:  true,\n            valuesFont: 'normal 9px \"Open Sans\"',\n            slice_innerRadiusEx: '50%',\n            slice_strokeStyle:   'white',\n            colors: [\n                '#333333', '#777777', '#FFC20F', '#FFE085',\n                '#00325b', '#005CA7', '#0086F4', '#39A74A',\n                '#63CA73', '#80BCA3', '#655643', '#BF4D28'\n            ]            \n        }\n        /*\n        chartOpts: {\n            \n            legendVisible: false,\n            plotFrameVisible: false,\n            axisLabel_font: \"lighter 10px Open Sans, Arial, Helvetica, sans-serif\",\n            axisLabel_textStyle: \"#CCC\",\n            orthoAxisTickFormatter: function(value) {\n                return Utils.numberFormat(value, \"#A\");\n            },\n            axisRule_strokeStyle: \"#CCC\",\n            orthoAxisRule_strokeStyle: \"rgba(0,0,0,0)\",\n            orthoAxisTicks_strokeStyle: \"#CCC\",\n            //orthoAxisTicks_call: function() {\n            //    this.right(-3);\n            //},\n            //orthoAxisTicks_width: 7,\n            orthoAxisDesiredTickCount: 2,\n            orthoAxisMinorTicks: false,\n            baseAxisLabel_textAlign: 'center',\n            //baseAxisRule_strokeStyle: \"#CCC\",\n            baseAxisSize: 20,\n            baseAxisTooltipEnabled: false,\n            baseAxisTicks_call: function() {\n                this.bottom(3);\n            },\n            //baseAxisTicks_width: 7\n        }\n        */\n    };\n    this.setAddInOptions(\"templateType\",\"cccChart\", cccChartOpts);\n    \n} ",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postFetch",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "tooltip",
+      "value": "",
+      "type": "Html"
+     },
+     {
+      "name": "modelHandler",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "template",
+      "value": "function() { \n           \n    var template =  '<div class=\"row card\">' +\n                    '<% _.each(items, function(elem) { %>' +\n                    '  <div class=\"col-xs-12 col-sm-6 col-md-4 col-lg-3 single clickable\" data-category=\"<%=elem[0]%>\"> '+\n                    '    <div class=\"category\"> <b> <%= addin(elem[0], \"clippedText\", \"Sales\") %> </b> </div>'+\n                    '    <div class=\"value\"> <%= formatter(elem[1], \"sales\") %> </div> '+\n                    '    <div class=\"addin\"> <%= addin(elem[4], \"trendArrow\", \"Trends\") %> </div>'+\n                    '    <div class=\"addin\"> <%= addin(elem[1], \"formatted\", \"Markets\") %> </div>'+\n                    '    <div class=\"addin\"> <%= addin(elem[3], \"sparkline\", \"Sparkline\" ) %> </div>'+\n                    '    <div class=\"addin\"> <%= addin(elem[6], \"sparkline\", \"Bullet\" ) %> </div>'+\n                    '    <div class=\"addin\"> <%= addin(elem[9], \"hyperlink\", \"Hyperlink\") %> </div>'+\n                    '    <div class=\"addin\"> <b>Best month of year:</b><%= addin(elem[8], \"localizedText\", \"Localized\") %> </div>'+\n                    '    <div class=\"addin\"> <%= addin(elem[5], \"bubble\", \"Bubble\") %> </div>'+\n                    '    <div class=\"addin\"> <%= addin(elem[6], \"bulletChart\", \"cccBullet\") %> </div>'+\n                    '    <div class=\"addin\"> <%= addin(elem[10], \"cccChart\", \"cccChart\") %> </div>'+\n                    '  </div>' +\n                    '<% }); %>' +\n                    '</div>'; \n   \n    return template;\n} ",
+      "type": "JavaScript"
+     },
+     {
+      "name": "templateType",
+      "value": "underscore",
+      "type": "templateTypeCustom"
+     },
+     {
+      "name": "events",
+      "value": "[[\"click , .single.clickable \",\"function(event) {\\n    var $elem = $(event.currentTarget);    \\n    var selected = $elem.data('category');\\n    $elem.toggleClass('selected');\\n    this.dashboard.fireChange('selected', selected);\\n    console.log(selected);\\n}\"]]",
+      "type": "EditorValuesArray"
+     },
+     {
+      "name": "formatters",
+      "value": "[[\"sales\",\"function(value) {\\n    return Utils.numberFormat(value, '$0.0A');\\n}\"]]",
+      "type": "EditorValuesArray"
+     },
+     {
+      "name": "rootElement",
+      "value": "items",
+      "type": "String"
+     },
+     {
+      "name": "extendableOptions",
+      "value": "",
+      "type": "JavaScript"
+     }
+    ]
+   },
+   {
+    "id": "99c10c48-213d-f997-9206-a73ef8d0f762",
+    "type": "ComponentsTemplateComponent",
+    "typeDesc": "Template Component",
+    "parent": "OTHERCOMPONENTS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "template_cccChart",
+      "type": "Id"
+     },
+     {
+      "name": "listeners",
+      "value": "[]",
+      "type": "Listeners"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "dataSource",
+      "value": "templateQueryTerritory",
+      "type": "Datasource"
+     },
+     {
+      "name": "priority",
+      "value": 5,
+      "type": "Integer"
+     },
+     {
+      "name": "htmlObject",
+      "value": "${h:template_cccChart}",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "function f(){\n    \n    var spOpts = {\n        type: 'bar',\n        height: 50,\n        barWidth: 8,\n        //barColor: \"#49AEC0\"\n    };\n\n    this.setAddInOptions(\"templateType\",\"sparkline\", spOpts);\n    \n    var bubbleOpts = {\n        containerSize: 60,\n        //color: \"#DDD\"\n        color: \"#FFE085\"\n    };\n\n    this.setAddInOptions(\"templateType\",\"bubble\", bubbleOpts);\n    \n    var bulletChartOpts = {\n        \n        chartOpts: {\n            height: 40,\n            bulletSize: 16,    \n            bulletSpacing: 150,\n            bulletMargin: 5, \n            bulletRuleLabel_text: function(value) {\n                return Utils.numberFormat(value, \"#A\");\n            },\n        }\n    };\n    \n    this.setAddInOptions(\"templateType\",\"bulletChart\", bulletChartOpts);\n    \n    var linkOpts = {\n        pattern: /\\[(.*?)\\]/g\n    };\n\n    this.setAddInOptions(\"templateType\",\"hyperlink\", linkOpts);\n\n    var cccChartOpts = { \n        type: 'PieChart',\n        chartOpts: {\n            width: 200,\n            height: 200,\n            seriesInRows: false,\n            crossTabMode: false,\n            timeSeries: false,\n            legendVisible: false,\n            valuesLabelStyle: 'inside',\n            valuesOptimizeLegibility: true,\n            valueFormat: function(value) {\n                return Utils.numberFormat(value, \"#A\");\n            },\n            selectable: true,\n            hoverable:  true,\n            valuesFont: 'normal 9px \"Open Sans\"',\n            slice_innerRadiusEx: '50%',\n            slice_strokeStyle:   'white',\n            colors: [\n                '#333333', '#777777', '#FFC20F', '#FFE085',\n                '#00325b', '#005CA7', '#0086F4', '#39A74A',\n                '#63CA73', '#80BCA3', '#655643', '#BF4D28'\n            ]            \n        }\n    };\n    this.setAddInOptions(\"templateType\",\"cccChart\", cccChartOpts);\n    \n} ",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postFetch",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "tooltip",
+      "value": "",
+      "type": "Html"
+     },
+     {
+      "name": "modelHandler",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "template",
+      "value": "function() { \n           \n    var template =  '<div class=\"row card\">' +\n                    '<% _.each(items, function(elem) { %>' +\n                    '  <div class=\"col-xs-12 col-sm-6 col-md-4 col-lg-3 single clickable\" data-category=\"<%=elem[0]%>\"> '+\n                    '    <div class=\"category\"> <b> <%= addin(elem[0], \"clippedText\", \"Sales\") %> </b> </div>'+\n                    '    <div class=\"value\"> <%= formatter(elem[1], \"sales\") %> </div> '+\n                    //'    <div class=\"addin\"> <%= addin(elem[4], \"trendArrow\", \"Trends\") %> </div>'+\n                    //'    <div class=\"addin\"> <%= addin(elem[1], \"formatted\", \"Markets\") %> </div>'+\n                    //'    <div class=\"addin\"> <%= addin(elem[3], \"sparkline\", \"Sparkline\" ) %> </div>'+\n                    //'    <div class=\"addin\"> <%= addin(elem[9], \"hyperlink\", \"Hyperlink\") %> </div>'+\n                    //'    <div class=\"addin\"> <b>Best month over the year:</b><%= addin(elem[8], \"localizedText\", \"Localized\") %> </div>'+\n                    //'    <div class=\"addin\"> <%= addin(elem[5], \"bubble\", \"Bubble\") %> </div>'+\n                    //'    <div class=\"addin\"> <%= addin(elem[6], \"bulletChart\", \"Bullet\") %> </div>'+\n                    '    <div class=\"addin\"> <%= addin(elem[10], \"cccChart\", \"cccChart\") %> </div>'+\n                    '  </div>' +\n                    '<% }); %>' +\n                    '</div>'; \n     \n    return template;\n} ",
+      "type": "JavaScript"
+     },
+     {
+      "name": "templateType",
+      "value": "underscore",
+      "type": "templateTypeCustom"
+     },
+     {
+      "name": "events",
+      "value": "[[\"click , .single.clickable \",\"function(event) {\\n    var $elem = $(event.currentTarget);    \\n    var selected = $elem.data('category');\\n    $elem.toggleClass('selected');\\n    this.dashboard.fireChange('selected', selected);\\n    console.log(selected);\\n}\"]]",
+      "type": "EditorValuesArray"
+     },
+     {
+      "name": "formatters",
+      "value": "[[\"sales\",\"function(value) {\\n    return Utils.numberFormat(value, '$0.0A');\\n}\"]]",
+      "type": "EditorValuesArray"
+     },
+     {
+      "name": "rootElement",
+      "value": "items",
+      "type": "String"
+     },
+     {
+      "name": "extendableOptions",
+      "value": "",
+      "type": "JavaScript"
+     }
+    ]
+   },
+   {
+    "id": "b7a6585d-987c-8597-dad5-6a460a48382d",
+    "type": "ComponentsTemplateComponent",
+    "typeDesc": "Template Component",
+    "parent": "OTHERCOMPONENTS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "template_bubble",
+      "type": "Id"
+     },
+     {
+      "name": "listeners",
+      "value": "[]",
+      "type": "Listeners"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "dataSource",
+      "value": "templateQueryProduct",
+      "type": "Datasource"
+     },
+     {
+      "name": "priority",
+      "value": 5,
+      "type": "Integer"
+     },
+     {
+      "name": "htmlObject",
+      "value": "${h:template_bubble}",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "function f(){\n    \n    var spOpts = {\n        type: 'bar',\n        height: 50,\n        barWidth: 8,\n        //barColor: \"#49AEC0\"\n    };\n\n    this.setAddInOptions(\"templateType\",\"sparkline\", spOpts);\n    \n    var bubbleOpts = {\n        containerSize: 60,\n        //color: \"#DDD\"\n        color: \"#FFE085\"\n    };\n\n    this.setAddInOptions(\"templateType\",\"bubble\", bubbleOpts);\n    \n    var bulletChartOpts = {\n        \n        chartOpts: {\n            height: 40,\n            bulletSize: 16,    \n            bulletSpacing: 150,\n            bulletMargin: 5, \n            bulletRuleLabel_text: function(value) {\n                return Utils.numberFormat(value, \"#A\");\n            },\n        }\n    };\n    \n    this.setAddInOptions(\"templateType\",\"bulletChart\", bulletChartOpts);\n    \n    var linkOpts = {\n        pattern: /\\[(.*?)\\]/g\n    };\n\n    this.setAddInOptions(\"templateType\",\"hyperlink\", linkOpts);\n\n\n    var cccChartOpts = { \n        type: 'PieChart',\n        chartOpts: {\n            width: 200,\n            height: 200,\n            seriesInRows: false,\n            crossTabMode: false,\n            timeSeries: false,\n            legendVisible: false,\n            valuesLabelStyle: 'inside',\n            valuesOptimizeLegibility: true,\n            valueFormat: function(value) {\n                return Utils.numberFormat(value, \"#A\");\n            },\n            selectable: true,\n            hoverable:  true,\n            valuesFont: 'normal 9px \"Open Sans\"',\n            slice_innerRadiusEx: '50%',\n            slice_strokeStyle:   'white',\n            colors: [\n                '#333333', '#777777', '#FFC20F', '#FFE085',\n                '#00325b', '#005CA7', '#0086F4', '#39A74A',\n                '#63CA73', '#80BCA3', '#655643', '#BF4D28'\n            ]            \n        }\n        /*\n        chartOpts: {\n            \n            legendVisible: false,\n            plotFrameVisible: false,\n            axisLabel_font: \"lighter 10px Open Sans, Arial, Helvetica, sans-serif\",\n            axisLabel_textStyle: \"#CCC\",\n            orthoAxisTickFormatter: function(value) {\n                return Utils.numberFormat(value, \"#A\");\n            },\n            axisRule_strokeStyle: \"#CCC\",\n            orthoAxisRule_strokeStyle: \"rgba(0,0,0,0)\",\n            orthoAxisTicks_strokeStyle: \"#CCC\",\n            //orthoAxisTicks_call: function() {\n            //    this.right(-3);\n            //},\n            //orthoAxisTicks_width: 7,\n            orthoAxisDesiredTickCount: 2,\n            orthoAxisMinorTicks: false,\n            baseAxisLabel_textAlign: 'center',\n            //baseAxisRule_strokeStyle: \"#CCC\",\n            baseAxisSize: 20,\n            baseAxisTooltipEnabled: false,\n            baseAxisTicks_call: function() {\n                this.bottom(3);\n            },\n            //baseAxisTicks_width: 7\n        }\n        */\n    };\n    this.setAddInOptions(\"templateType\",\"cccChart\", cccChartOpts);\n    \n} ",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postFetch",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "tooltip",
+      "value": "",
+      "type": "Html"
+     },
+     {
+      "name": "modelHandler",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "template",
+      "value": "function() { \n    var template =  '<div class=\"row card\">' +\n                    '<% _.each(items, function(elem) { %>' +\n                    '  <div class=\"col-xs-12 col-sm-6 col-md-2 col-lg-2 single clickable\" data-category=\"<%=elem[0]%>\"> '+\n                    '    <div class=\"category\"> <b> <%= addin(elem[0], \"clippedText\", \"Sales\") %> </b> </div>'+\n                    '    <div class=\"value\"> <%= formatter(elem[1], \"sales\") %> </div> '+\n                    //'    <div class=\"addin\"> <%= addin(elem[4], \"trendArrow\", \"Trends\") %> </div>'+\n                    //'    <div class=\"addin\"> <%= addin(elem[1], \"formatted\", \"Markets\") %> </div>'+\n                    //'    <div class=\"addin\"> <%= addin(elem[3], \"sparkline\", \"Sparkline\" ) %> </div>'+\n                    //'    <div class=\"addin\"> <%= addin(elem[9], \"hyperlink\", \"Hyperlink\") %> </div>'+\n                    //'    <div class=\"addin\"> <b>Best month over the year:</b><%= addin(elem[8], \"localizedText\", \"Localized\") %> </div>'+\n                    '    <div class=\"addin\"> <%= addin(elem[5], \"bubble\", \"Bubble\") %> </div>'+\n                    //'    <div class=\"addin\"> <%= addin(elem[6], \"bulletChart\", \"Bullet\") %> </div>'+\n                    //'    <div class=\"addin\"> <%= addin(elem[10], \"cccChart\", \"cccChart\") %> </div>'+\n                    '  </div>' +\n                    '<% }); %>' +\n                    '</div>'; \n    return template;\n} ",
+      "type": "JavaScript"
+     },
+     {
+      "name": "templateType",
+      "value": "underscore",
+      "type": "templateTypeCustom"
+     },
+     {
+      "name": "events",
+      "value": "[[\"click , .single.clickable \",\"function(event) {\\n    var $elem = $(event.currentTarget);    \\n    var selected = $elem.data('category');\\n    $elem.toggleClass('selected');\\n    this.dashboard.fireChange('selected', selected);\\n    console.log(selected);\\n}\"]]",
+      "type": "EditorValuesArray"
+     },
+     {
+      "name": "formatters",
+      "value": "[[\"sales\",\"function(value) {\\n    return Utils.numberFormat(value, '$0.0A');\\n}\"]]",
+      "type": "EditorValuesArray"
+     },
+     {
+      "name": "rootElement",
+      "value": "items",
+      "type": "String"
+     },
+     {
+      "name": "extendableOptions",
+      "value": "",
+      "type": "JavaScript"
+     }
+    ]
+   },
+   {
+    "id": "bb6c2d8e-9a94-f020-1846-d4240625fc43",
+    "type": "ComponentsTemplateComponent",
+    "typeDesc": "Template Component",
+    "parent": "OTHERCOMPONENTS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "template_bulletChart",
+      "type": "Id"
+     },
+     {
+      "name": "listeners",
+      "value": "[]",
+      "type": "Listeners"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "dataSource",
+      "value": "templateQueryTerritory",
+      "type": "Datasource"
+     },
+     {
+      "name": "priority",
+      "value": 5,
+      "type": "Integer"
+     },
+     {
+      "name": "htmlObject",
+      "value": "${h:template_bulletChart}",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "function f(){\n    \n    var spOpts = {\n        type: 'bar',\n        height: 50,\n        barWidth: 8,\n        //barColor: \"#49AEC0\"\n    };\n\n    this.setAddInOptions(\"templateType\",\"sparkline\", spOpts);\n    \n    var bubbleOpts = {\n        containerSize: 60,\n        //color: \"#DDD\"\n        color: \"#FFE085\"\n    };\n\n    this.setAddInOptions(\"templateType\",\"bubble\", bubbleOpts);\n    \n    var bulletChartOpts = {\n        \n        chartOpts: {\n            height: 40,\n            bulletSize: 16,    \n            bulletSpacing: 150,\n            bulletMargin: 5, \n            bulletRuleLabel_text: function(value) {\n                return Utils.numberFormat(value, \"#A\");\n            },\n        }\n    };\n    \n    this.setAddInOptions(\"templateType\",\"bulletChart\", bulletChartOpts);\n    \n    var linkOpts = {\n        pattern: /\\[(.*?)\\]/g\n    };\n\n    this.setAddInOptions(\"templateType\",\"hyperlink\", linkOpts);\n\n\n    var cccChartOpts = { \n        type: 'PieChart',\n        chartOpts: {\n            width: 200,\n            height: 200,\n            seriesInRows: false,\n            crossTabMode: false,\n            timeSeries: false,\n            legendVisible: false,\n            valuesLabelStyle: 'inside',\n            valuesOptimizeLegibility: true,\n            valueFormat: function(value) {\n                return Utils.numberFormat(value, \"#A\");\n            },\n            selectable: true,\n            hoverable:  true,\n            valuesFont: 'normal 9px \"Open Sans\"',\n            slice_innerRadiusEx: '50%',\n            slice_strokeStyle:   'white',\n            colors: [\n                '#333333', '#777777', '#FFC20F', '#FFE085',\n                '#00325b', '#005CA7', '#0086F4', '#39A74A',\n                '#63CA73', '#80BCA3', '#655643', '#BF4D28'\n            ]            \n        }\n        /*\n        chartOpts: {\n            \n            legendVisible: false,\n            plotFrameVisible: false,\n            axisLabel_font: \"lighter 10px Open Sans, Arial, Helvetica, sans-serif\",\n            axisLabel_textStyle: \"#CCC\",\n            orthoAxisTickFormatter: function(value) {\n                return Utils.numberFormat(value, \"#A\");\n            },\n            axisRule_strokeStyle: \"#CCC\",\n            orthoAxisRule_strokeStyle: \"rgba(0,0,0,0)\",\n            orthoAxisTicks_strokeStyle: \"#CCC\",\n            //orthoAxisTicks_call: function() {\n            //    this.right(-3);\n            //},\n            //orthoAxisTicks_width: 7,\n            orthoAxisDesiredTickCount: 2,\n            orthoAxisMinorTicks: false,\n            baseAxisLabel_textAlign: 'center',\n            //baseAxisRule_strokeStyle: \"#CCC\",\n            baseAxisSize: 20,\n            baseAxisTooltipEnabled: false,\n            baseAxisTicks_call: function() {\n                this.bottom(3);\n            },\n            //baseAxisTicks_width: 7\n        }\n        */\n    };\n    this.setAddInOptions(\"templateType\",\"cccChart\", cccChartOpts);\n    \n} ",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postFetch",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "tooltip",
+      "value": "",
+      "type": "Html"
+     },
+     {
+      "name": "modelHandler",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "template",
+      "value": "function() { \n    var template =  '<div class=\"row card\">' +\n                    '<% _.each(items, function(elem) { %>' +\n                    '  <div class=\"col-xs-12 col-sm-6 col-md-4 col-lg-3 single clickable\" data-category=\"<%=elem[0]%>\"> '+\n                    '    <div class=\"category\"> <b> <%= addin(elem[0], \"clippedText\", \"Sales\") %> </b> </div>'+\n                    '    <div class=\"value\"> <%= formatter(elem[1], \"sales\") %> </div> '+\n                    //'    <div class=\"addin\"> <%= addin(elem[4], \"trendArrow\", \"Trends\") %> </div>'+\n                    //'    <div class=\"addin\"> <%= addin(elem[1], \"formatted\", \"Markets\") %> </div>'+\n                    //'    <div class=\"addin\"> <%= addin(elem[3], \"sparkline\", \"Sparkline\" ) %> </div>'+\n                    //'    <div class=\"addin\"> <%= addin(elem[9], \"hyperlink\", \"Hyperlink\") %> </div>'+\n                    //'    <div class=\"addin\"> <b>Best month over the year:</b><%= addin(elem[8], \"localizedText\", \"Localized\") %> </div>'+\n                    //'    <div class=\"addin\"> <%= addin(elem[5], \"bubble\", \"Bubble\") %> </div>'+\n                    '    <div class=\"addin\"> <%= addin(elem[6], \"bulletChart\", \"Bullet\") %> </div>'+\n                    //'    <div class=\"addin\"> <%= addin(elem[10], \"cccChart\", \"cccChart\") %> </div>'+\n                    '  </div>' +\n                    '<% }); %>' +\n                    '</div>'; \n    return template;\n} ",
+      "type": "JavaScript"
+     },
+     {
+      "name": "templateType",
+      "value": "underscore",
+      "type": "templateTypeCustom"
+     },
+     {
+      "name": "events",
+      "value": "[[\"click , .single.clickable \",\"function(event) {\\n    var $elem = $(event.currentTarget);    \\n    var selected = $elem.data('category');\\n    $elem.toggleClass('selected');\\n    this.dashboard.fireChange('selected', selected);\\n    console.log(selected);\\n}\"]]",
+      "type": "EditorValuesArray"
+     },
+     {
+      "name": "formatters",
+      "value": "[[\"sales\",\"function(value) {\\n    return Utils.numberFormat(value, '$0.0A');\\n}\"]]",
+      "type": "EditorValuesArray"
+     },
+     {
+      "name": "rootElement",
+      "value": "items",
+      "type": "String"
+     },
+     {
+      "name": "extendableOptions",
+      "value": "",
+      "type": "JavaScript"
+     }
+    ]
+   },
+   {
+    "id": "43e089be-3650-5c45-9297-60441d8c14a4",
+    "type": "ComponentsTemplateComponent",
+    "typeDesc": "Template Component",
+    "parent": "OTHERCOMPONENTS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "template_sparklines",
+      "type": "Id"
+     },
+     {
+      "name": "listeners",
+      "value": "[]",
+      "type": "Listeners"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "dataSource",
+      "value": "templateQueryCountry",
+      "type": "Datasource"
+     },
+     {
+      "name": "priority",
+      "value": 5,
+      "type": "Integer"
+     },
+     {
+      "name": "htmlObject",
+      "value": "${h:template_sparklines}",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "function f(){\n    \n    var spOpts = {\n            width: 100,\n            type: 'bullet',\n            height: '12',\n            targetColor: '#007fff',\n            performanceColor: '#cccccc',\n            rangeColors: ['transparent','transparent','transparent']\n    };\n\n    this.setAddInOptions(\"templateType\",\"sparkline\", spOpts);\n    \n    var bubbleOpts = {\n        containerSize: 60,\n        //color: \"#DDD\"\n        color: \"#FFE085\"\n    };\n\n    this.setAddInOptions(\"templateType\",\"bubble\", bubbleOpts);\n    \n    var bulletChartOpts = {\n        \n        chartOpts: {\n            height: 40,\n            bulletSize: 16,    \n            bulletSpacing: 150,\n            bulletMargin: 5, \n            bulletRuleLabel_text: function(value) {\n                return Utils.numberFormat(value, \"#A\");\n            },\n        }\n    };\n    \n    this.setAddInOptions(\"templateType\",\"bulletChart\", bulletChartOpts);\n    \n    var linkOpts = {\n        pattern: /\\[(.*?)\\]/g\n    };\n\n    this.setAddInOptions(\"templateType\",\"hyperlink\", linkOpts);\n\n\n    var cccChartOpts = { \n        type: 'PieChart',\n        chartOpts: {\n            width: 200,\n            height: 200,\n            seriesInRows: false,\n            crossTabMode: false,\n            timeSeries: false,\n            legendVisible: false,\n            valuesLabelStyle: 'inside',\n            valuesOptimizeLegibility: true,\n            valueFormat: function(value) {\n                return Utils.numberFormat(value, \"#A\");\n            },\n            selectable: true,\n            hoverable:  true,\n            valuesFont: 'normal 9px \"Open Sans\"',\n            slice_innerRadiusEx: '50%',\n            slice_strokeStyle:   'white',\n            colors: [\n                '#333333', '#777777', '#FFC20F', '#FFE085',\n                '#00325b', '#005CA7', '#0086F4', '#39A74A',\n                '#63CA73', '#80BCA3', '#655643', '#BF4D28'\n            ]            \n        }\n        /*\n        chartOpts: {\n            \n            legendVisible: false,\n            plotFrameVisible: false,\n            axisLabel_font: \"lighter 10px Open Sans, Arial, Helvetica, sans-serif\",\n            axisLabel_textStyle: \"#CCC\",\n            orthoAxisTickFormatter: function(value) {\n                return Utils.numberFormat(value, \"#A\");\n            },\n            axisRule_strokeStyle: \"#CCC\",\n            orthoAxisRule_strokeStyle: \"rgba(0,0,0,0)\",\n            orthoAxisTicks_strokeStyle: \"#CCC\",\n            //orthoAxisTicks_call: function() {\n            //    this.right(-3);\n            //},\n            //orthoAxisTicks_width: 7,\n            orthoAxisDesiredTickCount: 2,\n            orthoAxisMinorTicks: false,\n            baseAxisLabel_textAlign: 'center',\n            //baseAxisRule_strokeStyle: \"#CCC\",\n            baseAxisSize: 20,\n            baseAxisTooltipEnabled: false,\n            baseAxisTicks_call: function() {\n                this.bottom(3);\n            },\n            //baseAxisTicks_width: 7\n        }\n        */\n    };\n    this.setAddInOptions(\"templateType\",\"cccChart\", cccChartOpts);\n    \n} ",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postFetch",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "tooltip",
+      "value": "",
+      "type": "Html"
+     },
+     {
+      "name": "modelHandler",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "template",
+      "value": "function() { \n    var template =  '<div class=\"row card\">' +\n                    '<% _.each(items, function(elem) { %>' +\n                    '  <div class=\"col-xs-6 col-sm-3 col-md-2 col-lg-2 single clickable\" data-category=\"<%=elem[0]%>\"> '+\n                    '    <div class=\"category\"> <b> <%= addin(elem[0], \"clippedText\", \"Sales\") %> </b> </div>'+\n                    '    <div class=\"value\"> <%= formatter(elem[1], \"sales\") %> </div> '+\n                    //'    <div class=\"addin\"> <%= addin(elem[4], \"trendArrow\", \"Trends\") %> </div>'+\n                    //'    <div class=\"addin\"> <%= addin(elem[1], \"formatted\", \"Markets\") %> </div>'+\n                    '    <div class=\"addin\"> <%= addin(elem[6], \"sparkline\", \"Sparkline\" ) %> </div>'+\n                    //'    <div class=\"addin\"> <%= addin(elem[9], \"hyperlink\", \"Hyperlink\") %> </div>'+\n                    '    <div class=\"addin\"> <b>Best month of year:</b><%= addin(elem[8], \"localizedText\", \"Localized\") %> </div>'+\n                    //'    <div class=\"addin\"> <%= addin(elem[5], \"bubble\", \"Bubble\") %> </div>'+\n                    //'    <div class=\"addin\"> <%= addin(elem[6], \"bulletChart\", \"Bullet\") %> </div>'+\n                    //'    <div class=\"addin\"> <%= addin(elem[10], \"cccChart\", \"cccChart\") %> </div>'+\n                    '  </div>' +\n                    '<% }); %>' +\n                    '</div>'; \n    return template;\n} ",
+      "type": "JavaScript"
+     },
+     {
+      "name": "templateType",
+      "value": "underscore",
+      "type": "templateTypeCustom"
+     },
+     {
+      "name": "events",
+      "value": "[[\"click , .single.clickable \",\"function(event) {\\n    var $elem = $(event.currentTarget);    \\n    var selected = $elem.data('category');\\n    $elem.toggleClass('selected');\\n    this.dashboard.fireChange('selected', selected);\\n    console.log(selected);\\n}\"]]",
+      "type": "EditorValuesArray"
+     },
+     {
+      "name": "formatters",
+      "value": "[[\"sales\",\"function(value) {\\n    return Utils.numberFormat(value, '$0.0A');\\n}\"]]",
+      "type": "EditorValuesArray"
+     },
+     {
+      "name": "rootElement",
+      "value": "items",
+      "type": "String"
+     },
+     {
+      "name": "extendableOptions",
+      "value": "",
+      "type": "JavaScript"
+     }
+    ]
+   },
+   {
+    "id": "f49b8146-f35f-b062-d910-d566d18b466f",
+    "type": "ComponentsTemplateComponent",
+    "typeDesc": "Template Component",
+    "parent": "OTHERCOMPONENTS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "template_bullet",
+      "type": "Id"
+     },
+     {
+      "name": "listeners",
+      "value": "[]",
+      "type": "Listeners"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "dataSource",
+      "value": "templateQueryProdLine",
+      "type": "Datasource"
+     },
+     {
+      "name": "priority",
+      "value": 5,
+      "type": "Integer"
+     },
+     {
+      "name": "htmlObject",
+      "value": "${h:template_bullet}",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "function f(){\n    \n    var spOpts = {\n        type: 'bar',\n        height: 50,\n        barWidth: 8,\n        //barColor: \"#49AEC0\"\n    };\n\n    this.setAddInOptions(\"templateType\",\"sparkline\", spOpts);\n    \n    var bubbleOpts = {\n        containerSize: 60,\n        //color: \"#DDD\"\n        color: \"#FFE085\"\n    };\n\n    this.setAddInOptions(\"templateType\",\"bubble\", bubbleOpts);\n    \n    var bulletChartOpts = {\n        \n        chartOpts: {\n            height: 40,\n            bulletSize: 16,    \n            bulletSpacing: 150,\n            bulletMargin: 5, \n            bulletRuleLabel_text: function(value) {\n                return Utils.numberFormat(value, \"#A\");\n            },\n        }\n    };\n    \n    this.setAddInOptions(\"templateType\",\"bulletChart\", bulletChartOpts);\n    \n    var linkOpts = {\n        pattern: /\\[(.*?)\\]/g\n    };\n\n    this.setAddInOptions(\"templateType\",\"hyperlink\", linkOpts);\n\n\n    var cccChartOpts = { \n        type: 'PieChart',\n        chartOpts: {\n            width: 200,\n            height: 200,\n            seriesInRows: false,\n            crossTabMode: false,\n            timeSeries: false,\n            legendVisible: false,\n            valuesLabelStyle: 'inside',\n            valuesOptimizeLegibility: true,\n            valueFormat: function(value) {\n                return Utils.numberFormat(value, \"#A\");\n            },\n            selectable: true,\n            hoverable:  true,\n            valuesFont: 'normal 9px \"Open Sans\"',\n            slice_innerRadiusEx: '50%',\n            slice_strokeStyle:   'white',\n            colors: [\n                '#333333', '#777777', '#FFC20F', '#FFE085',\n                '#00325b', '#005CA7', '#0086F4', '#39A74A',\n                '#63CA73', '#80BCA3', '#655643', '#BF4D28'\n            ]            \n        }\n        /*\n        chartOpts: {\n            \n            legendVisible: false,\n            plotFrameVisible: false,\n            axisLabel_font: \"lighter 10px Open Sans, Arial, Helvetica, sans-serif\",\n            axisLabel_textStyle: \"#CCC\",\n            orthoAxisTickFormatter: function(value) {\n                return Utils.numberFormat(value, \"#A\");\n            },\n            axisRule_strokeStyle: \"#CCC\",\n            orthoAxisRule_strokeStyle: \"rgba(0,0,0,0)\",\n            orthoAxisTicks_strokeStyle: \"#CCC\",\n            //orthoAxisTicks_call: function() {\n            //    this.right(-3);\n            //},\n            //orthoAxisTicks_width: 7,\n            orthoAxisDesiredTickCount: 2,\n            orthoAxisMinorTicks: false,\n            baseAxisLabel_textAlign: 'center',\n            //baseAxisRule_strokeStyle: \"#CCC\",\n            baseAxisSize: 20,\n            baseAxisTooltipEnabled: false,\n            baseAxisTicks_call: function() {\n                this.bottom(3);\n            },\n            //baseAxisTicks_width: 7\n        }\n        */\n    };\n    this.setAddInOptions(\"templateType\",\"cccChart\", cccChartOpts);\n    \n} ",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postFetch",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "tooltip",
+      "value": "",
+      "type": "Html"
+     },
+     {
+      "name": "modelHandler",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "template",
+      "value": "function() { \n    var template =  '<div class=\"row card\">' +\n                    '<% _.each(items, function(elem) { %>' +\n                    '  <div class=\"col-xs-4 col-sm-3 col-md-2 col-lg-2 single clickable\" data-category=\"<%=elem[0]%>\"> '+\n                    '    <div class=\"category\"> <b> <%= addin(elem[0], \"clippedText\", \"Sales\") %> </b> </div>'+\n                    '    <div class=\"value\"> <%= formatter(elem[1], \"sales\") %> </div> '+\n                    //'    <div class=\"addin\"> <%= addin(elem[4], \"trendArrow\", \"Trends\") %> </div>'+\n                    //'    <div class=\"addin\"> <%= addin(elem[1], \"formatted\", \"Markets\") %> </div>'+\n                    '    <div class=\"addin\"> <%= addin(elem[3], \"sparkline\", \"Sparkline\" ) %> </div>'+\n                    //'    <div class=\"addin\"> <%= addin(elem[9], \"hyperlink\", \"Hyperlink\") %> </div>'+\n                    '    <div class=\"addin\"> <b>Best month of year:</b><%= addin(elem[8], \"localizedText\", \"Localized\") %> </div>'+\n                    //'    <div class=\"addin\"> <%= addin(elem[5], \"bubble\", \"Bubble\") %> </div>'+\n                    //'    <div class=\"addin\"> <%= addin(elem[6], \"bulletChart\", \"Bullet\") %> </div>'+\n                    //'    <div class=\"addin\"> <%= addin(elem[10], \"cccChart\", \"cccChart\") %> </div>'+\n                    '  </div>' +\n                    '<% }); %>' +\n                    '</div>'; \n    return template;\n} ",
+      "type": "JavaScript"
+     },
+     {
+      "name": "templateType",
+      "value": "underscore",
+      "type": "templateTypeCustom"
+     },
+     {
+      "name": "events",
+      "value": "[[\"click , .single.clickable \",\"function(event) {\\n    var $elem = $(event.currentTarget);    \\n    var selected = $elem.data('category');\\n    $elem.toggleClass('selected');\\n    this.dashboard.fireChange('selected', selected);\\n    console.log(selected);\\n}\"]]",
+      "type": "EditorValuesArray"
+     },
+     {
+      "name": "formatters",
+      "value": "[[\"sales\",\"function(value) {\\n    return Utils.numberFormat(value, '$0.0A');\\n}\"]]",
+      "type": "EditorValuesArray"
+     },
+     {
+      "name": "rootElement",
+      "value": "items",
+      "type": "String"
+     },
+     {
+      "name": "extendableOptions",
+      "value": "",
+      "type": "JavaScript"
+     }
+    ]
+   },
+   {
+    "id": "65894c86-a183-4d57-31d1-a315debabcc9",
+    "type": "ComponentsTemplateComponent",
+    "typeDesc": "Template Component",
+    "parent": "OTHERCOMPONENTS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "template_trendArrow",
+      "type": "Id"
+     },
+     {
+      "name": "listeners",
+      "value": "[]",
+      "type": "Listeners"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "dataSource",
+      "value": "templateQueryProduct",
+      "type": "Datasource"
+     },
+     {
+      "name": "priority",
+      "value": 5,
+      "type": "Integer"
+     },
+     {
+      "name": "htmlObject",
+      "value": "${h:template_trendArrow}",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "function f(){\n    \n    var spOpts = {\n        type: 'bar',\n        height: 50,\n        barWidth: 8,\n        //barColor: \"#49AEC0\"\n    };\n\n    this.setAddInOptions(\"templateType\",\"sparkline\", spOpts);\n    \n    var bubbleOpts = {\n        containerSize: 60,\n        //color: \"#DDD\"\n        color: \"#FFE085\"\n    };\n\n    this.setAddInOptions(\"templateType\",\"bubble\", bubbleOpts);\n    \n    var bulletChartOpts = {\n        \n        chartOpts: {\n            height: 40,\n            bulletSize: 16,    \n            bulletSpacing: 150,\n            bulletMargin: 5, \n            bulletRuleLabel_text: function(value) {\n                return Utils.numberFormat(value, \"#A\");\n            },\n        }\n    };\n    \n    this.setAddInOptions(\"templateType\",\"bulletChart\", bulletChartOpts);\n    \n    var linkOpts = {\n        pattern: /\\[(.*?)\\]/g\n    };\n\n    this.setAddInOptions(\"templateType\",\"hyperlink\", linkOpts);\n\n\n    var cccChartOpts = { \n        type: 'PieChart',\n        chartOpts: {\n            width: 200,\n            height: 200,\n            seriesInRows: false,\n            crossTabMode: false,\n            timeSeries: false,\n            legendVisible: false,\n            valuesLabelStyle: 'inside',\n            valuesOptimizeLegibility: true,\n            valueFormat: function(value) {\n                return Utils.numberFormat(value, \"#A\");\n            },\n            selectable: true,\n            hoverable:  true,\n            valuesFont: 'normal 9px \"Open Sans\"',\n            slice_innerRadiusEx: '50%',\n            slice_strokeStyle:   'white',\n            colors: [\n                '#333333', '#777777', '#FFC20F', '#FFE085',\n                '#00325b', '#005CA7', '#0086F4', '#39A74A',\n                '#63CA73', '#80BCA3', '#655643', '#BF4D28'\n            ]            \n        }\n        /*\n        chartOpts: {\n            \n            legendVisible: false,\n            plotFrameVisible: false,\n            axisLabel_font: \"lighter 10px Open Sans, Arial, Helvetica, sans-serif\",\n            axisLabel_textStyle: \"#CCC\",\n            orthoAxisTickFormatter: function(value) {\n                return Utils.numberFormat(value, \"#A\");\n            },\n            axisRule_strokeStyle: \"#CCC\",\n            orthoAxisRule_strokeStyle: \"rgba(0,0,0,0)\",\n            orthoAxisTicks_strokeStyle: \"#CCC\",\n            //orthoAxisTicks_call: function() {\n            //    this.right(-3);\n            //},\n            //orthoAxisTicks_width: 7,\n            orthoAxisDesiredTickCount: 2,\n            orthoAxisMinorTicks: false,\n            baseAxisLabel_textAlign: 'center',\n            //baseAxisRule_strokeStyle: \"#CCC\",\n            baseAxisSize: 20,\n            baseAxisTooltipEnabled: false,\n            baseAxisTicks_call: function() {\n                this.bottom(3);\n            },\n            //baseAxisTicks_width: 7\n        }\n        */\n    };\n    this.setAddInOptions(\"templateType\",\"cccChart\", cccChartOpts);\n    \n} ",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postFetch",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "tooltip",
+      "value": "",
+      "type": "Html"
+     },
+     {
+      "name": "modelHandler",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "template",
+      "value": "function() { \n    var template =  '<div class=\"row card\">' +\n                    '<% _.each(items, function(elem) { %>' +\n                    '  <div class=\"col-xs-3 col-sm-2 col-md-2 col-lg-2 single clickable\" data-category=\"<%=elem[0]%>\"> '+\n                    '    <div class=\"category\"> <b> <%= addin(elem[0], \"clippedText\", \"Sales\") %> </b> </div>'+\n                    '    <div class=\"value\"> <%= formatter(elem[1], \"sales\") %> </div> '+\n                    '    <div class=\"addin\"> <%= addin(elem[4], \"trendArrow\", \"Trends\") %> </div>'+\n                    //'    <div class=\"addin\"> <%= addin(elem[1], \"formatted\", \"Markets\") %> </div>'+\n                    //'    <div class=\"addin\"> <%= addin(elem[3], \"sparkline\", \"Sparkline\" ) %> </div>'+\n                    //'    <div class=\"addin\"> <%= addin(elem[9], \"hyperlink\", \"Hyperlink\") %> </div>'+\n                    //'    <div class=\"addin\"> <b>Best month of year:</b><%= addin(elem[8], \"localizedText\", \"Localized\") %> </div>'+\n                    //'    <div class=\"addin\"> <%= addin(elem[5], \"bubble\", \"Bubble\") %> </div>'+\n                    //'    <div class=\"addin\"> <%= addin(elem[6], \"bulletChart\", \"Bullet\") %> </div>'+\n                    //'    <div class=\"addin\"> <%= addin(elem[10], \"cccChart\", \"cccChart\") %> </div>'+\n                    '  </div>' +\n                    '<% }); %>' +\n                    '</div>'; \n    return template;\n} ",
+      "type": "JavaScript"
+     },
+     {
+      "name": "templateType",
+      "value": "underscore",
+      "type": "templateTypeCustom"
+     },
+     {
+      "name": "events",
+      "value": "[[\"click , .single.clickable \",\"function(event) {\\n    var $elem = $(event.currentTarget);    \\n    var selected = $elem.data('category');\\n    $elem.toggleClass('selected');\\n    this.dashboard.fireChange('selected', selected);\\n    console.log(selected);\\n}\"]]",
+      "type": "EditorValuesArray"
+     },
+     {
+      "name": "formatters",
+      "value": "[[\"sales\",\"function(value) {\\n    return Utils.numberFormat(value, '$0.0A');\\n}\"]]",
+      "type": "EditorValuesArray"
+     },
+     {
+      "name": "rootElement",
+      "value": "items",
+      "type": "String"
+     },
+     {
+      "name": "extendableOptions",
+      "value": "",
+      "type": "JavaScript"
+     }
+    ]
+   }
+  ]
+ },
+ "datasources": {
+  "rows": [
+   {
+    "id": "MDX",
+    "name": "MDX Queries",
+    "type": "Label",
+    "typeDesc": "<i>Group</i>",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "Group",
+      "value": "MDX Queries",
+      "type": "Label"
+     }
+    ]
+   },
+   {
+    "id": "001ba9bd-9d3d-6ce8-66f2-85f2d64e8e5d",
+    "type": "Componentsmdx_mondrianJndi",
+    "typeDesc": "mdx over mondrianJndi",
+    "parent": "MDX",
+    "properties": [
+     {
+      "name": "name",
+      "value": "templateQueryTerritory",
+      "type": "Id"
+     },
+     {
+      "name": "access",
+      "value": "public",
+      "type": "Access"
+     },
+     {
+      "name": "jndi",
+      "value": "SampleData",
+      "type": "Jndi"
+     },
+     {
+      "name": "catalog",
+      "value": "mondrian:/SteelWheels",
+      "type": "MondrianCatalog"
+     },
+     {
+      "name": "query",
+      "value": "WITH \n  MEMBER [Measures].[Year] AS \"2004\"\n  //SET [ROWS] AS FILTER({[Product].[Product].Members}, NOT ISEMPTY([Measures].[Sales]))\n  //SET [ROWS] AS FILTER({[Product].[Line].Members}, NOT ISEMPTY([Measures].[Sales]))\n  SET [ROWS] AS FILTER({[Markets].[Territory].Members}, NOT ISEMPTY([Measures].[Sales]))\n  MEMBER [Measures].[Sparkline] AS GENERATE(DESCENDANTS([Time].[2004], [Time].[Months]), CAST(ROUND( [Measures].[Sales]+0, 1) AS STRING), ',')\n  MEMBER [Measures].[Trends] AS ([Time].[2004], [Measures].[Sales])-([Time].[2003], [Measures].[Sales])\n  MEMBER [Measures].[Bubble] AS ([Time].[2004], [Measures].[Quantity])+0\n  MEMBER [Measures].[Bullet] AS CAST(([Time].[2003], [Measures].[Quantity])+0 AS STRING) || \",\" || CAST(([Time].[2004], [Measures].[Quantity])+0 AS STRING) || \",\" || CAST((([Time].[2004], ([Measures].[Quantity]))+1000)/3 AS STRING) || \",\" || CAST((([Time].[2004], ([Measures].[Quantity]))+1000)/2 AS STRING) || \", \" || CAST(([Time].[2004], ([Measures].[Quantity]))+1000 AS STRING)   \n  MEMBER [Measures].[Formatted] AS MAX(DESCENDANTS([Time].[2004], [Time].[Months]), [Measures].[Sales])\n  MEMBER [Measures].[Localized] AS GENERATE(TOPCOUNT(DESCENDANTS([Time].[2004], [Time].[Months]), 1, [Measures].[Sales]), [Time].CURRENTMEMBER.NAME)\n  MEMBER [Measures].[Hyperlink] AS \"[\"||\"Google it ...\"||\"][\"||\"https://www.google.pt/search?q=\"||[Product].CURRENTMEMBER.NAME||\"]\"\n  MEMBER [Measures].[cccChart] AS \"[\" || GENERATE(DESCENDANTS([Time].[2004], [Time].[Months]), \"[\"\"\"||[Time].CURRENTMEMBER.NAME ||\"\"\",\"\"\"|| CAST(ROUND( [Measures].[Sales]+0, 1) AS STRING)||\"\"\"]\", ',') || \"]\"\nSELECT\n  NON EMPTY {\n    [Measures].[Sales], \n    [Measures].[Year], \n    [Measures].[Sparkline],  \n    [Measures].[Trends], \n    [Measures].[Bubble], \n    [Measures].[Bullet], \n    [Measures].[Formatted], \n    [Measures].[Localized],\n    [Measures].[Hyperlink],\n    [Measures].[Months],\n    [Measures].[cccChart] } ON COLUMNS,\n  NON EMPTY [ROWS] ON ROWS\nFROM [SteelWheelsSales]",
+      "type": "CurrentMdxQuery"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "CdaParameters"
+     },
+     {
+      "name": "bandedMode",
+      "value": "compact",
+      "type": "BandedMode"
+     },
+     {
+      "name": "cdacalculatedcolumns",
+      "value": "[]",
+      "type": "CdaCalculatedColumnsArray"
+     },
+     {
+      "name": "cdacolumns",
+      "value": "[]",
+      "type": "CdaColumnsArray"
+     },
+     {
+      "name": "output",
+      "value": "[]",
+      "type": "IndexArray"
+     },
+     {
+      "name": "outputMode",
+      "value": "include",
+      "type": "OutputMode"
+     },
+     {
+      "name": "cacheKeys",
+      "value": "[]",
+      "type": "CacheKeysValues"
+     },
+     {
+      "name": "cacheDuration",
+      "value": 3600,
+      "type": "Integer"
+     },
+     {
+      "name": "cache",
+      "value": "true",
+      "type": "Boolean"
+     }
+    ],
+    "meta": "CDA",
+    "meta_conntype": "mondrian.jndi",
+    "meta_datype": "mdx"
+   },
+   {
+    "id": "c8ebb67a-fbb2-04af-2271-b3d8604986d8",
+    "type": "Componentsmdx_mondrianJndi",
+    "typeDesc": "mdx over mondrianJndi",
+    "parent": "MDX",
+    "properties": [
+     {
+      "name": "name",
+      "value": "templateQueryCountry",
+      "type": "Id"
+     },
+     {
+      "name": "access",
+      "value": "public",
+      "type": "Access"
+     },
+     {
+      "name": "jndi",
+      "value": "SampleData",
+      "type": "Jndi"
+     },
+     {
+      "name": "catalog",
+      "value": "mondrian:/SteelWheels",
+      "type": "MondrianCatalog"
+     },
+     {
+      "name": "query",
+      "value": "WITH \n  MEMBER [Measures].[Year] AS \"2004\"\n  //SET [ROWS] AS FILTER({[Product].[Product].Members}, NOT ISEMPTY([Measures].[Sales]))\n  //SET [ROWS] AS FILTER({[Product].[Line].Members}, NOT ISEMPTY([Measures].[Sales]))\n  SET [ROWS] AS FILTER({[Markets].[Country].Members}, NOT ISEMPTY([Measures].[Sales]))\n  MEMBER [Measures].[Sparkline] AS GENERATE(DESCENDANTS([Time].[2004], [Time].[Months]), CAST(ROUND( [Measures].[Sales]+0, 1) AS STRING), ',')\n  MEMBER [Measures].[Trends] AS ([Time].[2004], [Measures].[Sales])-([Time].[2003], [Measures].[Sales])\n  MEMBER [Measures].[Bubble] AS ([Time].[2004], [Measures].[Quantity])+0\n  MEMBER [Measures].[Bullet] AS CAST(([Time].[2003], [Measures].[Quantity])+0 AS STRING) || \",\" || CAST(([Time].[2004], [Measures].[Quantity])+0 AS STRING) || \",\" || CAST((([Time].[2004], ([Measures].[Quantity]))+1000)/3 AS STRING) || \",\" || CAST((([Time].[2004], ([Measures].[Quantity]))+1000)/2 AS STRING) || \", \" || CAST(([Time].[2004], ([Measures].[Quantity]))+1000 AS STRING)   \n  MEMBER [Measures].[Formatted] AS MAX(DESCENDANTS([Time].[2004], [Time].[Months]), [Measures].[Sales])\n  MEMBER [Measures].[Localized] AS GENERATE(TOPCOUNT(DESCENDANTS([Time].[2004], [Time].[Months]), 1, [Measures].[Sales]), [Time].CURRENTMEMBER.NAME)\n  MEMBER [Measures].[Hyperlink] AS \"[\"||\"Google it ...\"||\"][\"||\"https://www.google.pt/search?q=\"||[Product].CURRENTMEMBER.NAME||\"]\"\n  MEMBER [Measures].[cccChart] AS \"[\" || GENERATE(DESCENDANTS([Time].[2004], [Time].[Months]), \"[\"\"\"||[Time].CURRENTMEMBER.NAME ||\"\"\",\"\"\"|| CAST(ROUND( [Measures].[Sales]+0, 1) AS STRING)||\"\"\"]\", ',') || \"]\"\nSELECT\n  NON EMPTY {\n    [Measures].[Sales], \n    [Measures].[Year], \n    [Measures].[Sparkline],  \n    [Measures].[Trends], \n    [Measures].[Bubble], \n    [Measures].[Bullet], \n    [Measures].[Formatted], \n    [Measures].[Localized],\n    [Measures].[Hyperlink],\n    [Measures].[Months],\n    [Measures].[cccChart] } ON COLUMNS,\n  NON EMPTY [ROWS] ON ROWS\nFROM [SteelWheelsSales]",
+      "type": "CurrentMdxQuery"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "CdaParameters"
+     },
+     {
+      "name": "bandedMode",
+      "value": "compact",
+      "type": "BandedMode"
+     },
+     {
+      "name": "cdacalculatedcolumns",
+      "value": "[]",
+      "type": "CdaCalculatedColumnsArray"
+     },
+     {
+      "name": "cdacolumns",
+      "value": "[]",
+      "type": "CdaColumnsArray"
+     },
+     {
+      "name": "output",
+      "value": "[]",
+      "type": "IndexArray"
+     },
+     {
+      "name": "outputMode",
+      "value": "include",
+      "type": "OutputMode"
+     },
+     {
+      "name": "cacheKeys",
+      "value": "[]",
+      "type": "CacheKeysValues"
+     },
+     {
+      "name": "cacheDuration",
+      "value": 3600,
+      "type": "Integer"
+     },
+     {
+      "name": "cache",
+      "value": "true",
+      "type": "Boolean"
+     }
+    ],
+    "meta": "CDA",
+    "meta_conntype": "mondrian.jndi",
+    "meta_datype": "mdx"
+   },
+   {
+    "id": "e0a8a915-a2d4-1d9c-8dd4-f13d7d3aed4a",
+    "type": "Componentsmdx_mondrianJndi",
+    "typeDesc": "mdx over mondrianJndi",
+    "parent": "MDX",
+    "properties": [
+     {
+      "name": "name",
+      "value": "templateQueryProdLine",
+      "type": "Id"
+     },
+     {
+      "name": "access",
+      "value": "public",
+      "type": "Access"
+     },
+     {
+      "name": "jndi",
+      "value": "SampleData",
+      "type": "Jndi"
+     },
+     {
+      "name": "catalog",
+      "value": "mondrian:/SteelWheels",
+      "type": "MondrianCatalog"
+     },
+     {
+      "name": "query",
+      "value": "WITH \n  MEMBER [Measures].[Year] AS \"2004\"\n  //SET [ROWS] AS FILTER({[Product].[Product].Members}, NOT ISEMPTY([Measures].[Sales]))\n  SET [ROWS] AS FILTER({[Product].[Line].Members}, NOT ISEMPTY([Measures].[Sales]))\n  //SET [ROWS] AS FILTER({[Markets].[Territory].Members}, NOT ISEMPTY([Measures].[Sales]))\n  MEMBER [Measures].[Sparkline] AS GENERATE(DESCENDANTS([Time].[2004], [Time].[Months]), CAST(ROUND( [Measures].[Sales]+0, 1) AS STRING), ',')\n  MEMBER [Measures].[Trends] AS ([Time].[2004], [Measures].[Sales])-([Time].[2003], [Measures].[Sales])\n  MEMBER [Measures].[Bubble] AS ([Time].[2004], [Measures].[Quantity])+0\n  MEMBER [Measures].[Bullet] AS CAST(([Time].[2003], [Measures].[Quantity])+0 AS STRING) || \",\" || CAST(([Time].[2004], [Measures].[Quantity])+0 AS STRING) || \",\" || CAST((([Time].[2004], ([Measures].[Quantity]))+1000)/3 AS STRING) || \",\" || CAST((([Time].[2004], ([Measures].[Quantity]))+1000)/2 AS STRING) || \", \" || CAST(([Time].[2004], ([Measures].[Quantity]))+1000 AS STRING)   \n  MEMBER [Measures].[Formatted] AS MAX(DESCENDANTS([Time].[2004], [Time].[Months]), [Measures].[Sales])\n  MEMBER [Measures].[Localized] AS GENERATE(TOPCOUNT(DESCENDANTS([Time].[2004], [Time].[Months]), 1, [Measures].[Sales]), [Time].CURRENTMEMBER.NAME)\n  MEMBER [Measures].[Hyperlink] AS \"[\"||\"Google it ...\"||\"][\"||\"https://www.google.pt/search?q=\"||[Product].CURRENTMEMBER.NAME||\"]\"\n  MEMBER [Measures].[cccChart] AS \"[\" || GENERATE(DESCENDANTS([Time].[2004], [Time].[Months]), \"[\"\"\"||[Time].CURRENTMEMBER.NAME ||\"\"\",\"\"\"|| CAST(ROUND( [Measures].[Sales]+0, 1) AS STRING)||\"\"\"]\", ',') || \"]\"\nSELECT\n  NON EMPTY {\n    [Measures].[Sales], \n    [Measures].[Year], \n    [Measures].[Sparkline],  \n    [Measures].[Trends], \n    [Measures].[Bubble], \n    [Measures].[Bullet], \n    [Measures].[Formatted], \n    [Measures].[Localized],\n    [Measures].[Hyperlink],\n    [Measures].[Months],\n    [Measures].[cccChart] } ON COLUMNS,\n  NON EMPTY [ROWS] ON ROWS\nFROM [SteelWheelsSales]",
+      "type": "CurrentMdxQuery"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "CdaParameters"
+     },
+     {
+      "name": "bandedMode",
+      "value": "compact",
+      "type": "BandedMode"
+     },
+     {
+      "name": "cdacalculatedcolumns",
+      "value": "[]",
+      "type": "CdaCalculatedColumnsArray"
+     },
+     {
+      "name": "cdacolumns",
+      "value": "[]",
+      "type": "CdaColumnsArray"
+     },
+     {
+      "name": "output",
+      "value": "[]",
+      "type": "IndexArray"
+     },
+     {
+      "name": "outputMode",
+      "value": "include",
+      "type": "OutputMode"
+     },
+     {
+      "name": "cacheKeys",
+      "value": "[]",
+      "type": "CacheKeysValues"
+     },
+     {
+      "name": "cacheDuration",
+      "value": 3600,
+      "type": "Integer"
+     },
+     {
+      "name": "cache",
+      "value": "true",
+      "type": "Boolean"
+     }
+    ],
+    "meta": "CDA",
+    "meta_conntype": "mondrian.jndi",
+    "meta_datype": "mdx"
+   },
+   {
+    "id": "7f0fd6ad-af4a-c8db-6053-4cecafe81ad9",
+    "type": "Componentsmdx_mondrianJndi",
+    "typeDesc": "mdx over mondrianJndi",
+    "parent": "MDX",
+    "properties": [
+     {
+      "name": "name",
+      "value": "templateQueryProduct",
+      "type": "Id"
+     },
+     {
+      "name": "access",
+      "value": "public",
+      "type": "Access"
+     },
+     {
+      "name": "jndi",
+      "value": "SampleData",
+      "type": "Jndi"
+     },
+     {
+      "name": "catalog",
+      "value": "mondrian:/SteelWheels",
+      "type": "MondrianCatalog"
+     },
+     {
+      "name": "query",
+      "value": "WITH \n  MEMBER [Measures].[Year] AS \"2004\"\n  //SET [ROWS] AS FILTER({[Product].[Product].Members}, NOT ISEMPTY([Measures].[Sales]))\n  SET [ROWS] AS FILTER({[Product].[Product].Members}, NOT ISEMPTY([Measures].[Sales]))\n  //SET [ROWS] AS FILTER({[Markets].[Territory].Members}, NOT ISEMPTY([Measures].[Sales]))\n  MEMBER [Measures].[Sparkline] AS GENERATE(DESCENDANTS([Time].[2004], [Time].[Months]), CAST(ROUND( [Measures].[Sales]+0, 1) AS STRING), ',')\n  MEMBER [Measures].[Trends] AS ([Time].[2004], [Measures].[Sales])-([Time].[2003], [Measures].[Sales])\n  MEMBER [Measures].[Bubble] AS ([Time].[2004], [Measures].[Quantity])+0\n  MEMBER [Measures].[Bullet] AS CAST(([Time].[2003], [Measures].[Quantity])+0 AS STRING) || \",\" || CAST(([Time].[2004], [Measures].[Quantity])+0 AS STRING) || \",\" || CAST((([Time].[2004], ([Measures].[Quantity]))+1000)/3 AS STRING) || \",\" || CAST((([Time].[2004], ([Measures].[Quantity]))+1000)/2 AS STRING) || \", \" || CAST(([Time].[2004], ([Measures].[Quantity]))+1000 AS STRING)   \n  MEMBER [Measures].[Formatted] AS MAX(DESCENDANTS([Time].[2004], [Time].[Months]), [Measures].[Sales])\n  MEMBER [Measures].[Localized] AS GENERATE(TOPCOUNT(DESCENDANTS([Time].[2004], [Time].[Months]), 1, [Measures].[Sales]), [Time].CURRENTMEMBER.NAME)\n  MEMBER [Measures].[Hyperlink] AS \"[\"||\"Google it ...\"||\"][\"||\"https://www.google.pt/search?q=\"||[Product].CURRENTMEMBER.NAME||\"]\"\n  MEMBER [Measures].[cccChart] AS \"[\" || GENERATE(DESCENDANTS([Time].[2004], [Time].[Months]), \"[\"\"\"||[Time].CURRENTMEMBER.NAME ||\"\"\",\"\"\"|| CAST(ROUND( [Measures].[Sales]+0, 1) AS STRING)||\"\"\"]\", ',') || \"]\"\nSELECT\n  NON EMPTY {\n    [Measures].[Sales], \n    [Measures].[Year], \n    [Measures].[Sparkline],  \n    [Measures].[Trends], \n    [Measures].[Bubble], \n    [Measures].[Bullet], \n    [Measures].[Formatted], \n    [Measures].[Localized],\n    [Measures].[Hyperlink],\n    [Measures].[Months],\n    [Measures].[cccChart] } ON COLUMNS,\n  NON EMPTY [ROWS] ON ROWS\nFROM [SteelWheelsSales]",
+      "type": "CurrentMdxQuery"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "CdaParameters"
+     },
+     {
+      "name": "bandedMode",
+      "value": "compact",
+      "type": "BandedMode"
+     },
+     {
+      "name": "cdacalculatedcolumns",
+      "value": "[]",
+      "type": "CdaCalculatedColumnsArray"
+     },
+     {
+      "name": "cdacolumns",
+      "value": "[]",
+      "type": "CdaColumnsArray"
+     },
+     {
+      "name": "output",
+      "value": "[]",
+      "type": "IndexArray"
+     },
+     {
+      "name": "outputMode",
+      "value": "include",
+      "type": "OutputMode"
+     },
+     {
+      "name": "cacheKeys",
+      "value": "[]",
+      "type": "CacheKeysValues"
+     },
+     {
+      "name": "cacheDuration",
+      "value": 3600,
+      "type": "Integer"
+     },
+     {
+      "name": "cache",
+      "value": "true",
+      "type": "Boolean"
+     }
+    ],
+    "meta": "CDA",
+    "meta_conntype": "mondrian.jndi",
+    "meta_datype": "mdx"
+   }
+  ]
+ },
+ "filename": "/public/Ctools+Book+Samples/Chapter+6/Template+Component/TemplateUseAddins.cdfde"
+}

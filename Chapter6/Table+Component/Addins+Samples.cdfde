@@ -1,0 +1,632 @@
+{
+ "layout": {
+  "title": "CDF - Sample structure",
+  "rows": [
+   {
+    "id": "6be95203-2cfa-c5fc-06a7-bc3abec0aa48",
+    "type": "LayoutResourceCode",
+    "typeDesc": "Resource",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "resourceCode",
+      "value": ".dataBarContainer .value {\n    float: left;\n    margin-right: 4px;\n}\n\n.dataBarContainer svg {\n    float: right;\n}\n \n \n \n.trendArrow > div {\n    margin: 0px 4px 0px 0px;\n}\n\ntable .trend {\n    position: relative;\n\n}\n\ntable .trend:after {\n    position: absolute;\n    background: none;\n    font: normal normal normal 20px/1 FontAwesome;\n    top: -5px;\n    left: -3px;\n}\n\ntable .trend.down.good {\n    background: none;\n}\n\ntable .trend.down.good:after {\n    content: \"\\f0ab\";\n    color: red;\n}\n\ntable .trend.up.good {\n    margin-top: 5px;\n    background: none;\n}\n\ntable .trend.up.good:after {\n    content: \"\\f0aa\";\n    color: green;\n}\n\ntable .trend.neutral.good {\n    background: none;\n}\n\ntable .trend.neutral.good:after {\n    content: \"\\f0a9\";\n    color: #ccc;\n}\n\n.groupHeader.group0 {\n    background: #888;\n    color: white;\n}\n ",
+      "type": "Resource"
+     },
+     {
+      "name": "resourceType",
+      "value": "Css",
+      "type": "Label"
+     }
+    ]
+   },
+   {
+    "id": "1897e37a-212f-5ac7-74a3-c90351606e8d",
+    "type": "LayoutRow",
+    "typeDesc": "Row",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "f5a3641e-7c78-671b-d1d8-572dfd117b49",
+    "type": "LayoutBootstrapColumn",
+    "typeDesc": "Column",
+    "parent": "1897e37a-212f-5ac7-74a3-c90351606e8d",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "bootstrapExtraSmall",
+      "value": "12",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapSmall",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapMedium",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapLarge",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapCssClass",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "937edb2a-d09f-5a9d-16db-cd084fb90fe6",
+    "type": "LayoutSpace",
+    "typeDesc": "Space",
+    "parent": "f5a3641e-7c78-671b-d1d8-572dfd117b49",
+    "properties": [
+     {
+      "name": "height",
+      "value": "10",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "acb0963f-f894-70ed-9839-1d8ff753ffcb",
+    "type": "LayoutHtml",
+    "typeDesc": "Html",
+    "parent": "f5a3641e-7c78-671b-d1d8-572dfd117b49",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "html",
+      "value": "<b>Note</b>: Given the amount of columns to display for this sample it's not possible to make the table responsive/adpative ",
+      "type": "Html"
+     },
+     {
+      "name": "fontSize",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "color",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "a146b01e-0d42-eed0-8105-0fd948bdf392",
+    "type": "LayoutSpace",
+    "typeDesc": "Space",
+    "parent": "f5a3641e-7c78-671b-d1d8-572dfd117b49",
+    "properties": [
+     {
+      "name": "height",
+      "value": "10",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "134f20cd-2b66-92da-c19c-016ee6883ed4",
+    "type": "LayoutRow",
+    "typeDesc": "Row",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "2c4e9334-8488-4aef-b128-23cda0d3d683",
+    "type": "LayoutBootstrapColumn",
+    "typeDesc": "Column",
+    "parent": "134f20cd-2b66-92da-c19c-016ee6883ed4",
+    "properties": [
+     {
+      "name": "name",
+      "value": "table",
+      "type": "Id"
+     },
+     {
+      "name": "bootstrapExtraSmall",
+      "value": "12",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapSmall",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapMedium",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapLarge",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapCssClass",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   }
+  ]
+ },
+ "components": {
+  "rows": [
+   {
+    "id": "OTHERCOMPONENTS",
+    "name": "Others",
+    "type": "Label",
+    "typeDesc": "<i>Group</i>",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "Group",
+      "value": "Others",
+      "type": "Label"
+     }
+    ]
+   },
+   {
+    "id": "d38ac6bb-c08c-3ad4-7411-957d89a42598",
+    "type": "ComponentsTable",
+    "typeDesc": "table Component",
+    "parent": "OTHERCOMPONENTS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "table",
+      "type": "Id"
+     },
+     {
+      "name": "expandContainerObject",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "listeners",
+      "value": "[]",
+      "type": "Listeners"
+     },
+     {
+      "name": "oLanguage",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "language",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "colFormats",
+      "value": "[\"%s\",\"%s\",\"%s\",\"%s\",\"%.0f\",\"%.1f\",\"%.1f\",\"%s\",\"%.2f\",\"%s\",\"%s\"]",
+      "type": "ColFormatsArray"
+     },
+     {
+      "name": "colHeaders",
+      "value": "[]",
+      "type": "ColHeadersArray"
+     },
+     {
+      "name": "colSortable",
+      "value": "[]",
+      "type": "ColSortableArray"
+     },
+     {
+      "name": "colTypes",
+      "value": "[\"groupHeaders\",\"clippedText\",\"sparkline\",\"sparkline\",\"dataBar\",\"trendArrow\",\"circle\",\"cccBulletChart\",\"formattedText\",\"localizedText\",\"hyperlink\"]",
+      "type": "colTypesCustom"
+     },
+     {
+      "name": "colWidths",
+      "value": "[\"20%\",\"20%\",\"8%\",\"8%\",\"14%\",\"3%\",\"3%\",\"10%\",\"4%\",\"10%\",\"10%\"]",
+      "type": "ColWidthsArray"
+     },
+     {
+      "name": "expandParameters",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "displayLength",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "expandOnClick",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "filter",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "info",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "lengthChange",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "paginate",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "sort",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "colSearchable",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "drawCallback",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "dataSource",
+      "value": "table",
+      "type": "Datasource"
+     },
+     {
+      "name": "sDom",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "sortBy",
+      "value": "[]",
+      "type": "SortByArray"
+     },
+     {
+      "name": "priority",
+      "value": 5,
+      "type": "Integer"
+     },
+     {
+      "name": "refreshPeriod",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "paginationType",
+      "value": "simple_numbers",
+      "type": "PaginationType"
+     },
+     {
+      "name": "tableStyle",
+      "value": "bootstrap",
+      "type": "TableStyle"
+     },
+     {
+      "name": "htmlObject",
+      "value": "${h:table}",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "paginateServerside",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "function f(){\n    var myself = this;\n    \n    var hyperlinkOpts = {\n      openInNewTab: true,\n      prependHttpIfNeeded: true,\n      regexp: null,\n      pattern: null,\n      urlReference: 2,\n      labelReference: 1\n    };\n    myself.setAddInOptions(\"colType\", \"hyperlink\", hyperlinkOpts);\n\n    \n    require(['cdf/dashboard/Sprintf'], function(sprintf) {\n        var trendArrowOpts = {\n            good: true,\n            includeValue: false,\n            valueFormat: function(v, format, st, opt) {\n                return sprintf(format || \"%.1f\", v);\n            },\n            thresholds: {up: 0, down: 0}\n        };\n        myself.setAddInOptions(\"colType\", \"trendArrow\", trendArrowOpts);\n    });    \n        \n    require(['amd!cdf/lib/underscore', 'cdf/dashboard/Utils'], function(_, Utils) {\n        var circleOpts = {\n            canvasSize: 20,\n            radius: function(st) {\n                var values = st.tableData.map(function(e){\n                        return Number(_.first(e[st.colIdx].split(',')));\n                    });\n                var tblMax = _.max(values),\n                    tblMin = _.min(values);\n                var value = Number(_.first(st.value.split(','))),\n                    size = (value-tblMin)/(tblMax-tblMin);\n                return (20*size)/2;\n            },\n            color: function(st) {\n                var values = st.tableData.map(function(e){\n                        return Number(_.last(e[st.colIdx].split(',')));\n                    });\n                var tblMax = _.max(values),\n                    tblMin = _.min(values);\n                var value = Number(_.last(st.value.split(','))),\n                    size = (value-tblMin)/(tblMax-tblMin),\n                    red = Math.min(255, Math.round(510 - 2 * 255 * size)),\n                    green = Math.min(255, Math.round(2 * 255 * size));\n                return \"rgb(\" + red + \",\" + green + \",0)\";\n            },\n            title: function(st, opt) { \n                var sales = Number(_.first(st.value.split(','))),\n                    quant = Number(_.last(st.value.split(',')));\n                return \"(#): \" + Utils.numberFormat(sales, \"0\") + \" ($): \"+ Utils.numberFormat(quant, \"0.0\"); \n            }\n        };\n        myself.setAddInOptions(\"colType\", \"circle\", circleOpts);\n    });\n    \n    \n    \n    var sparklineOpts = function(state){\n        if(state.colIdx == \"3\"){\n            return {\n                type:'bar',\n                height: 20\n            };\n        } else {   \n            if(state.colIdx == \"2\"){\n                return {\n                    type:'line',\n                    width: 65,\n                    height: 20,\n                    lineWidth: 1.5,\n                    minSpotColor: null,\n                    maxSpotColor: null,\n                    highlightSpotColor: null,\n                    highlightLineColor: null,\n                    spotColor: null,\n                    lineColor: \"#3366cc\",\n                    fillColor: null\n                    \n                };\n            }\n        }\n    };\n    myself.setAddInOptions(\"colType\", \"sparkline\", sparklineOpts);\n    \n    require(['cdf/dashboard/Utils'], function(Utils) {\n        var dataBarOpts = {\n            widthRatio:0.70,\n            height: 20,\n            align: 'left',\n            startColor: \"#3366cc\",\n            endColor: \"#3366cc\",\n            stroke: null,\n            absValue: true,\n            includeValue: true,\n            valueFormat: function(v, format, st, opt) {\n                return Utils.numberFormat(v, \"0A\")\n            }\n        };\n        myself.setAddInOptions(\"colType\", \"dataBar\", dataBarOpts);\n    });\n        \n    var groupHeadersOpts = {\n        hide: true,\n        columnHeadersInGroups: false\n    };\n    myself.setAddInOptions(\"colType\", \"groupHeaders\", groupHeadersOpts);\n    \n    require(['cdf/dashboard/Utils'], function(Utils) {\n        var formattedTextOpts = {\n            textFormat: function(v, st, opt) { \n                var cssClass = ((v < 0) ? 'negative' : 'positive'), \n                    value =  Utils.numberFormat(v, \"0.0A\");\n                return '<div class='+cssClass+'\">'+value+'</div>'; \n            }    \n        };\n        myself.setAddInOptions(\"colType\", \"formattedText\", formattedTextOpts);\n    });\n    \n    var clippedTextOpts = {\n        showTooltip: true,\n        useTipsy: true,\n        style: {'font-weight': 'bold'}     \n    };\n    myself.setAddInOptions(\"colType\", \"clippedText\", clippedTextOpts);\n\n    var cccBulletChartOpts = {\n        compatVersion: 2,\n        title: false,\n        height: 40,\n        animate: false,\n        orientation: \"horizontal\",\n        bulletSize: 16,    \n        bulletSpacing: 150,\n        bulletMargin: 5, \n        bulletRanges: [30, 80, 100],\n        bulletTitle: \"\",\n        extensionPoints: {\n            \"bulletMarker_shape\": \"triangle\",\n            \"bulletTitle_textStyle\": \"green\",\n            \"bulletMeasure_fillStyle\": \"#3366cc\",\n            \"bulletRuleLabel_font\": \"8px sans-serif\",\n            \"bulletRule_height\": 5\n        }\n    };\n    this.setAddInOptions(\"colType\", \"cccBulletChart\", cccBulletChartOpts);\n\n    \n} ",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postFetch",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "preChange",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postChange",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "extraOptions",
+      "value": "[]",
+      "type": "OptionArray"
+     },
+     {
+      "name": "tooltip",
+      "value": "",
+      "type": "Html"
+     },
+     {
+      "name": "clickAction",
+      "value": "",
+      "type": "JavaScript"
+     }
+    ]
+   }
+  ]
+ },
+ "datasources": {
+  "rows": [
+   {
+    "id": "MDX",
+    "name": "MDX Queries",
+    "type": "Label",
+    "typeDesc": "<i>Group</i>",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "Group",
+      "value": "MDX Queries",
+      "type": "Label"
+     }
+    ]
+   },
+   {
+    "id": "60adeb31-8fa6-5e08-bef5-252402012ca6",
+    "type": "Componentsmdx_mondrianJndi",
+    "typeDesc": "mdx over mondrianJndi",
+    "parent": "MDX",
+    "properties": [
+     {
+      "name": "name",
+      "value": "table",
+      "type": "Id"
+     },
+     {
+      "name": "access",
+      "value": "public",
+      "type": "Access"
+     },
+     {
+      "name": "jndi",
+      "value": "SampleData",
+      "type": "Jndi"
+     },
+     {
+      "name": "catalog",
+      "value": "mondrian:/SteelWheels",
+      "type": "MondrianCatalog"
+     },
+     {
+      "name": "query",
+      "value": "WITH\nMEMBER [Measures].[Line] AS ([Product].CURRENTMEMBER.PARENT.PARENT.NAME)\nMEMBER [Measures].[Product] AS ([Product].CURRENTMEMBER.NAME)\nMEMBER [Measures].[dataBar] AS ([Time].[2004], [Measures].[Sales])\nMEMBER [Measures].[sparkline l] AS GENERATE(DESCENDANTS([Time].[2004], [Time].[Months]), CAST(ROUND( [Measures].[Sales]+0, 1) AS STRING), ',')\nMEMBER [Measures].[sparkline b] AS GENERATE(DESCENDANTS([Time].[2004], [Time].[Months]), CAST(ROUND( [Measures].[Sales]+0, 1) AS STRING), ',')\nMEMBER [Measures].[trendArrow] AS ([Time].[2004], [Measures].[Sales])-([Time].[2003], [Measures].[Sales])\nMEMBER [Measures].[circle] AS CAST(([Time].[2004], [Measures].[Quantity])+0 AS STRING) || \",\" || CAST(([Time].[2004], [Measures].[Sales])+0 AS STRING) \nMEMBER [Measures].[cccBulletChart] AS CAST(([Time].[2003], [Measures].[Quantity])+0 AS STRING) || \",\" || CAST(([Time].[2004], [Measures].[Quantity])+0 AS STRING) || \", 200\" || \", 300\" || \", 400\"   \nMEMBER [Measures].[formattedText] AS MAX(DESCENDANTS([Time].[2004], [Time].[Months]), [Measures].[Sales])\nMEMBER [Measures].[localized] AS GENERATE(TOPCOUNT(DESCENDANTS([Time].[2004], [Time].[Months]), 1, [Measures].[Sales]), [Time].CURRENTMEMBER.NAME)\nMEMBER [Measures].[hyperlink] AS \"https://www.google.pt/search?q=\"||[Product].CURRENTMEMBER.NAME\nSET [COLUMNS] AS {[Measures].[Line], \n[Measures].[Product], [Measures].[sparkline l], [Measures].[sparkline b], [Measures].[dataBar], [Measures].[trendArrow], \n[Measures].[circle], [Measures].[cccBulletChart], [Measures].[formattedText], [Measures].[localized], [Measures].[hyperlink]}\nSET [ROWS] AS {[Product].[Product].Members}\nSELECT\nNON EMPTY [COLUMNS] ON COLUMNS,\nNON EMPTY [ROWS] ON ROWS\nFROM [SteelWheelsSales]",
+      "type": "CurrentMdxQuery"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "CdaParameters"
+     },
+     {
+      "name": "bandedMode",
+      "value": "compact",
+      "type": "BandedMode"
+     },
+     {
+      "name": "cdacalculatedcolumns",
+      "value": "[]",
+      "type": "CdaCalculatedColumnsArray"
+     },
+     {
+      "name": "cdacolumns",
+      "value": "[[\"0\",\"hidden\"],[\"1\",\"group\"],[\"2\",\" \"],[\"3\",\" \"],[\"4\",\" \"],[\"5\",\" \"],[\"6\",\" \"],[\"7\",\" \"],[\"8\",\" \"],[\"9\",\" \"],[\"10\",\" \"],[\"11\",\" \"]]",
+      "type": "CdaColumnsArray"
+     },
+     {
+      "name": "output",
+      "value": "[\"0\"]",
+      "type": "IndexArray"
+     },
+     {
+      "name": "outputMode",
+      "value": "exclude",
+      "type": "OutputMode"
+     },
+     {
+      "name": "cacheKeys",
+      "value": "[]",
+      "type": "CacheKeysValues"
+     },
+     {
+      "name": "cacheDuration",
+      "value": 3600,
+      "type": "Integer"
+     },
+     {
+      "name": "cache",
+      "value": "true",
+      "type": "Boolean"
+     }
+    ],
+    "meta": "CDA",
+    "meta_conntype": "mondrian.jndi",
+    "meta_datype": "mdx"
+   }
+  ]
+ },
+ "filename": "/public/Ctools+Book+Samples/Chapter+5/Table+Component/Addins+Samples.cdfde"
+}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDADescriptor>
+   <DataSources>
+      <Connection id="table" type="mondrian.jndi">
+         <Catalog>mondrian:/SteelWheels</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+   </DataSources>
+   <DataAccess access="public" connection="table" id="table" type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns>
+         <Column idx="0">
+            <Name>hidden</Name>
+         </Column>
+         <Column idx="1">
+            <Name>group</Name>
+         </Column>
+         <Column idx="2">
+            <Name> </Name>
+         </Column>
+         <Column idx="3">
+            <Name> </Name>
+         </Column>
+         <Column idx="4">
+            <Name> </Name>
+         </Column>
+         <Column idx="5">
+            <Name> </Name>
+         </Column>
+         <Column idx="6">
+            <Name> </Name>
+         </Column>
+         <Column idx="7">
+            <Name> </Name>
+         </Column>
+         <Column idx="8">
+            <Name> </Name>
+         </Column>
+         <Column idx="9">
+            <Name> </Name>
+         </Column>
+         <Column idx="10">
+            <Name> </Name>
+         </Column>
+         <Column idx="11">
+            <Name> </Name>
+         </Column>
+      </Columns>
+      <Output indexes="0" mode="exclude"/>
+      <Parameters/>
+      <Query><![CDATA[WITH
+MEMBER [Measures].[Line] AS ([Product].CURRENTMEMBER.PARENT.PARENT.NAME)
+MEMBER [Measures].[Product] AS ([Product].CURRENTMEMBER.NAME)
+MEMBER [Measures].[dataBar] AS ([Time].[2004], [Measures].[Sales])
+MEMBER [Measures].[sparkline l] AS GENERATE(DESCENDANTS([Time].[2004], [Time].[Months]), CAST(ROUND( [Measures].[Sales]+0, 1) AS STRING), ',')
+MEMBER [Measures].[sparkline b] AS GENERATE(DESCENDANTS([Time].[2004], [Time].[Months]), CAST(ROUND( [Measures].[Sales]+0, 1) AS STRING), ',')
+MEMBER [Measures].[trendArrow] AS ([Time].[2004], [Measures].[Sales])-([Time].[2003], [Measures].[Sales])
+MEMBER [Measures].[circle] AS CAST(([Time].[2004], [Measures].[Quantity])+0 AS STRING) || "," || CAST(([Time].[2004], [Measures].[Sales])+0 AS STRING) 
+MEMBER [Measures].[cccBulletChart] AS CAST(([Time].[2003], [Measures].[Quantity])+0 AS STRING) || "," || CAST(([Time].[2004], [Measures].[Quantity])+0 AS STRING) || ", 200" || ", 300" || ", 400"   
+MEMBER [Measures].[formattedText] AS MAX(DESCENDANTS([Time].[2004], [Time].[Months]), [Measures].[Sales])
+MEMBER [Measures].[localized] AS GENERATE(TOPCOUNT(DESCENDANTS([Time].[2004], [Time].[Months]), 1, [Measures].[Sales]), [Time].CURRENTMEMBER.NAME)
+MEMBER [Measures].[hyperlink] AS "https://www.google.pt/search?q="||[Product].CURRENTMEMBER.NAME
+SET [COLUMNS] AS {[Measures].[Line], 
+[Measures].[Product], [Measures].[sparkline l], [Measures].[sparkline b], [Measures].[dataBar], [Measures].[trendArrow], 
+[Measures].[circle], [Measures].[cccBulletChart], [Measures].[formattedText], [Measures].[localized], [Measures].[hyperlink]}
+SET [ROWS] AS {[Product].[Product].Members}
+SELECT
+NON EMPTY [COLUMNS] ON COLUMNS,
+NON EMPTY [ROWS] ON ROWS
+FROM [SteelWheelsSales]]]></Query>
+   </DataAccess>
+</CDADescriptor>

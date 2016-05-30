@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDADescriptor>
+   <DataSources>
+      <Connection id="templateQuerySparkline" type="mondrian.jndi">
+         <Catalog>mondrian:/SteelWheels</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+   </DataSources>
+   <DataAccess access="public" connection="templateQuerySparkline" id="templateQuerySparkline"
+               type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[WITH 
+  MEMBER [Measures].[Year] AS "2004"
+  //SET [ROWS] AS FILTER({[Product].[Product].Members}, NOT ISEMPTY([Measures].[Sales]))
+  SET [ROWS] AS FILTER({[Markets].[Territory].Members}, NOT ISEMPTY([Measures].[Sales]))
+  MEMBER [Measures].[Sparkline] AS GENERATE(DESCENDANTS([Time].[2004], [Time].[Months]), CAST(ROUND( [Measures].[Sales]+0, 1) AS STRING), ',')
+SELECT
+  NON EMPTY {[Measures].[Sales], [Measures].[Sparkline], [Measures].[Year] } ON COLUMNS,
+  NON EMPTY [ROWS] ON ROWS
+FROM [SteelWheelsSales]]]></Query>
+   </DataAccess>
+</CDADescriptor>

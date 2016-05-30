@@ -1,0 +1,3047 @@
+{
+ "layout": {
+  "title": "CDF - Sample structure",
+  "rows": [
+   {
+    "id": "74ff07c1-3b1e-9d06-2cd7-3995885ccf5f",
+    "type": "LayoutResourceCode",
+    "typeDesc": "Resource",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "value": "CSS",
+      "type": "Id"
+     },
+     {
+      "name": "resourceCode",
+      "value": ".filter-accordion .filter-root-body{\n    position: relative; \n} ",
+      "type": "Resource"
+     },
+     {
+      "name": "resourceType",
+      "value": "Css",
+      "type": "Label"
+     }
+    ]
+   },
+   {
+    "id": "81b01412-af6a-6111-8b90-7294d9fdf83b",
+    "type": "LayoutRow",
+    "typeDesc": "Row",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "23769fdf-b593-6325-e9da-32f25052fd40",
+    "type": "LayoutBootstrapColumn",
+    "typeDesc": "Column",
+    "parent": "81b01412-af6a-6111-8b90-7294d9fdf83b",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "bootstrapExtraSmall",
+      "value": "12",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapSmall",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapMedium",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapLarge",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapCssClass",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "b598d985-071b-ab72-d8f0-064a2b7b5295",
+    "type": "LayoutRow",
+    "typeDesc": "Row",
+    "parent": "23769fdf-b593-6325-e9da-32f25052fd40",
+    "properties": [
+     {
+      "name": "name",
+      "value": "itemsNotGoruped",
+      "type": "Id"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "2ca696ad-189e-f158-ca95-0c6bcfb6079e",
+    "type": "LayoutBootstrapColumn",
+    "typeDesc": "Column",
+    "parent": "b598d985-071b-ab72-d8f0-064a2b7b5295",
+    "properties": [
+     {
+      "name": "name",
+      "value": "simpleSelection",
+      "type": "Id"
+     },
+     {
+      "name": "bootstrapExtraSmall",
+      "value": "6",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapSmall",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapMedium",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapLarge",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapCssClass",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "0d989e41-c9ab-9503-10c5-3ba5c383e4b2",
+    "type": "LayoutBootstrapColumn",
+    "typeDesc": "Column",
+    "parent": "b598d985-071b-ab72-d8f0-064a2b7b5295",
+    "properties": [
+     {
+      "name": "name",
+      "value": "multipleSelection",
+      "type": "Id"
+     },
+     {
+      "name": "bootstrapExtraSmall",
+      "value": "6",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapSmall",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapMedium",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapLarge",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapCssClass",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "0bf403d8-ba1a-143a-c01f-0ce289f7d5ad",
+    "type": "LayoutSpace",
+    "typeDesc": "Space",
+    "parent": "23769fdf-b593-6325-e9da-32f25052fd40",
+    "properties": [
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "ee0cafa5-d863-3cdc-8a10-c39e67dfd1a3",
+    "type": "LayoutRow",
+    "typeDesc": "Row",
+    "parent": "23769fdf-b593-6325-e9da-32f25052fd40",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "aaf2db25-76ed-2420-6678-e1800130e0aa",
+    "type": "LayoutBootstrapColumn",
+    "typeDesc": "Column",
+    "parent": "ee0cafa5-d863-3cdc-8a10-c39e67dfd1a3",
+    "properties": [
+     {
+      "name": "name",
+      "value": "multipleSelectionWithGroups",
+      "type": "Id"
+     },
+     {
+      "name": "bootstrapExtraSmall",
+      "value": "12",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapSmall",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapMedium",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapLarge",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapCssClass",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "130050e8-38ea-86ce-502c-9ffe49324b80",
+    "type": "LayoutSpace",
+    "typeDesc": "Space",
+    "parent": "23769fdf-b593-6325-e9da-32f25052fd40",
+    "properties": [
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "630515a0-25fe-cd17-7455-72f2affdec55",
+    "type": "LayoutRow",
+    "typeDesc": "Row",
+    "parent": "23769fdf-b593-6325-e9da-32f25052fd40",
+    "properties": [
+     {
+      "name": "name",
+      "value": "accordionFilters",
+      "type": "Id"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "filter-accordion",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "7747acf1-565e-fff8-e452-cda746927750",
+    "type": "LayoutBootstrapColumn",
+    "typeDesc": "Column",
+    "parent": "630515a0-25fe-cd17-7455-72f2affdec55",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "bootstrapExtraSmall",
+      "value": "12",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapSmall",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapMedium",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapLarge",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapCssClass",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "82c53246-e20e-03d8-f501-8d7cf6af001e",
+    "type": "LayoutRow",
+    "typeDesc": "Row",
+    "parent": "7747acf1-565e-fff8-e452-cda746927750",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "a18d3c9c-df7a-7318-41cb-e6e4a011acd3",
+    "type": "LayoutBootstrapColumn",
+    "typeDesc": "Column",
+    "parent": "82c53246-e20e-03d8-f501-8d7cf6af001e",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "bootstrapExtraSmall",
+      "value": "12",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapSmall",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapMedium",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapLarge",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapCssClass",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "cd59b02c-f366-aa4b-f130-f1791a58a43f",
+    "type": "LayoutHtml",
+    "typeDesc": "Html",
+    "parent": "a18d3c9c-df7a-7318-41cb-e6e4a011acd3",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "html",
+      "value": "Accordion ",
+      "type": "Html"
+     },
+     {
+      "name": "fontSize",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "color",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "39419c73-bb2a-1316-6af2-253c85347e96",
+    "type": "LayoutBootstrapColumn",
+    "typeDesc": "Column",
+    "parent": "82c53246-e20e-03d8-f501-8d7cf6af001e",
+    "properties": [
+     {
+      "name": "name",
+      "value": "productLineFilter",
+      "type": "Id"
+     },
+     {
+      "name": "bootstrapExtraSmall",
+      "value": "12",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapSmall",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapMedium",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapLarge",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapCssClass",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "088aa420-4819-fde5-ca3b-4d33558d65d3",
+    "type": "LayoutBootstrapColumn",
+    "typeDesc": "Column",
+    "parent": "82c53246-e20e-03d8-f501-8d7cf6af001e",
+    "properties": [
+     {
+      "name": "name",
+      "value": "productVendorFilter",
+      "type": "Id"
+     },
+     {
+      "name": "bootstrapExtraSmall",
+      "value": "12",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapSmall",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapMedium",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapLarge",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapCssClass",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "b5cd396c-666c-9a34-9685-35921a2568a3",
+    "type": "LayoutBootstrapColumn",
+    "typeDesc": "Column",
+    "parent": "82c53246-e20e-03d8-f501-8d7cf6af001e",
+    "properties": [
+     {
+      "name": "name",
+      "value": "productFilter",
+      "type": "Id"
+     },
+     {
+      "name": "bootstrapExtraSmall",
+      "value": "12",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapSmall",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapMedium",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapLarge",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapCssClass",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "85503245-9c53-eb7e-cf25-60af9e2feccb",
+    "type": "LayoutSpace",
+    "typeDesc": "Space",
+    "parent": "23769fdf-b593-6325-e9da-32f25052fd40",
+    "properties": [
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "3b497509-d02d-e188-51b5-d7d23eb6f194",
+    "type": "LayoutRow",
+    "typeDesc": "Row",
+    "parent": "23769fdf-b593-6325-e9da-32f25052fd40",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "84054131-8d60-112f-6317-e29c224a3624",
+    "type": "LayoutBootstrapColumn",
+    "typeDesc": "Column",
+    "parent": "3b497509-d02d-e188-51b5-d7d23eb6f194",
+    "properties": [
+     {
+      "name": "name",
+      "value": "addins",
+      "type": "Id"
+     },
+     {
+      "name": "bootstrapExtraSmall",
+      "value": "12",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapSmall",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapMedium",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapLarge",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapCssClass",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   }
+  ]
+ },
+ "components": {
+  "rows": [
+   {
+    "id": "GENERIC",
+    "name": "Generic",
+    "type": "Label",
+    "typeDesc": "<i>Group</i>",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "Group",
+      "value": "Generic",
+      "type": "Label"
+     }
+    ]
+   },
+   {
+    "id": "dee72bcd-1d69-652b-4291-5c233b5a3605",
+    "type": "ComponentsJavascriptParameter",
+    "typeDesc": "Custom parameter",
+    "parent": "GENERIC",
+    "properties": [
+     {
+      "name": "name",
+      "value": "productLineParam",
+      "type": "Id"
+     },
+     {
+      "name": "javaScript",
+      "value": "[\"[Product].[Classic Cars]\"] ",
+      "type": "JavaScript"
+     },
+     {
+      "name": "parameterViewRole",
+      "value": "unused",
+      "type": "parameterViewRoleCustom"
+     },
+     {
+      "name": "bookmarkable",
+      "value": "false",
+      "type": "Boolean"
+     }
+    ]
+   },
+   {
+    "id": "c2730eeb-e079-8e18-dc11-5c658df1fcf9",
+    "type": "ComponentsJavascriptParameter",
+    "typeDesc": "Custom parameter",
+    "parent": "GENERIC",
+    "properties": [
+     {
+      "name": "name",
+      "value": "productVendorParam",
+      "type": "Id"
+     },
+     {
+      "name": "javaScript",
+      "value": "[\"[Product].[Classic Cars].[Autoart Studio Design]\"]\n ",
+      "type": "JavaScript"
+     },
+     {
+      "name": "parameterViewRole",
+      "value": "unused",
+      "type": "parameterViewRoleCustom"
+     },
+     {
+      "name": "bookmarkable",
+      "value": "false",
+      "type": "Boolean"
+     }
+    ]
+   },
+   {
+    "id": "2450a39b-b897-c7e4-6ec0-4d7ede9c6459",
+    "type": "ComponentsJavascriptParameter",
+    "typeDesc": "Custom parameter",
+    "parent": "GENERIC",
+    "properties": [
+     {
+      "name": "name",
+      "value": "productParam",
+      "type": "Id"
+     },
+     {
+      "name": "javaScript",
+      "value": "[\"[Product].[Classic Cars].[Autoart Studio Design].[1968 Ford Mustang]\"]\n ",
+      "type": "JavaScript"
+     },
+     {
+      "name": "parameterViewRole",
+      "value": "unused",
+      "type": "parameterViewRoleCustom"
+     },
+     {
+      "name": "bookmarkable",
+      "value": "false",
+      "type": "Boolean"
+     }
+    ]
+   },
+   {
+    "id": "b1ed43c1-13e1-2352-9eb4-730fb61bc141",
+    "type": "ComponentsJavascriptParameter",
+    "typeDesc": "Custom parameter",
+    "parent": "GENERIC",
+    "properties": [
+     {
+      "name": "name",
+      "value": "filter1Param",
+      "type": "Id"
+     },
+     {
+      "name": "javaScript",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "parameterViewRole",
+      "value": "unused",
+      "type": "parameterViewRoleCustom"
+     },
+     {
+      "name": "bookmarkable",
+      "value": "false",
+      "type": "Boolean"
+     }
+    ]
+   },
+   {
+    "id": "SELECTORS",
+    "name": "Selects",
+    "type": "Label",
+    "typeDesc": "<i>Group</i>",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "Group",
+      "value": "Selects",
+      "type": "Label"
+     }
+    ]
+   },
+   {
+    "id": "d98e7273-db44-eeb4-05aa-2cb8889f3a9f",
+    "type": "ComponentsFilterComponent",
+    "typeDesc": "Filter Component",
+    "parent": "SELECTORS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "simpleSelection",
+      "type": "Id"
+     },
+     {
+      "name": "title",
+      "value": "Single Selection",
+      "type": "String"
+     },
+     {
+      "name": "parameter",
+      "value": "${p:filter1Param}",
+      "type": "Parameter"
+     },
+     {
+      "name": "listeners",
+      "value": "[]",
+      "type": "Listeners"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "valueAsId",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "outputFormat",
+      "value": "lowestID",
+      "type": "outputFormatCustom"
+     },
+     {
+      "name": "dataSource",
+      "value": "simpleSelection",
+      "type": "Datasource"
+     },
+     {
+      "name": "valuesArray",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "priority",
+      "value": 5,
+      "type": "Integer"
+     },
+     {
+      "name": "alwaysExpanded",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "multiselect",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "selectionLimit",
+      "value": 200,
+      "type": "Integer"
+     },
+     {
+      "name": "pageSize",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "showIcons",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "showButtonOnlyThis",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "useOverlay",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "showFilter",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "htmlObject",
+      "value": "${h:simpleSelection}",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postFetch",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "preChange",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postChange",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postUpdate",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "renderRootHeader",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "renderRootSelection",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "renderRootFooter",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "renderGroupSelection",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "renderItemSelection",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "sortGroup",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "sortItem",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "options",
+      "value": "function options(){\n    return {};\n} ",
+      "type": "JavaScript"
+     }
+    ]
+   },
+   {
+    "id": "dd6770fd-f79f-ff67-2c61-ddf296312c1d",
+    "type": "ComponentsFilterComponent",
+    "typeDesc": "Filter Component",
+    "parent": "SELECTORS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "multipliSelection",
+      "type": "Id"
+     },
+     {
+      "name": "title",
+      "value": "Multiple Selection",
+      "type": "String"
+     },
+     {
+      "name": "parameter",
+      "value": "${p:filter1Param}",
+      "type": "Parameter"
+     },
+     {
+      "name": "listeners",
+      "value": "[]",
+      "type": "Listeners"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "valueAsId",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "outputFormat",
+      "value": "lowestID",
+      "type": "outputFormatCustom"
+     },
+     {
+      "name": "dataSource",
+      "value": "simpleSelection",
+      "type": "Datasource"
+     },
+     {
+      "name": "valuesArray",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "priority",
+      "value": 5,
+      "type": "Integer"
+     },
+     {
+      "name": "alwaysExpanded",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "multiselect",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "selectionLimit",
+      "value": 200,
+      "type": "Integer"
+     },
+     {
+      "name": "pageSize",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "showIcons",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "showButtonOnlyThis",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "useOverlay",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "showFilter",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "htmlObject",
+      "value": "${h:multipleSelection}",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postFetch",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "preChange",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postChange",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postUpdate",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "renderRootHeader",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "renderRootSelection",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "renderRootFooter",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "renderGroupSelection",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "renderItemSelection",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "sortGroup",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "sortItem",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "options",
+      "value": "function options(){\n    return {};\n} ",
+      "type": "JavaScript"
+     }
+    ]
+   },
+   {
+    "id": "03c7338d-b5a0-d8ee-7c3b-bf08679da804",
+    "type": "ComponentsFilterComponent",
+    "typeDesc": "Filter Component",
+    "parent": "SELECTORS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "multipleSelectionWithGroups",
+      "type": "Id"
+     },
+     {
+      "name": "title",
+      "value": "Multiple Selection With Groups",
+      "type": "String"
+     },
+     {
+      "name": "parameter",
+      "value": "${p:filter1Param}",
+      "type": "Parameter"
+     },
+     {
+      "name": "listeners",
+      "value": "[]",
+      "type": "Listeners"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "valueAsId",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "outputFormat",
+      "value": "lowestID",
+      "type": "outputFormatCustom"
+     },
+     {
+      "name": "dataSource",
+      "value": "optionsAndGroups",
+      "type": "Datasource"
+     },
+     {
+      "name": "valuesArray",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "priority",
+      "value": 5,
+      "type": "Integer"
+     },
+     {
+      "name": "alwaysExpanded",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "multiselect",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "selectionLimit",
+      "value": "100",
+      "type": "Integer"
+     },
+     {
+      "name": "pageSize",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "showIcons",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "showButtonOnlyThis",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "useOverlay",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "showFilter",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "htmlObject",
+      "value": "${h:multipleSelectionWithGroups}",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postFetch",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "preChange",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postChange",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postUpdate",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "renderRootHeader",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "renderRootSelection",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "renderRootFooter",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "renderGroupSelection",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "renderItemSelection",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "sortGroup",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "sortItem",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "options",
+      "value": "function options(){\n    return {};\n} ",
+      "type": "JavaScript"
+     }
+    ]
+   },
+   {
+    "id": "0dc48d6a-c355-536d-dc93-101d17251455",
+    "type": "ComponentsFilterComponent",
+    "typeDesc": "Filter Component",
+    "parent": "SELECTORS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "productLineFilter",
+      "type": "Id"
+     },
+     {
+      "name": "title",
+      "value": "Select Product Lines",
+      "type": "String"
+     },
+     {
+      "name": "parameter",
+      "value": "${p:productLineParam}",
+      "type": "Parameter"
+     },
+     {
+      "name": "listeners",
+      "value": "[]",
+      "type": "Listeners"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "valueAsId",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "outputFormat",
+      "value": "lowestID",
+      "type": "outputFormatCustom"
+     },
+     {
+      "name": "dataSource",
+      "value": "ProductLineQuery",
+      "type": "Datasource"
+     },
+     {
+      "name": "valuesArray",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "priority",
+      "value": 5,
+      "type": "Integer"
+     },
+     {
+      "name": "alwaysExpanded",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "multiselect",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "selectionLimit",
+      "value": "100",
+      "type": "Integer"
+     },
+     {
+      "name": "pageSize",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "showIcons",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "showButtonOnlyThis",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "useOverlay",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "showFilter",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "htmlObject",
+      "value": "${h:productLineFilter}",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postFetch",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "preChange",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postChange",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postUpdate",
+      "value": "[\"accordion\"]",
+      "type": "Array"
+     },
+     {
+      "name": "renderRootHeader",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "renderRootSelection",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "renderRootFooter",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "renderGroupSelection",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "renderItemSelection",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "sortGroup",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "sortItem",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "options",
+      "value": "function options(){\n    return {};\n} ",
+      "type": "JavaScript"
+     }
+    ]
+   },
+   {
+    "id": "b3766c89-4a3d-b212-8428-ea2d11b1407b",
+    "type": "ComponentsFilterComponent",
+    "typeDesc": "Filter Component",
+    "parent": "SELECTORS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "productVendorFilter",
+      "type": "Id"
+     },
+     {
+      "name": "title",
+      "value": "Select Product Lines",
+      "type": "String"
+     },
+     {
+      "name": "parameter",
+      "value": "${p:productVendorParam}",
+      "type": "Parameter"
+     },
+     {
+      "name": "listeners",
+      "value": "['${p:productLineParam}']",
+      "type": "Listeners"
+     },
+     {
+      "name": "parameters",
+      "value": "[[\"productLineParam\",\"productLineParam\"]]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "valueAsId",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "outputFormat",
+      "value": "lowestID",
+      "type": "outputFormatCustom"
+     },
+     {
+      "name": "dataSource",
+      "value": "ProductVendorQuery",
+      "type": "Datasource"
+     },
+     {
+      "name": "valuesArray",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "priority",
+      "value": 5,
+      "type": "Integer"
+     },
+     {
+      "name": "alwaysExpanded",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "multiselect",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "selectionLimit",
+      "value": "100",
+      "type": "Integer"
+     },
+     {
+      "name": "pageSize",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "showIcons",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "showButtonOnlyThis",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "useOverlay",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "showFilter",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "htmlObject",
+      "value": "${h:productVendorFilter}",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postFetch",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "preChange",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postChange",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postUpdate",
+      "value": "[\"accordion\"]",
+      "type": "Array"
+     },
+     {
+      "name": "renderRootHeader",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "renderRootSelection",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "renderRootFooter",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "renderGroupSelection",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "renderItemSelection",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "sortGroup",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "sortItem",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "options",
+      "value": "function options(){\n    return {};\n} ",
+      "type": "JavaScript"
+     }
+    ]
+   },
+   {
+    "id": "c82eb687-8f14-24cf-924f-8212f7fc9a10",
+    "type": "ComponentsFilterComponent",
+    "typeDesc": "Filter Component",
+    "parent": "SELECTORS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "productFilter",
+      "type": "Id"
+     },
+     {
+      "name": "title",
+      "value": "Select Product Lines",
+      "type": "String"
+     },
+     {
+      "name": "parameter",
+      "value": "${p:productParam}",
+      "type": "Parameter"
+     },
+     {
+      "name": "listeners",
+      "value": "['${p:productLineParam}','${p:productVendorParam}']",
+      "type": "Listeners"
+     },
+     {
+      "name": "parameters",
+      "value": "[[\"productVendorParam\",\"productVendorParam\"]]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "valueAsId",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "outputFormat",
+      "value": "lowestID",
+      "type": "outputFormatCustom"
+     },
+     {
+      "name": "dataSource",
+      "value": "ProductQuery",
+      "type": "Datasource"
+     },
+     {
+      "name": "valuesArray",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "priority",
+      "value": 5,
+      "type": "Integer"
+     },
+     {
+      "name": "alwaysExpanded",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "multiselect",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "selectionLimit",
+      "value": "10",
+      "type": "Integer"
+     },
+     {
+      "name": "pageSize",
+      "value": "20",
+      "type": "Integer"
+     },
+     {
+      "name": "showIcons",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "showButtonOnlyThis",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "useOverlay",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "showFilter",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "htmlObject",
+      "value": "${h:productFilter}",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postFetch",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "preChange",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postChange",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postUpdate",
+      "value": "[\"accordion\"]",
+      "type": "Array"
+     },
+     {
+      "name": "renderRootHeader",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "renderRootSelection",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "renderRootFooter",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "renderGroupSelection",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "renderItemSelection",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "sortGroup",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "sortItem",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "options",
+      "value": "function options(){\n    return {};\n} ",
+      "type": "JavaScript"
+     }
+    ]
+   },
+   {
+    "id": "b73f0f4e-19ee-3c7a-5f8e-f3a7760bfdc2",
+    "type": "ComponentsFilterComponent",
+    "typeDesc": "Filter Component",
+    "parent": "SELECTORS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "applyAddins",
+      "type": "Id"
+     },
+     {
+      "name": "title",
+      "value": "Making use of addins ",
+      "type": "String"
+     },
+     {
+      "name": "parameter",
+      "value": "${p:filter1Param}",
+      "type": "Parameter"
+     },
+     {
+      "name": "listeners",
+      "value": "[]",
+      "type": "Listeners"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "valueAsId",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "outputFormat",
+      "value": "lowestID",
+      "type": "outputFormatCustom"
+     },
+     {
+      "name": "dataSource",
+      "value": "ProductLineQuery",
+      "type": "Datasource"
+     },
+     {
+      "name": "valuesArray",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "priority",
+      "value": 5,
+      "type": "Integer"
+     },
+     {
+      "name": "alwaysExpanded",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "multiselect",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "selectionLimit",
+      "value": "100",
+      "type": "Integer"
+     },
+     {
+      "name": "pageSize",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "showIcons",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "showButtonOnlyThis",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "useOverlay",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "showFilter",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "htmlObject",
+      "value": "${h:addins}",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "function (){\n \n    this.setAddInOptions('renderItemSelection', 'template', {\n        template: '{{label}} <a url=\"https://www.google.com/#q={{label}}\">Google Search</a>',\n        filter: '.filter-item-label',\n        postRender: function($tgt, st, opt){\n            $tgt\n                .find('.filter-item-label a')\n                .click(function(event){\n                    window.open(event.target.attributes.url.value, '_blank');\n                    event.stopPropagation();\n                });\n        }\n    });\n} ",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postFetch",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "preChange",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postChange",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postUpdate",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "renderRootHeader",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "renderRootSelection",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "renderRootFooter",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "renderGroupSelection",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "renderItemSelection",
+      "value": "[\"template\"]",
+      "type": "Array"
+     },
+     {
+      "name": "sortGroup",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "sortItem",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "options",
+      "value": "function options(){\n    return {};\n} ",
+      "type": "JavaScript"
+     }
+    ]
+   }
+  ]
+ },
+ "datasources": {
+  "rows": [
+   {
+    "id": "MDX",
+    "name": "MDX Queries",
+    "type": "Label",
+    "typeDesc": "<i>Group</i>",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "Group",
+      "value": "MDX Queries",
+      "type": "Label"
+     }
+    ]
+   },
+   {
+    "id": "03a61b0e-7505-ad97-0113-d7ec4fb36c51",
+    "type": "Componentsmdx_mondrianJndi",
+    "typeDesc": "mdx over mondrianJndi",
+    "parent": "MDX",
+    "properties": [
+     {
+      "name": "name",
+      "value": "simpleSelection",
+      "type": "Id"
+     },
+     {
+      "name": "access",
+      "value": "public",
+      "type": "Access"
+     },
+     {
+      "name": "jndi",
+      "value": "SampleData",
+      "type": "Jndi"
+     },
+     {
+      "name": "catalog",
+      "value": "mondrian:/SteelWheels",
+      "type": "MondrianCatalog"
+     },
+     {
+      "name": "query",
+      "value": "WITH\n    SET [ROWS_SET] AS {[Product].[Line].Members}\n    MEMBER [Measures].[PRODUCT DESC] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Product]).NAME\n    MEMBER [Measures].[PRODUCT UNAME] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Product]).UNIQUENAME\n    MEMBER [Measures].[VENDOR DESC] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Vendor]).NAME\n    MEMBER [Measures].[VENDOR UNAME] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Vendor]).UNIQUENAME\n    MEMBER [Measures].[LINE DESC] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Line]).NAME\n    MEMBER [Measures].[LINE UNAME] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Line]).UNIQUENAME\nSELECT\n    NON EMPTY {\n        [Measures].[LINE UNAME]\n    } ON COLUMNS,\n    NON EMPTY [ROWS_SET] ON ROWS\nFROM [SteelWheelsSales]",
+      "type": "CurrentMdxQuery"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "CdaParameters"
+     },
+     {
+      "name": "bandedMode",
+      "value": "compact",
+      "type": "BandedMode"
+     },
+     {
+      "name": "cdacalculatedcolumns",
+      "value": "[]",
+      "type": "CdaCalculatedColumnsArray"
+     },
+     {
+      "name": "cdacolumns",
+      "value": "[]",
+      "type": "CdaColumnsArray"
+     },
+     {
+      "name": "output",
+      "value": "[\"1\",\"0\"]",
+      "type": "IndexArray"
+     },
+     {
+      "name": "outputMode",
+      "value": "include",
+      "type": "OutputMode"
+     },
+     {
+      "name": "cacheKeys",
+      "value": "[]",
+      "type": "CacheKeysValues"
+     },
+     {
+      "name": "cacheDuration",
+      "value": 3600,
+      "type": "Integer"
+     },
+     {
+      "name": "cache",
+      "value": "true",
+      "type": "Boolean"
+     }
+    ],
+    "meta": "CDA",
+    "meta_conntype": "mondrian.jndi",
+    "meta_datype": "mdx"
+   },
+   {
+    "id": "abb69684-f3f5-faae-8de1-c1a579eead8a",
+    "type": "Componentsmdx_mondrianJndi",
+    "typeDesc": "mdx over mondrianJndi",
+    "parent": "MDX",
+    "properties": [
+     {
+      "name": "name",
+      "value": "optionsAndGroups",
+      "type": "Id"
+     },
+     {
+      "name": "access",
+      "value": "public",
+      "type": "Access"
+     },
+     {
+      "name": "jndi",
+      "value": "SampleData",
+      "type": "Jndi"
+     },
+     {
+      "name": "catalog",
+      "value": "mondrian:/SteelWheels",
+      "type": "MondrianCatalog"
+     },
+     {
+      "name": "query",
+      "value": "WITH\n    SET [ROWS_SET] AS {[Product].[Vendor].Members}\n    MEMBER [Measures].[PRODUCT DESC] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Product]).NAME\n    MEMBER [Measures].[PRODUCT UNAME] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Product]).UNIQUENAME\n    MEMBER [Measures].[VENDOR DESC] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Vendor]).NAME\n    MEMBER [Measures].[VENDOR UNAME] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Vendor]).UNIQUENAME\n    MEMBER [Measures].[LINE DESC] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Line]).NAME\n    MEMBER [Measures].[LINE UNAME] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Line]).UNIQUENAME\nSELECT\n    NON EMPTY {\n        [Measures].[LINE UNAME], [Measures].[LINE DESC], \n        [Measures].[VENDOR UNAME], [Measures].[VENDOR DESC]\n    } ON COLUMNS,\n    NON EMPTY [ROWS_SET] ON ROWS\nFROM [SteelWheelsSales]",
+      "type": "CurrentMdxQuery"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "CdaParameters"
+     },
+     {
+      "name": "bandedMode",
+      "value": "compact",
+      "type": "BandedMode"
+     },
+     {
+      "name": "cdacalculatedcolumns",
+      "value": "[]",
+      "type": "CdaCalculatedColumnsArray"
+     },
+     {
+      "name": "cdacolumns",
+      "value": "[[\"1\",\"Group Id\"],[\"2\",\"Group Label\"],[\"3\",\"Item Label\"],[\"4\",\"Item Id\"]]",
+      "type": "CdaColumnsArray"
+     },
+     {
+      "name": "output",
+      "value": "[\"3\",\"4\",\"1\",\"2\"]",
+      "type": "IndexArray"
+     },
+     {
+      "name": "outputMode",
+      "value": "include",
+      "type": "OutputMode"
+     },
+     {
+      "name": "cacheKeys",
+      "value": "[]",
+      "type": "CacheKeysValues"
+     },
+     {
+      "name": "cacheDuration",
+      "value": 3600,
+      "type": "Integer"
+     },
+     {
+      "name": "cache",
+      "value": "true",
+      "type": "Boolean"
+     }
+    ],
+    "meta": "CDA",
+    "meta_conntype": "mondrian.jndi",
+    "meta_datype": "mdx"
+   },
+   {
+    "id": "28744ffb-0afb-6fdb-f51f-ec17ff511bc1",
+    "type": "Componentsmdx_mondrianJndi",
+    "typeDesc": "mdx over mondrianJndi",
+    "parent": "MDX",
+    "properties": [
+     {
+      "name": "name",
+      "value": "query",
+      "type": "Id"
+     },
+     {
+      "name": "access",
+      "value": "public",
+      "type": "Access"
+     },
+     {
+      "name": "jndi",
+      "value": "SampleData",
+      "type": "Jndi"
+     },
+     {
+      "name": "catalog",
+      "value": "mondrian:/SteelWheels",
+      "type": "MondrianCatalog"
+     },
+     {
+      "name": "query",
+      "value": "WITH\n    SET [ROWS_SET] AS {[Product].[Product].Members}\n    MEMBER [Measures].[PRODUCT DESC] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Product]).NAME\n    MEMBER [Measures].[PRODUCT UNAME] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Product]).UNIQUENAME\n    MEMBER [Measures].[VENDOR DESC] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Vendor]).NAME\n    MEMBER [Measures].[VENDOR UNAME] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Vendor]).UNIQUENAME\n    MEMBER [Measures].[LINE DESC] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Line]).NAME\n    MEMBER [Measures].[LINE UNAME] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Line]).UNIQUENAME\nSELECT\n    NON EMPTY {\n        [Measures].[LINE UNAME], [Measures].[LINE DESC], \n        [Measures].[VENDOR UNAME], [Measures].[VENDOR DESC],\n        [Measures].[PRODUCT UNAME], [Measures].[PRODUCT DESC]\n    } ON COLUMNS,\n    NON EMPTY [ROWS_SET] ON ROWS\nFROM [SteelWheelsSales]",
+      "type": "CurrentMdxQuery"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "CdaParameters"
+     },
+     {
+      "name": "bandedMode",
+      "value": "compact",
+      "type": "BandedMode"
+     },
+     {
+      "name": "cdacalculatedcolumns",
+      "value": "[]",
+      "type": "CdaCalculatedColumnsArray"
+     },
+     {
+      "name": "cdacolumns",
+      "value": "[]",
+      "type": "CdaColumnsArray"
+     },
+     {
+      "name": "output",
+      "value": "[\"5\",\"6\",\"3\",\"4\",\"1\",\"2\"]",
+      "type": "IndexArray"
+     },
+     {
+      "name": "outputMode",
+      "value": "include",
+      "type": "OutputMode"
+     },
+     {
+      "name": "cacheKeys",
+      "value": "[]",
+      "type": "CacheKeysValues"
+     },
+     {
+      "name": "cacheDuration",
+      "value": 3600,
+      "type": "Integer"
+     },
+     {
+      "name": "cache",
+      "value": "true",
+      "type": "Boolean"
+     }
+    ],
+    "meta": "CDA",
+    "meta_conntype": "mondrian.jndi",
+    "meta_datype": "mdx"
+   },
+   {
+    "id": "74dc6fa9-50c4-6af0-a958-f13bf7f06b7d",
+    "type": "Componentsmdx_mondrianJndi",
+    "typeDesc": "mdx over mondrianJndi",
+    "parent": "MDX",
+    "properties": [
+     {
+      "name": "name",
+      "value": "multipleLevels",
+      "type": "Id"
+     },
+     {
+      "name": "access",
+      "value": "public",
+      "type": "Access"
+     },
+     {
+      "name": "jndi",
+      "value": "SampleData",
+      "type": "Jndi"
+     },
+     {
+      "name": "catalog",
+      "value": "mondrian:/SteelWheels",
+      "type": "MondrianCatalog"
+     },
+     {
+      "name": "query",
+      "value": "WITH\n    SET [ROWS_SET] AS {[Product].[Product].Members}\n    MEMBER [Measures].[PRODUCT DESC] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Product]).NAME\n    MEMBER [Measures].[PRODUCT UNAME] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Product]).UNIQUENAME\n    MEMBER [Measures].[VENDOR DESC] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Vendor]).NAME\n    MEMBER [Measures].[VENDR UNAME] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Vendor]).UNIQUENAME\n    MEMBER [Measures].[LINE DESC] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Line]).NAME\n    MEMBER [Measures].[LINE UNAME] AS ANCESTOR([Product].CURRENTMEMBER, [Product].[Line]).UNIQUENAME\nSELECT\n    NON EMPTY {\n        [Measures].[LINE DESC], [Measures].[LINE UNAME],\n        [Measures].[VENDOR DESC], [Measures].[VENDOR UNAME],\n        [Measures].[PRODUCT DESC], [Measures].[PRODUCT UNAME]\n    } ON COLUMNS,\n    NON EMPTY [ROWS_SET] ON ROWS\nFROM [SteelWheelsSales]",
+      "type": "CurrentMdxQuery"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "CdaParameters"
+     },
+     {
+      "name": "bandedMode",
+      "value": "compact",
+      "type": "BandedMode"
+     },
+     {
+      "name": "cdacalculatedcolumns",
+      "value": "[]",
+      "type": "CdaCalculatedColumnsArray"
+     },
+     {
+      "name": "cdacolumns",
+      "value": "[]",
+      "type": "CdaColumnsArray"
+     },
+     {
+      "name": "output",
+      "value": "[]",
+      "type": "IndexArray"
+     },
+     {
+      "name": "outputMode",
+      "value": "include",
+      "type": "OutputMode"
+     },
+     {
+      "name": "cacheKeys",
+      "value": "[]",
+      "type": "CacheKeysValues"
+     },
+     {
+      "name": "cacheDuration",
+      "value": 3600,
+      "type": "Integer"
+     },
+     {
+      "name": "cache",
+      "value": "true",
+      "type": "Boolean"
+     }
+    ],
+    "meta": "CDA",
+    "meta_conntype": "mondrian.jndi",
+    "meta_datype": "mdx"
+   },
+   {
+    "id": "81403a58-455f-d8df-3ce7-90ecde29d37c",
+    "type": "Componentsmdx_mondrianJndi",
+    "typeDesc": "mdx over mondrianJndi",
+    "parent": "MDX",
+    "properties": [
+     {
+      "name": "name",
+      "value": "ProductLineQuery",
+      "type": "Id"
+     },
+     {
+      "name": "access",
+      "value": "public",
+      "type": "Access"
+     },
+     {
+      "name": "jndi",
+      "value": "SampleData",
+      "type": "Jndi"
+     },
+     {
+      "name": "catalog",
+      "value": "mondrian:/SteelWheels",
+      "type": "MondrianCatalog"
+     },
+     {
+      "name": "query",
+      "value": "WITH\n    SET [ROWS_SET] AS {[Product].[Line].MEMBERS}\n    MEMBER [Measures].[DESC] AS [Product].CURRENTMEMBER.NAME\n    MEMBER [Measures].[UNAME] AS [Product].CURRENTMEMBER.UNIQUENAME\nSELECT\n    NON EMPTY {\n        [Measures].[UNAME], [Measures].[DESC]\n    } ON COLUMNS,\n    NON EMPTY [ROWS_SET] ON ROWS\nFROM [SteelWheelsSales]",
+      "type": "CurrentMdxQuery"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "CdaParameters"
+     },
+     {
+      "name": "bandedMode",
+      "value": "compact",
+      "type": "BandedMode"
+     },
+     {
+      "name": "cdacalculatedcolumns",
+      "value": "[]",
+      "type": "CdaCalculatedColumnsArray"
+     },
+     {
+      "name": "cdacolumns",
+      "value": "[]",
+      "type": "CdaColumnsArray"
+     },
+     {
+      "name": "output",
+      "value": "[\"1\",\"2\"]",
+      "type": "IndexArray"
+     },
+     {
+      "name": "outputMode",
+      "value": "include",
+      "type": "OutputMode"
+     },
+     {
+      "name": "cacheKeys",
+      "value": "[]",
+      "type": "CacheKeysValues"
+     },
+     {
+      "name": "cacheDuration",
+      "value": 3600,
+      "type": "Integer"
+     },
+     {
+      "name": "cache",
+      "value": "true",
+      "type": "Boolean"
+     }
+    ],
+    "meta": "CDA",
+    "meta_conntype": "mondrian.jndi",
+    "meta_datype": "mdx"
+   },
+   {
+    "id": "7873511d-e999-4c0e-c248-3fdccdfb356b",
+    "type": "Componentsmdx_mondrianJndi",
+    "typeDesc": "mdx over mondrianJndi",
+    "parent": "MDX",
+    "properties": [
+     {
+      "name": "name",
+      "value": "ProductVendorQuery",
+      "type": "Id"
+     },
+     {
+      "name": "access",
+      "value": "public",
+      "type": "Access"
+     },
+     {
+      "name": "jndi",
+      "value": "SampleData",
+      "type": "Jndi"
+     },
+     {
+      "name": "catalog",
+      "value": "mondrian:/SteelWheels",
+      "type": "MondrianCatalog"
+     },
+     {
+      "name": "query",
+      "value": "WITH\n    SET [ROWS_SET] AS DESCENDANTS({${productLineParam}}, 1)\n    MEMBER [Measures].[DESC] AS [Product].CURRENTMEMBER.NAME\n    MEMBER [Measures].[UNAME] AS [Product].CURRENTMEMBER.UNIQUENAME\nSELECT\n    NON EMPTY {\n        [Measures].[UNAME], [Measures].[DESC]\n    } ON COLUMNS,\n    NON EMPTY [ROWS_SET] ON ROWS\nFROM [SteelWheelsSales]",
+      "type": "CurrentMdxQuery"
+     },
+     {
+      "name": "parameters",
+      "value": "[[\"productLineParam\",\"[Product].[Classic Cars].[Classic Metal Creations]\",\"String\",\"\"]]",
+      "type": "CdaParameters"
+     },
+     {
+      "name": "bandedMode",
+      "value": "compact",
+      "type": "BandedMode"
+     },
+     {
+      "name": "cdacalculatedcolumns",
+      "value": "[]",
+      "type": "CdaCalculatedColumnsArray"
+     },
+     {
+      "name": "cdacolumns",
+      "value": "[]",
+      "type": "CdaColumnsArray"
+     },
+     {
+      "name": "output",
+      "value": "[\"1\",\"2\"]",
+      "type": "IndexArray"
+     },
+     {
+      "name": "outputMode",
+      "value": "include",
+      "type": "OutputMode"
+     },
+     {
+      "name": "cacheKeys",
+      "value": "[]",
+      "type": "CacheKeysValues"
+     },
+     {
+      "name": "cacheDuration",
+      "value": 3600,
+      "type": "Integer"
+     },
+     {
+      "name": "cache",
+      "value": "true",
+      "type": "Boolean"
+     }
+    ],
+    "meta": "CDA",
+    "meta_conntype": "mondrian.jndi",
+    "meta_datype": "mdx"
+   },
+   {
+    "id": "aa3fa1a4-7b4e-7bfc-5034-d0745fe8df09",
+    "type": "Componentsmdx_mondrianJndi",
+    "typeDesc": "mdx over mondrianJndi",
+    "parent": "MDX",
+    "properties": [
+     {
+      "name": "name",
+      "value": "ProductQuery",
+      "type": "Id"
+     },
+     {
+      "name": "access",
+      "value": "public",
+      "type": "Access"
+     },
+     {
+      "name": "jndi",
+      "value": "SampleData",
+      "type": "Jndi"
+     },
+     {
+      "name": "catalog",
+      "value": "mondrian:/SteelWheels",
+      "type": "MondrianCatalog"
+     },
+     {
+      "name": "query",
+      "value": "WITH\n    SET [ROWS_SET] AS DESCENDANTS({${productVendorParam}}, 1)\n    MEMBER [Measures].[DESC] AS [Product].CURRENTMEMBER.NAME\n    MEMBER [Measures].[UNAME] AS [Product].CURRENTMEMBER.UNIQUENAME\nSELECT\n    NON EMPTY {\n        [Measures].[UNAME], [Measures].[DESC]\n    } ON COLUMNS,\n    NON EMPTY [ROWS_SET] ON ROWS\nFROM [SteelWheelsSales]",
+      "type": "CurrentMdxQuery"
+     },
+     {
+      "name": "parameters",
+      "value": "[[\"productVendorParam\",\"[Product].[Classic Cars].[Autoart Studio Design]\",\"String\",\"\"]]",
+      "type": "CdaParameters"
+     },
+     {
+      "name": "bandedMode",
+      "value": "compact",
+      "type": "BandedMode"
+     },
+     {
+      "name": "cdacalculatedcolumns",
+      "value": "[]",
+      "type": "CdaCalculatedColumnsArray"
+     },
+     {
+      "name": "cdacolumns",
+      "value": "[]",
+      "type": "CdaColumnsArray"
+     },
+     {
+      "name": "output",
+      "value": "[\"1\",\"2\"]",
+      "type": "IndexArray"
+     },
+     {
+      "name": "outputMode",
+      "value": "include",
+      "type": "OutputMode"
+     },
+     {
+      "name": "cacheKeys",
+      "value": "[]",
+      "type": "CacheKeysValues"
+     },
+     {
+      "name": "cacheDuration",
+      "value": 3600,
+      "type": "Integer"
+     },
+     {
+      "name": "cache",
+      "value": "true",
+      "type": "Boolean"
+     }
+    ],
+    "meta": "CDA",
+    "meta_conntype": "mondrian.jndi",
+    "meta_datype": "mdx"
+   },
+   {
+    "id": "8e847755-abbb-0d2e-6d03-acea6689b470",
+    "type": "Componentsmdx_mondrianJndi",
+    "typeDesc": "mdx over mondrianJndi",
+    "parent": "MDX",
+    "properties": [
+     {
+      "name": "name",
+      "value": "accordionFilters",
+      "type": "Id"
+     },
+     {
+      "name": "access",
+      "value": "public",
+      "type": "Access"
+     },
+     {
+      "name": "jndi",
+      "value": "SampleData",
+      "type": "Jndi"
+     },
+     {
+      "name": "catalog",
+      "value": "mondrian:/SteelWheels",
+      "type": "MondrianCatalog"
+     },
+     {
+      "name": "query",
+      "value": "WITH\n    SET [ROWS_SET] AS DESCENDANTS({[Product].[Classic Cars].[Classic Metal Creations]}, 1)\n    MEMBER [Measures].[DESC] AS [Product].CURRENTMEMBER.NAME\n    MEMBER [Measures].[UNAME] AS [Product].CURRENTMEMBER.UNIQUENAME\nSELECT\n    NON EMPTY {\n        [Measures].[UNAME], [Measures].[DESC]\n    } ON COLUMNS,\n    NON EMPTY [ROWS_SET] ON ROWS\nFROM [SteelWheelsSales]",
+      "type": "CurrentMdxQuery"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "CdaParameters"
+     },
+     {
+      "name": "bandedMode",
+      "value": "compact",
+      "type": "BandedMode"
+     },
+     {
+      "name": "cdacalculatedcolumns",
+      "value": "[]",
+      "type": "CdaCalculatedColumnsArray"
+     },
+     {
+      "name": "cdacolumns",
+      "value": "[]",
+      "type": "CdaColumnsArray"
+     },
+     {
+      "name": "output",
+      "value": "[\"5\",\"6\",\"3\",\"4\",\"1\",\"2\"]",
+      "type": "IndexArray"
+     },
+     {
+      "name": "outputMode",
+      "value": "include",
+      "type": "OutputMode"
+     },
+     {
+      "name": "cacheKeys",
+      "value": "[]",
+      "type": "CacheKeysValues"
+     },
+     {
+      "name": "cacheDuration",
+      "value": 3600,
+      "type": "Integer"
+     },
+     {
+      "name": "cache",
+      "value": "true",
+      "type": "Boolean"
+     }
+    ],
+    "meta": "CDA",
+    "meta_conntype": "mondrian.jndi",
+    "meta_datype": "mdx"
+   }
+  ]
+ },
+ "filename": "/public/Ctools+Book+Samples/Chapter+5/Filter+Component/filterComponent.cdfde"
+}

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdf><title>usingCustomStyle</title><description>usingCustomStyle</description><author>miguel.ferreira.gaspar@gmail.om</author><style>CustomStyleRequire</style><rendererType>bootstrap</rendererType><require>true</require><widget>false</widget><widgetName></widgetName><widgetParameters></widgetParameters></cdf>

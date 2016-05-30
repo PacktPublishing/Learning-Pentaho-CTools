@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDADescriptor>
+   <DataSources>
+      <Connection id="templateQuery" type="mondrian.jndi">
+         <Catalog>mondrian:/SteelWheels</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+   </DataSources>
+   <DataAccess access="public" connection="templateQuery" id="templateQuery" type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[WITH
+    SET [~ROWS] AS FILTER({[Markets].[Country].Members}, NOT ISEMPTY([Measures].[Sales]) )
+    MEMBER [Measures].[Territory] AS [Markets].CURRENTMEMBER.PARENT.NAME
+    MEMBER [Measures].[Sparkline] AS GENERATE(DESCENDANTS([Time].[2004], [Time].[Months]), CAST(ROUND( [Measures].[Sales]+0, 1) AS STRING), ',')
+SELECT
+NON EMPTY {[Measures].[Territory], [Measures].[Sales], [Measures].[Sparkline]} ON COLUMNS,
+NON EMPTY [~ROWS] ON ROWS
+FROM [SteelWheelsSales]]]></Query>
+   </DataAccess>
+</CDADescriptor>

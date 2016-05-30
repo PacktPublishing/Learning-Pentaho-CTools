@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDADescriptor>
+   <DataSources>
+      <Connection id="query" type="mondrian.jndi">
+         <Catalog>mondrian:/SteelWheels</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+   </DataSources>
+   <DataAccess access="public" connection="query" id="query" type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="[Time].[2004]" name="dateParam" type="String"/>
+         <Parameter default="[Territory].[APAC]" name="territoryParam" type="String"/>
+      </Parameters>
+      <Query><![CDATA[WITH
+SET [COLUMNS] AS {${dateParam}}
+SET [ROWS] AS {[Product].[Line].Members}
+SELECT
+NON EMPTY CrossJoin([COLUMNS], {[Measures].[Quantity]}) ON COLUMNS,
+NON EMPTY [ROWS] ON ROWS
+FROM [SteelWheelsSales]
+WHERE {${territoryParam}}]]></Query>
+   </DataAccess>
+</CDADescriptor>

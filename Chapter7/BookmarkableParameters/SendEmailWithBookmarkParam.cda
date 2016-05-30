@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDADescriptor>
+   <DataSources>
+      <Connection id="productFilterQuery" type="mondrian.jndi">
+         <Catalog>mondrian:/SteelWheels</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+      <Connection id="productTableQuery" type="mondrian.jndi">
+         <Catalog>mondrian:/SteelWheels</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+   </DataSources>
+   <DataAccess access="public" connection="productFilterQuery" id="productFilterQuery"
+               type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Output indexes="1,0" mode="include"/>
+      <Parameters/>
+      <Query><![CDATA[WITH
+    SET [ROWS] AS
+    Hierarchize({{[Product].[Line].Members}, {[Product].[Vendor].Members}})
+    MEMBER [Measures].[Uname] AS [Product].CURRENTMEMBER.UNIQUENAME
+SELECT
+NON EMPTY {[Measures].[Uname]} ON COLUMNS,
+NON EMPTY [ROWS] ON ROWS
+FROM [SteelWheelsSales]]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="productTableQuery" id="productTableQuery"
+               type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="[Product].[Classic Cars]" name="filterParam" type="String"/>
+      </Parameters>
+      <Query><![CDATA[WITH
+    SET [ROWS] AS DESCENDANTS({${filterParam}}, [Product].[Product])
+    MEMBER [Measures].[Trend] AS ((([Time].[Years].CURRENTMEMBER, [Measures].[Sales])+0)-(([Time].[Years].CURRENTMEMBER.lAG(1), [Measures].[Sales])+0))/(([Time].[Years].CURRENTMEMBER, [Measures].[Sales])+0)
+SELECT
+NON EMPTY {[Time].[Years].MEMBERS} * {[Measures].[Sales], [Measures].[Trend]} ON COLUMNS,
+NON EMPTY [ROWS] ON ROWS
+FROM [SteelWheelsSales]]]></Query>
+   </DataAccess>
+</CDADescriptor>

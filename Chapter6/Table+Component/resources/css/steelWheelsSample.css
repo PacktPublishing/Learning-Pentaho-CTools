@@ -1,0 +1,489 @@
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src:  local('Open Sans Light'),
+        local('OpenSans-Light'),
+        url('../fonts/opensans-light.eot') format('embedded-opentype'),
+        url('../fonts/opensans-light.woff') format('woff'),
+        url('../fonts/opensans-light.ttf') format('truetype'),
+        url('../fonts/opensans-light.svg#OpenSansLight') format('svg')
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src:  local('Open Sans'),
+        local('OpenSans'),
+        /* EE */
+        url('../fonts/opensans-regular.eot') format('embedded-opentype'),
+        url('../fonts/opensans-regular.woff') format('woff'),
+        url('../fonts/opensans-regular.ttf') format('truetype'),
+        url('../fonts/opensans-regular.svg#OpenSansRegular') format('svg'),
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src:  local('Open Sans Semibold'),
+        local('OpenSans-Semibold'),
+        url('../fonts/opensans-semibold.eot') format('embedded-opentype'),
+        url('../fonts/opensans-semibold.woff') format('woff'),
+        url('../fonts/opensans-semibold.ttf') format('truetype'),
+        url('../fonts/opensans-semibold.svg#OpenSansSemibold') format('svg'),
+}
+
+body {
+    background: #F8FAFB !important;
+}
+
+*:focus {
+    outline: 0;
+}
+
+input:focus, button:focus{
+    outline: 0;
+}
+
+* {
+  font-family: 'Open Sans';
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+
+h1,h2,h3,h4 {
+    font-weight: 400;
+    color: #343E47;
+}
+
+/* ================ HEADER ================ */
+
+.hidden {
+    display: none;
+}
+
+.headerBackground.row {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  background: #f6f7f7 url(../imgs/header-bg.png) repeat-x center bottom;
+  margin: 0;
+  margin-bottom: 20px;
+  margin-right: 0px;
+  margin-left: 0px
+}
+
+.header {
+    height: 100px;
+    line-height: 100px;
+}
+
+.fa.fa-user.userImage {
+    font-size: 20px;
+    color: #ccc;
+    text-align: center;
+}
+
+.fa.fa-user.userImage:before {
+    border: 1px solid #ccc;
+    border-radius: 100%;
+    padding: 8px;
+}
+
+.dashPanel {
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgba(200,200,200,0.5);
+    border: 1px solid rgba(220,220,220,0.7);
+}
+/* ================ HEADER ================ */
+
+
+.filters {
+    padding-top: 20px;
+}
+
+.filters .yearFilterTitle {
+    line-height: 20px;
+    text-align: right;
+    color: #aaa;
+}
+
+.userName b {
+  font-size: 18px;
+  position: absolute;
+  top: -3px;
+  padding-left: 5px;
+}
+
+
+.filters .chzn-container {
+    display: block;
+    width: 100% !important;
+}
+
+.filters .chzn-container,
+.filters .chzn-container-single .chzn-single {
+    outline: 0 none !important;
+}
+
+.filters .chzn-container-single .chzn-single {
+    background: #fff;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: 1px solid #CCC;
+    height: 32px;
+    line-height: 30px;
+    padding: 0 0 0 10px;
+    color: #4d4d4d;
+    box-shadow: none !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-8 */
+}
+
+.filters .chzn-container-single .chzn-single div {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    background: #FFF;
+    border: none;
+    width: 22px;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-8 */
+}
+
+.filters .chzn-container-single .chzn-single div b {
+    width: 20px;
+    height: 18px;
+    background: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.filters .chzn-container-single .chzn-single div b:before {
+    border: none;;
+    content: '';
+    display: block;
+    height: 8px;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    position: absolute;
+    vertical-align: top;
+    width: 10px;
+    background: url(../imgs/selector-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.no-svg .filters .chzn-container-single .chzn-single div b:before {
+    background: url(../imgs/selector-arrow.png);
+}
+
+.filters .chzn-container-single .chzn-single-with-drop div b:before {
+    background-position: right center;
+    -ms-background-position-x: right;
+}
+
+.filters .chzn-container-single .chzn-drop {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    width: 100% !important;
+    border: 1px solid #CCC;
+    border-top: 0;
+    margin-top: 1px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.1);
+}
+
+.filters .chzn-container-single .chzn-drop .chzn-search {
+    display: none;
+}
+
+.filters .chzn-container .chzn-results .highlighted {
+    background: #005ca7;
+    color: #fff;
+}
+
+.filters .chzn-container .chzn-results {
+    padding: 5px;
+    margin: 0;
+}
+
+
+/* ================ OVERVIEW ================ */
+
+
+.overview {
+    margin-top: 20px;
+}
+
+.productLineFilterTitle {
+    padding-bottom: 10px;
+    color: #aaa;
+}
+
+.description {
+    color: #aaa;
+}
+
+.overview .description {
+    margin-bottom: 10px;
+}
+
+
+.filters .description {
+    color: #aaa;
+    line-height: 20px;
+    text-align: right;
+}
+
+.charts .description {
+    padding: 15px 0px;
+    color: #aaa;
+    font-size: 16px;
+}
+
+
+
+.overview .productLineFilter .pentaho-toggle-button-up,
+.overview .productLineFilter .pentaho-toggle-button-down,
+.overview .productLineFilter .pentaho-toggle-button,
+.overview .productLineFilter .pentaho-toggle-button-up button,
+.overview .productLineFilter .pentaho-toggle-button-down button,
+.overview .productLineFilter .pentaho-toggle-button button {
+    line-height: 25px;
+    font-size: 16px;
+    width: 100%;
+    background: none;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    text-align: left; 
+    position: relative;
+} 
+
+.overview .productLineFilter .pentaho-toggle-button:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #676767;
+    border-radius: 2px;
+    right: 0px;
+    top: 5px;
+}
+
+.overview .productLineFilter .pentaho-toggle-button-up:after {
+    background: #676767;
+}
+
+.overview .productLineFilter .pentaho-toggle-button-down:after {
+    background-image: url(../imgs/check.png);
+}
+
+
+.overviewPieChart {
+    margin-top: 28px;
+}
+
+/* ================ TABLE ================ */
+
+.clippedText {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+table.table.dataTable {
+    margin-top: 28px;
+    border: none;
+}
+
+table.table.dataTable tr {
+    line-height: 20px;
+}
+
+table.table.dataTable thead {
+    display: none;
+}
+
+table.table.dataTable tbody tr {
+    background-color: white;
+    border: none;
+}
+
+table.table.dataTable tbody tr td {
+    border: none;
+    background-color: inherit;
+    padding: 4px;
+    line-height: 22px;
+    font-family: 'Open Sans';
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(odd) > th {
+    background-color: inherit;
+}
+
+table.table.dataTable tbody tr td.column2 {
+    font-size: 16px;
+    text-align: right;
+}
+
+.salesByProduct {
+    margin-top: 20px;
+}
+
+.salesByProduct table.table.dataTable thead {
+    display: table-header-group;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    margin-left: 0.5em;
+    border: 1px solid #efefef;
+    padding: 5px;
+    margin: 10px;
+}
+
+.dataTables_wrapper .dataTables_length, 
+.dataTables_wrapper .dataTables_filter, 
+.dataTables_wrapper .dataTables_info, 
+.dataTables_wrapper .dataTables_processing, 
+.dataTables_wrapper .dataTables_paginate {
+    color: #333333;
+    width: 100%;
+    background-color: #F8FAFB;
+    padding: 4px;
+    border-bottom: 2px solid white;
+}
+
+table.dataTable.compact thead th, 
+table.dataTable.compact thead td {
+    padding: 5px 9px;
+    background-color: #F8FAFB;
+    border: 2px solid white;
+    font-family: 'Open Sans';
+}
+
+table.tableComponent td.numeric {
+    font-family: 'Open Sans';
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+
+.trendArrow > div {
+    margin: 0px 4px 0px 0px;
+}
+
+table .trend {
+    position: relative;
+
+}
+
+table .trend:after {
+    position: absolute;
+    background: none;
+    font: normal normal normal 20px/1 FontAwesome;
+    top: -5px;
+    left: -3px;
+}
+
+table .trend.down.good {
+    background: none;
+}
+
+table .trend.down.good:after {
+    content: "\f0ab";
+    color: red;
+}
+
+table .trend.up.good {
+    background: none;
+}
+
+table .trend.up.good:after {
+    content: "\f0aa";
+    color: green;
+}
+
+table .trend.neutral.good {
+    background: none;
+}
+
+table .trend.neutral.good:after {
+    content: "\f0a9";
+    color: #ccc;
+}
+
+.salesByProduct  table tr {
+    cursor: pointer;
+}
+
+.salesByProduct  table tr.expandingClass td.expandingClass {
+    margin: 0px;
+    padding: 0px;
+        border: 1px solid #676767;
+}
+
+.salesByProduct table .even.expandingClass,
+.salesByProduct table .odd.expandingClass {
+    background: #676767;
+    color: white;
+}
+
+.salesByProduct table .even.expandingClass .trend.good:after,
+.salesByProduct table .odd.expandingClass .trend.good:after {
+    color: white;
+}
+
+table.dataTable tbody tr {
+    background-color: white;
+    line-height: 22px;
+}
+
+.salesByProduct .dataTables_wrapper table.dataTable thead th {
+    border: 0;
+    text-align: center;
+    background-color: #F8FAFB;
+    border-bottom: 1px solid white;
+}
+
+/* ================ TEMPLATE ================ */
+
+.salesByCountry {
+    margin-top: 40px;
+}
+
+.value {
+    border: 1px dotted #ccc;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    height: 150px;
+    text-align: center;
+    /* vertical-align: middle; */
+    padding-top: 41px;
+    margin-bottom: 15px;
+}
+
+.tableDetailsContainer.row {
+    padding: 5px;
+    margin: 0px;
+}

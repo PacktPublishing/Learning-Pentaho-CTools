@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdf>
+  <title>CDF Hello World Sample!</title>
+  <author>My Name</author>
+  <description>CDF Hello World Sample!</description>
+  <icon></icon>
+  <template>helloWorld.html</template>
+  <style>ctoolsBook</style>
+  <require>true</require>
+</cdf>

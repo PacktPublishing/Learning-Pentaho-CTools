@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDADescriptor>
+   <DataSources>
+      <Connection id="status" type="mondrian.jndi">
+         <Catalog>mondrian:/SteelWheels</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+   </DataSources>
+   <DataAccess access="public" connection="status" id="status" type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="Cancelled" name="statusParam" type="String"/>
+      </Parameters>
+      <Query><![CDATA[WITH
+MEMBER [Measures].[Measure] AS ([Order Status].[Type].[${statusParam}], [Measures].[Sales])
+MEMBER [Measures].[Others] AS AGGREGATE(EXCEPT({[Order Status].[Type].MEMBERS}, [Order Status].[Type].[${statusParam}]), [Measures].[Sales])
+SET ROWS_SET AS {[Measures].[Measure], [Measures].[Others]}
+SET COLUMNS_SET AS
+    {[Markets].[All Markets]}
+SELECT
+NON EMPTY COLUMNS_SET ON COLUMNS,
+NON EMPTY ROWS_SET ON ROWS
+FROM [SteelWheelsSales]]]></Query>
+   </DataAccess>
+</CDADescriptor>
