@@ -3,6 +3,7 @@
 This is the code repository for [Learning-Pentaho-CTools](https://www.packtpub.com/big-data-and-business-intelligence/learning-pentaho-ctools?utm_source=GitHub&utm_medium=repo&utm_campaign=9781785283420), published by [Packt Publishing](https://www.packtpub.com/). It contains all the supporting project files necessary to work through the book from start to finish.
 
 Dear all,
+
 Being an introductory chapter Chapter 1, Getting Started with CTools and Chapter 9: Pentaho App Builder, Chapter 10, Embed, Deploy, and Debug does not contain code files.
 
 Chapter 1, Getting Started with CTools, gives a brief introduction to the history of CTools. It will also introduce you to the purpose of the tool and teaches you what methods are needed to install Community Tools. 
