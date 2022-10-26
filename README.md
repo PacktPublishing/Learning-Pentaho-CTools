@@ -16,3 +16,7 @@ Chapter 10, Embed, Deploy, and Debug, will explain how to embed both CDF and CDE
 * [Pentaho Business Analytics Cookbook](https://www.packtpub.com/big-data-and-business-intelligence/pentaho-business-analytics-cookbook?utm_source=GitHub&utm_medium=repo&utm_campaign=9781783289356)
 * [Pentaho Data Integration 4 Cookbook](https://www.packtpub.com/big-data-and-business-intelligence/pentaho-data-integration-4-cookbook?utm_source=GitHub&utm_medium=repo&utm_campaign=9781849515245)
 * [Pentaho Data Integration Cookbook - Second Edition](https://www.packtpub.com/big-data-and-business-intelligence/pentaho-data-integration-cookbook-second-edition?utm_source=GitHub&utm_medium=repo&utm_campaign=9781783280674)
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781785283420">https://packt.link/free-ebook/9781785283420 </a> </p>
