@@ -1,3 +1,15 @@
+
+### Get this product for $5
+
+<i>Packt is having its biggest sale of the year. Get this eBook or any other book, video, or course that you like just for $5 each</i>
+
+
+<b><p align='center'>[Buy now](https://packt.link/9781785283420)</p></b>
+
+
+<b><p align='center'>[Buy similar titles for just $5](https://subscription.packtpub.com/search)</p></b>
+
+
 # Learning-Pentaho-CTools
 
 This is the code repository for [Learning-Pentaho-CTools](https://www.packtpub.com/big-data-and-business-intelligence/learning-pentaho-ctools?utm_source=GitHub&utm_medium=repo&utm_campaign=9781785283420), published by [Packt Publishing](https://www.packtpub.com/). It contains all the supporting project files necessary to work through the book from start to finish.
